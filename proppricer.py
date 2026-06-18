@@ -9,7 +9,10 @@ CLI quick reference (all probabilities 0-1 floats, American odds as ints):
     advance 1.4 1.1              knockout: win-in-90 vs advance (ET + pens)
     devig 160 210 200            de-vig only (shows proportional AND power)
     odds -150  |  odds 0.62      convert American odds <-> probability
-    anytime 200                  one-sided market fair prob (anytime scorer)
+    anytime 285                  one-sided fair prob (auto odds-aware longshot shade)
+    half sot 2H --lam 6.8        half-scoped P(>=1/2/3) from a full-game lam
+    half sot 2H --mkt 8 400      ...deriving the full-game lam from an 'X+ at odds' line
+    half corners 1H --lam 5.6 --vs-lam 3.3   HT race: P(team more / tie / opp more)
     pois 2.2                     distribution table for a lambda
     pois 3.5 --nb 8              negative binomial (overdispersed: cards, fouls)
     atleast 2 2.2                P(X >= 2) for lambda 2.2
@@ -17,7 +20,6 @@ CLI quick reference (all probabilities 0-1 floats, American odds as ints):
     lam --under 2.5 0.60         invert "under 2.5 at 60%" -> lambda
     race 2.1 1.7                 P(A more / tie / B more)
     handicap 5.2 4.1 --line -1.5 P(A beats B by 2+) etc. (corners, cards)
-    half cards 3.5               split full-match lam into 1H/2H + thresholds
     player 1.3 0.31 --minutes 0.9   P(player scores), P(2+)
     blend 3.5 5.2 6              shrink prior toward observed (6 matches seen)
     rbp 0.45 0.65 0.46           expected RBP for (you, crowd, truth)
@@ -56,9 +58,23 @@ def devig_power(*odds: int, tol=1e-10) -> list[float]:
         lo, hi = (k, hi) if s > 1 else (lo, k)
     return [r ** k for r in raw]
 
-def fair_anytime(odds: int, shade: float = 1.10) -> float:
-    """One-sided market (anytime scorer): raw implied / shade."""
-    return implied(odds) / shade
+def auto_shade(p: float) -> float:
+    """Favorite-longshot-aware de-vig factor for a ONE-SIDED 'X+' market (which
+    has no opposite side to normalize against). The single-line vig is small near
+    pick'em (~2%) but deep longshots are inflated much more (~12%). Linear in the
+    raw implied prob between those anchors, clamped to [1.02, 1.12]. Replaces the
+    old fixed 1.10 guess, which over-shaded pick'em and under-shaded longshots."""
+    return max(1.02, min(1.12, 1.149 - 0.286 * p))
+
+def fair_anytime(odds: int, shade=None) -> float:
+    """One-sided market fair prob = raw implied / shade. shade=None (default) uses
+    the odds-aware auto_shade; pass a float to override."""
+    p = implied(odds)
+    return p / (auto_shade(p) if shade is None else shade)
+
+def one_sided_fair(odds: int) -> float:
+    """Auto-shaded fair prob for a one-sided X+ line (alias of fair_anytime)."""
+    return fair_anytime(odds, None)
 
 # ------------------------------------------------------------- poisson core
 def pois_pmf(k: int, lam: float) -> float:
@@ -293,9 +309,10 @@ def main(argv=None):
     p = sub.add_parser("devig", help="de-vig a mutually exclusive market")
     p.add_argument("odds", type=int, nargs="+")
 
-    p = sub.add_parser("anytime", help="fair prob from one-sided market")
+    p = sub.add_parser("anytime", help="fair prob from one-sided X+ market (auto shade)")
     p.add_argument("odds", type=int)
-    p.add_argument("--shade", type=float, default=1.10)
+    p.add_argument("--shade", type=float, default=None,
+                   help="override the odds-aware auto shade with a fixed factor")
 
     p = sub.add_parser("pois", help="distribution table for a lambda")
     p.add_argument("lam", type=float)
@@ -346,9 +363,18 @@ def main(argv=None):
     p.add_argument("--pen", type=float, default=0.5, help="P(A wins shootout)")
     p.add_argument("--names", nargs=2, default=("A", "B"))
 
-    p = sub.add_parser("half", help="split a full-match lam into halves")
+    p = sub.add_parser("half", help="half-scoped prob/race from a full-game lam or X+ market")
     p.add_argument("event", choices=sorted(HALF_SHARE))
-    p.add_argument("lam", type=float)
+    p.add_argument("half", choices=["1H", "2H"])
+    src = p.add_mutually_exclusive_group(required=True)
+    src.add_argument("--lam", type=float, help="full-game lam for the team/total")
+    src.add_argument("--mkt", nargs=2, type=int, metavar=("K", "ODDS"),
+                     help="derive full-game lam from a one-sided X+ line: P(>=K) at ODDS")
+    p.add_argument("--vs-lam", type=float, help="opponent full-game lam -> race in this half")
+    p.add_argument("--vs-mkt", nargs=2, type=int, metavar=("K", "ODDS"),
+                   help="opponent X+ line for the race")
+    p.add_argument("--atleast", type=int,
+                   help="P(half count >= this) instead of the 1/2/3 summary")
 
     p = sub.add_parser("player", help="P(player scores) from team lam x share")
     p.add_argument("team_lam", type=float)
@@ -390,9 +416,12 @@ def main(argv=None):
                   f"{american(pp):>10}  {submit(pp):>6}")
 
     elif a.cmd == "anytime":
-        f = fair_anytime(a.odds, a.shade)
-        print(f"raw {100*implied(a.odds):.1f}% -> fair {100*f:.1f}% "
-              f"(shade {a.shade})  submit {submit(f)}")
+        p_raw = implied(a.odds)
+        s = auto_shade(p_raw) if a.shade is None else a.shade
+        f = p_raw / s
+        tag = " auto" if a.shade is None else ""
+        print(f"raw {100*p_raw:.1f}% -> fair {100*f:.1f}% "
+              f"(shade {s:.3f}{tag})  submit {submit(f)}")
 
     elif a.cmd == "pois":
         pmf = (lambda k: nb_pmf(k, a.lam, a.nb)) if a.nb else \
@@ -474,11 +503,29 @@ def main(argv=None):
         print(row(f"{nb_} ADVANCES", r["advance_b"]))
 
     elif a.cmd == "half":
-        s1, s2 = HALF_SHARE[a.event]
-        for name, lam in (("1H", a.lam * s1), ("2H", a.lam * s2)):
-            print(f"{name} {a.event}: lam={lam:.2f}")
+        share = HALF_SHARE[a.event][0 if a.half == "1H" else 1]
+
+        def _full_lam(lam, mkt):
+            if lam is not None:
+                return lam
+            k, odds = mkt
+            return lam_from_threshold(k, one_sided_fair(odds))
+
+        la = _full_lam(a.lam, a.mkt) * share
+        print(f"{a.half} {a.event}: half lam = {la:.2f}  (share {share:.2f})")
+        if a.vs_lam is not None or a.vs_mkt is not None:
+            lb = _full_lam(a.vs_lam, a.vs_mkt) * share
+            r = race(la, lb)
+            print(f"  opp half lam = {lb:.2f}")
+            print(row("team more", r["a_more"]))
+            print(row("tie", r["tie"]))
+            print(row("opp more", r["b_more"]))
+            print(row("team more or tie", r["a_more"] + r["tie"]))
+        elif a.atleast is not None:
+            print(row(f"P(>= {a.atleast})", p_at_least(a.atleast, la)))
+        else:
             for k in (1, 2, 3):
-                print(row(f"  P(>= {k})", p_at_least(k, lam)))
+                print(row(f"P(>= {k})", p_at_least(k, la)))
 
     elif a.cmd == "player":
         m = a.team_lam * a.share * a.minutes
