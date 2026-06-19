@@ -156,9 +156,11 @@ def main(argv):
     elif argv[0] == "card":
         mdl = fit(load())                       # fit on ALL logged matches
         cats = set(mdl["cats"])
-        # gap = crowd_hat - you. E[RBP if your number is the truth] = gap^2 / 100
-        # (in points), the prize you collect for that deviation IF you're right.
-        print(f"{'prop':24} {'you':>3} {'crowd':>5} {'gap':>5} {'E[RBP]':>6}  zone / note")
+        # gap = crowd_hat - you. RBP vs the predicted crowd, by outcome:
+        #   ifYES = ((crowd-100)^2 - (you-100)^2)/100   (we gain when we're above crowd & it hits)
+        #   ifNO  = (crowd^2 - you^2)/100                (we gain when we're below crowd & it misses)
+        # E[RBP | your number is truth] = (crowd - you)^2 / 100 = you/100*ifYES + (1-you/100)*ifNO.
+        print(f"{'prop':22} {'you':>3} {'crowd':>5} {'gap':>5} {'ifYES':>6} {'ifNO':>6} {'E[RBP]':>6}  note")
         for ln in open(argv[1]):
             ln = ln.split("#")[0].strip()
             if not ln:
@@ -168,17 +170,20 @@ def main(argv):
             half = len(parts) > 2 and parts[2].lower() in ("1", "true", "t", "yes")
             label = parts[3] if len(parts) > 3 else cat
             if cat not in cats:
-                print(f"{label:24}  !! unknown category '{cat}' (using global line)")
+                print(f"{label:22}  !! unknown category '{cat}' (using global line)")
             ch = predict(mdl, you, cat, half)
             gap = ch - you
+            ifyes = ((ch - 100) ** 2 - (you - 100) ** 2) / 100.0
+            ifno = (ch ** 2 - you ** 2) / 100.0
             erbp = gap ** 2 / 100.0
             if gap > 1.5:            # you sit BELOW crowd = our reliable direction
-                note = "below crowd -> collect (our +EV side)"
+                note = "below crowd (+EV side)"
             elif gap < -1.5:         # you sit ABOVE crowd = our leak direction
-                note = f"ABOVE crowd -> trim to ~{round(ch)} UNLESS you have a reason"
+                note = f"ABOVE crowd -> trim ~{round(ch)} unless you have a reason"
             else:
-                note = "~at crowd -> small edge, banks the cushion"
-            print(f"{label:24} {you:>3.0f} {ch:>5.1f} {gap:>+5.1f} {erbp:>6.2f}  {note}")
+                note = "~at crowd (cushion)"
+            print(f"{label:22} {you:>3.0f} {ch:>5.1f} {gap:>+5.1f} {ifyes:>+6.1f} {ifno:>+6.1f} "
+                  f"{erbp:>6.2f}  {note}")
     else:
         print(__doc__)
 
