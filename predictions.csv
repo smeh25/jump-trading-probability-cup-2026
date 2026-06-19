@@ -228,13 +228,31 @@ Switzerland,Bosnia-Herzegovina,24,2026-06-18,group,1,7,Penalty awarded,1,38,39.7
 Switzerland,Bosnia-Herzegovina,24,2026-06-18,group,1,8,Switzerland more SOT than Bosnia in 2nd half,1,63,63.2,64,1.38,1,0.1369,0.1296,-0.73,race,true
 Switzerland,Bosnia-Herzegovina,24,2026-06-18,group,1,9,Granit Xhaka 1+ SOT in 2nd half,1,27,37.4,34,-6.79,0,0.5329,0.4356,-9.73,fav_player,true
 Switzerland,Bosnia-Herzegovina,24,2026-06-18,group,1,10,Edin Dzeko 1+ SOT,0,58,55.6,45,-10.18,0,0.3364,0.2025,-13.39,fav_player,false
-Canada,Qatar,25,2026-06-18,group,1,1,Qatar more fouls than Canada,NA,52,54.2,NA,NA,NA,NA,NA,NA,race,false
-Canada,Qatar,25,2026-06-18,group,1,2,4+ total SOT in 2nd half,NA,68,62.5,NA,NA,NA,NA,NA,NA,totals,true
-Canada,Qatar,25,2026-06-18,group,1,3,Penalty awarded OR red card shown,NA,41,41.4,NA,NA,NA,NA,NA,NA,discipline,false
-Canada,Qatar,25,2026-06-18,group,1,4,Jonathan David 1+ SOT in 2nd half,NA,57,54.8,NA,NA,NA,NA,NA,NA,fav_player,true
-Canada,Qatar,25,2026-06-18,group,1,5,Canada wins,NA,74,73.2,NA,NA,NA,NA,NA,NA,fav_team_total,false
-Canada,Qatar,25,2026-06-18,group,1,6,Canada winning at halftime,NA,56,58.7,NA,NA,NA,NA,NA,NA,fav_team_total,true
-Canada,Qatar,25,2026-06-18,group,1,7,Canada 5+ SOT,NA,72,64.9,NA,NA,NA,NA,NA,NA,totals,false
-Canada,Qatar,25,2026-06-18,group,1,8,Qatar 5+ corners,NA,14,24.9,NA,NA,NA,NA,NA,NA,totals,false
-Canada,Qatar,25,2026-06-18,group,1,9,Akram Afif 1+ SOT,NA,54,52.7,NA,NA,NA,NA,NA,NA,fav_player,false
-Canada,Qatar,25,2026-06-18,group,1,10,Qatar score in 2nd half,NA,32,38.8,NA,NA,NA,NA,NA,NA,fav_team_total,true
+Canada,Qatar,25,2026-06-18,group,1,1,Qatar more fouls than Canada,1,52,54.2,56,-1.93,0,0.2304,0.1936,-3.68,race,false
+Canada,Qatar,25,2026-06-18,group,1,2,4+ total SOT in 2nd half,0,68,62.5,60,-7.5,0,0.4624,0.3600,-10.24,totals,true
+Canada,Qatar,25,2026-06-18,group,1,3,Penalty awarded OR red card shown,1,41,41.4,36,7.85,1,0.3481,0.4096,6.15,discipline,false
+Canada,Qatar,25,2026-06-18,group,1,4,Jonathan David 1+ SOT in 2nd half,1,57,54.8,50,9.48,1,0.1849,0.2500,6.51,fav_player,true
+Canada,Qatar,25,2026-06-18,group,1,5,Canada wins,1,76,74.9,71,4.18,1,0.0576,0.0841,2.65,fav_team_total,false
+Canada,Qatar,25,2026-06-18,group,1,6,Canada winning at halftime,1,58,60.3,52,7.87,1,0.1764,0.2304,5.4,fav_team_total,true
+Canada,Qatar,25,2026-06-18,group,1,7,Canada 5+ SOT,1,72,64.9,57,13.78,1,0.0784,0.1849,10.65,totals,false
+Canada,Qatar,25,2026-06-18,group,1,8,Qatar 5+ corners,0,14,24.9,28,8.34,1,0.0196,0.0784,5.88,totals,false
+Canada,Qatar,25,2026-06-18,group,1,9,Akram Afif 1+ SOT,0,54,52.7,42,-9.46,0,0.2916,0.1764,-11.52,fav_player,false
+Canada,Qatar,25,2026-06-18,group,1,10,Qatar score in 2nd half,0,32,38.8,35,4.25,1,0.1024,0.1225,2.01,fav_team_total,true
+Mexico,Korea-Republic,26,2026-06-18,group,1,1,Mexico caught offside 2+,1,57,54.5,51,8.29,1,0.1849,0.2401,5.52,offsides,false
+Mexico,Korea-Republic,26,2026-06-18,group,1,2,Mexico scores 1st AND South Korea scores 2H,0,24,30.8,32,8.3,1,0.0576,0.1024,4.48,and_conjunction,false
+Mexico,Korea-Republic,26,2026-06-18,group,1,3,South Korea more corners than Mexico,1,26,34.6,41,-17.13,0,0.5476,0.3481,-19.95,race,false
+Mexico,Korea-Republic,26,2026-06-18,group,1,4,Mexico wins,1,48,51.4,49,1.02,1,0.2704,0.2601,-1.03,fav_team_total,false
+Mexico,Korea-Republic,26,2026-06-18,group,1,5,Mexico winning at halftime,0,35,41.0,39,5.29,1,0.1225,0.1521,2.96,fav_team_total,true
+Mexico,Korea-Republic,26,2026-06-18,group,1,6,3+ total goals,0,44,45.6,49,6.16,1,0.1936,0.2401,4.65,totals,false
+Mexico,Korea-Republic,26,2026-06-18,group,1,7,South Korea score in 2nd half,0,44,48.4,50,7.33,1,0.1936,0.2500,5.64,fav_team_total,true
+Mexico,Korea-Republic,26,2026-06-18,group,1,8,4+ total cards,0,40,40.5,48,9.86,1,0.1600,0.2304,7.04,discipline,false
+Mexico,Korea-Republic,26,2026-06-18,group,1,9,Son Heung-min score or assist,0,37,42.5,42,7.04,1,0.1369,0.1764,3.95,fav_player,false
+United-States,Australia,27,2026-06-19,group,1,1,United States more fouls than Australia,0,40,45.3,44,5.95,1,0.1600,0.1936,3.36,race,false
+United-States,Australia,27,2026-06-19,group,1,2,Australia caught offside 2+,0,51,50.2,45,-3.02,0,0.2601,0.2025,-5.76,offsides,false
+United-States,Australia,27,2026-06-19,group,1,3,United States more goals than Australia in 2nd half,0,46,50.1,52,8.94,1,0.2116,0.2704,5.88,race,true
+United-States,Australia,27,2026-06-19,group,1,4,United States more SOT than Australia in 2nd half,0,63,62.8,63,1.78,1,0.3969,0.3969,0.0,race,true
+United-States,Australia,27,2026-06-19,group,1,5,Australia more corners than United States,0,16,27.3,34,11.47,1,0.0256,0.1156,9.0,race,false
+United-States,Australia,27,2026-06-19,group,1,6,BTTS AND 3+ total goals,0,33,37.9,43,10.85,1,0.1089,0.1849,7.6,and_conjunction,false
+United-States,Australia,27,2026-06-19,group,1,7,United States wins,1,60,61.2,62,0.8,1,0.1600,0.1444,-1.56,fav_team_total,false
+United-States,Australia,27,2026-06-19,group,1,8,4+ total cards,1,35,37.2,45,-9.31,0,0.4225,0.3025,-12.0,discipline,false
+United-States,Australia,27,2026-06-19,group,1,9,Folarin Balogun 1+ SOT,0,75,63.9,65,-11.35,0,0.5625,0.4225,-14.0,fav_player,false
