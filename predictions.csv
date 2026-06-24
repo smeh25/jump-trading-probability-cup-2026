@@ -453,23 +453,23 @@ Colombia,DR Congo,46,2026-06-23,group,1,7,Colombia 5+ corners,1,57,53.8,58,1.15,
 Colombia,DR Congo,46,2026-06-23,group,1,8,Luis Diaz score or assist,0,41,44.3,50,11.37,1,0.1681,0.2500,8.19,fav_player,false
 Colombia,DR Congo,46,2026-06-23,group,1,9,Cedric Bakambu 1+ SOT,0,46,47.2,43,-0.45,0,0.2116,0.1849,-2.67,fav_player,false
 Colombia,DR Congo,46,2026-06-23,group,1,10,Colombia more fouls than DR Congo,0,40,45.2,41,2.84,1,0.1600,0.1681,0.81,race,false
-Switzerland,Canada,47,2026-06-24,group,1,1,Canada more fouls than Switzerland,NA,49,51.9,NA,NA,NA,NA,NA,NA,race,false
-Switzerland,Canada,47,2026-06-24,group,1,2,Switzerland caught offside 2+,NA,52,49.4,NA,NA,NA,NA,NA,NA,offsides,false
-Switzerland,Canada,47,2026-06-24,group,1,3,2+ total cards in 2nd half,NA,58,54.7,NA,NA,NA,NA,NA,NA,discipline,true
-Switzerland,Canada,47,2026-06-24,group,1,4,BTTS and 3+ goals,NA,37,40.0,NA,NA,NA,NA,NA,NA,and_conjunction,false
-Switzerland,Canada,47,2026-06-24,group,1,5,Penalty awarded,NA,31,34.8,NA,NA,NA,NA,NA,NA,discipline,false
-Switzerland,Canada,47,2026-06-24,group,1,6,Switzerland more SOT than Canada in 2nd half,NA,46,49.8,NA,NA,NA,NA,NA,NA,race,true
-Switzerland,Canada,47,2026-06-24,group,1,7,Switzerland win,NA,38,42.7,NA,NA,NA,NA,NA,NA,fav_team_total,false
-Switzerland,Canada,47,2026-06-24,group,1,8,2nd half 2+ goals,NA,40,42.8,NA,NA,NA,NA,NA,NA,totals,true
-Switzerland,Canada,47,2026-06-24,group,1,9,Granit Xhaka 1+ SOT,NA,37,42.1,NA,NA,NA,NA,NA,NA,fav_player,false
-Switzerland,Canada,47,2026-06-24,group,1,10,Jonathan David 1+ SOT,NA,56,52.8,NA,NA,NA,NA,NA,NA,fav_player,false
-Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,1,Bosnia more corners than Qatar in 2nd half,NA,75,71.4,NA,NA,NA,NA,NA,NA,race,true
-Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,2,Bosnia more goals than Qatar in 2nd half,NA,54,55.8,NA,NA,NA,NA,NA,NA,race,true
-Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,3,Qatar more SOT than Bosnia in 2nd half,NA,15,26.7,NA,NA,NA,NA,NA,NA,race,true
-Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,4,Penalty or red card in match,NA,43,43.6,NA,NA,NA,NA,NA,NA,discipline,false
-Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,5,Qatar more fouls than Bosnia,NA,35,41.5,NA,NA,NA,NA,NA,NA,race,false
-Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,6,Bosnia more cards than Qatar,NA,36,38.5,NA,NA,NA,NA,NA,NA,discipline,false
-Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,7,Bosnia win,NA,70,69.8,NA,NA,NA,NA,NA,NA,fav_team_total,false
-Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,8,2 or fewer total goals,NA,43,44.7,NA,NA,NA,NA,NA,NA,totals,false
-Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,9,Edin Dzeko 1+ SOT,NA,70,60.6,NA,NA,NA,NA,NA,NA,fav_player,false
-Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,10,Qatar caught offside 2+,NA,39,41.4,NA,NA,NA,NA,NA,NA,offsides,false
+Switzerland,Canada,47,2026-06-24,group,1,1,Canada more fouls than Switzerland,0,49,51.9,53,6.09,1,0.2401,0.2809,4.08,race,false
+Switzerland,Canada,47,2026-06-24,group,1,2,Switzerland caught offside 2+,0,52,49.4,50,0.47,1,0.2704,0.2500,-2.04,offsides,false
+Switzerland,Canada,47,2026-06-24,group,1,3,2+ total cards in 2nd half,0,58,54.7,54,-1.32,0,0.3364,0.2916,-4.48,discipline,true
+Switzerland,Canada,47,2026-06-24,group,1,4,BTTS and 3+ goals,1,37,40.0,41,-2.43,0,0.3969,0.3481,-4.88,and_conjunction,false
+Switzerland,Canada,47,2026-06-24,group,1,5,Penalty awarded,0,31,34.8,29,0.67,1,0.0961,0.0841,-1.2,discipline,false
+Switzerland,Canada,47,2026-06-24,group,1,6,Switzerland more SOT than Canada in 2nd half,0,46,49.8,51,7.14,1,0.2116,0.2601,4.85,race,true
+Switzerland,Canada,47,2026-06-24,group,1,7,Switzerland win,1,38,42.7,45,-5.91,0,0.3844,0.3025,-8.19,fav_team_total,false
+Switzerland,Canada,47,2026-06-24,group,1,8,2nd half 2+ goals,1,40,42.8,43,-1.28,0,0.3600,0.3249,-3.51,totals,true
+Switzerland,Canada,47,2026-06-24,group,1,9,Granit Xhaka 1+ SOT,0,37,42.1,40,5.96,1,0.1369,0.1600,2.31,fav_player,false
+Switzerland,Canada,47,2026-06-24,group,1,10,Jonathan David 1+ SOT,0,56,52.8,59,6.29,1,0.3136,0.3481,3.45,fav_player,false
+Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,1,Bosnia more corners than Qatar in 2nd half,0,75,71.4,61,-17.0,0,0.5625,0.3721,-19.04,race,true
+Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,2,Bosnia more goals than Qatar in 2nd half,1,54,55.8,54,2.4,1,0.2116,0.2116,0.0,race,true
+Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,3,Qatar more SOT than Bosnia in 2nd half,0,15,26.7,29,9.12,1,0.0225,0.0841,6.16,race,true
+Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,4,Penalty or red card in match,0,43,43.6,38,-2.18,0,0.1849,0.1444,-4.05,discipline,false
+Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,5,Qatar more fouls than Bosnia,1,35,41.5,50,-14.4,0,0.4225,0.2500,-17.25,race,false
+Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,6,Bosnia more cards than Qatar,0,36,38.5,40,5.48,1,0.1296,0.1600,3.04,discipline,false
+Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,7,Bosnia win,1,70,69.8,64,6.38,1,0.0900,0.1296,3.96,fav_team_total,false
+Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,8,2 or fewer total goals,0,43,44.7,46,5.0,1,0.1849,0.2116,2.67,totals,false
+Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,9,Edin Dzeko 1+ SOT,0,70,60.6,59,-10.56,0,0.4900,0.3481,-14.19,fav_player,false
+Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,10,Qatar caught offside 2+,1,39,41.4,43,-1.75,0,0.3721,0.3249,-4.72,offsides,false
