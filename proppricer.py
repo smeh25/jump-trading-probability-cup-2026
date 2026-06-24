@@ -58,23 +58,55 @@ def devig_power(*odds: int, tol=1e-10) -> list[float]:
         lo, hi = (k, hi) if s > 1 else (lo, k)
     return [r ** k for r in raw]
 
-def auto_shade(p: float) -> float:
-    """Favorite-longshot-aware de-vig factor for a ONE-SIDED 'X+' market (which
-    has no opposite side to normalize against). The single-line vig is small near
-    pick'em (~2%) but deep longshots are inflated much more (~12%). Linear in the
-    raw implied prob between those anchors, clamped to [1.02, 1.12]. Replaces the
-    old fixed 1.10 guess, which over-shaded pick'em and under-shaded longshots."""
-    return max(1.02, min(1.12, 1.149 - 0.286 * p))
+# --------------------------------------------------------- one-sided vig table
+# Typical TWO-WAY hold (overround) for ONE-SIDED markets where the book quotes
+# only the "Yes/Over" side, so we cannot de-vig against the opposite outcome.
+# fair = raw_implied / (1 + vig).  Keyed by SOURCE-MARKET type (what we price
+# OFF), NOT by our prop category. Values are web-researched two-way-hold anchors
+# (2026-06-23): moneyline ~5%, Yes/No props ~7% (bettingusa); player props
+# major 4-6% / secondary 6-10% / exotic 10-20% (Wizard of Odds); first-GS multiway
+# 20-40%, anytime two-way lower (Pinnacle). Soccer runs higher-vig than US sports
+# and DK is recreational. REFINE empirically: whenever both sides (or a paired
+# threshold ladder) are seen, back out the hold with `observed_vig` and nudge.
+# The single source of truth lives here; see toolkit.md for the documented table.
+ONE_SIDED_VIG = {
+    "two_way":        0.00,  # both sides quoted -> de-vig directly; no estimate
+    "team_count":     0.07,  # one-sided team threshold (SOT/corners/fouls/offsides); Yes/No 7%, observed 7.3%
+    "player_sot":     0.10,  # player shots on target -- secondary prop (volume-based, more predictable)
+    "anytime_scorer": 0.15,  # anytime score / score-or-assist -- juiciest; two-way below the 20-40% multiway
+    "penalty":        0.07,  # "penalty awarded? yes" -- Yes/No prop
+    "red_card":       0.10,  # "a red card in the match" -- Yes/No + favorite-longshot premium on the rare side
+    "default":        0.08,  # unknown one-sided market -> conservative middle
+}
+MARKET_CHOICES = sorted(ONE_SIDED_VIG)
+
+def one_sided_vig(market: str) -> float:
+    """Two-way hold for a one-sided market type (see ONE_SIDED_VIG)."""
+    return ONE_SIDED_VIG.get(market, ONE_SIDED_VIG["default"])
+
+def observed_vig(*odds: int) -> float:
+    """Realized two-way/N-way hold from quoted odds: sum(raw_implied) - 1. Use to
+    back out a market's true hold whenever both sides are seen, then update the
+    ONE_SIDED_VIG prior for that market type."""
+    return sum(implied(o) for o in odds) - 1.0
+
+def fair_one_sided(odds: int, market: str = "default", shade=None) -> float:
+    """Fair prob from a ONE-SIDED line, de-vigged by the market-type two-way hold:
+    fair = raw / (1 + vig[market]).  Pass `shade` to override the table with an
+    explicit (1+vig) factor (e.g. 1.15). Replaces the old odds-only `auto_shade`,
+    which assumed every one-sided line carried only ~2-12% regardless of market —
+    badly under-de-vigging juiced player/scorer props."""
+    p = implied(odds)
+    factor = (1.0 + one_sided_vig(market)) if shade is None else shade
+    return p / factor
 
 def fair_anytime(odds: int, shade=None) -> float:
-    """One-sided market fair prob = raw implied / shade. shade=None (default) uses
-    the odds-aware auto_shade; pass a float to override."""
-    p = implied(odds)
-    return p / (auto_shade(p) if shade is None else shade)
+    """Back-compat: fair prob for an anytime score/score-or-assist line."""
+    return fair_one_sided(odds, "anytime_scorer", shade)
 
-def one_sided_fair(odds: int) -> float:
-    """Auto-shaded fair prob for a one-sided X+ line (alias of fair_anytime)."""
-    return fair_anytime(odds, None)
+def one_sided_fair(odds: int, market: str = "default") -> float:
+    """Alias kept for callers that don't pass an explicit shade."""
+    return fair_one_sided(odds, market)
 
 # ------------------------------------------------------------- poisson core
 def pois_pmf(k: int, lam: float) -> float:
@@ -309,10 +341,13 @@ def main(argv=None):
     p = sub.add_parser("devig", help="de-vig a mutually exclusive market")
     p.add_argument("odds", type=int, nargs="+")
 
-    p = sub.add_parser("anytime", help="fair prob from one-sided X+ market (auto shade)")
+    p = sub.add_parser("anytime", help="fair prob from one-sided market (de-vig by market type)")
     p.add_argument("odds", type=int)
+    p.add_argument("--market", choices=MARKET_CHOICES, default="default",
+                   help="source-market type -> two-way hold from ONE_SIDED_VIG "
+                        "(e.g. anytime_scorer, player_sot, team_count)")
     p.add_argument("--shade", type=float, default=None,
-                   help="override the odds-aware auto shade with a fixed factor")
+                   help="override the table with an explicit (1+vig) factor, e.g. 1.15")
 
     p = sub.add_parser("pois", help="distribution table for a lambda")
     p.add_argument("lam", type=float)
@@ -326,8 +361,16 @@ def main(argv=None):
 
     p = sub.add_parser("lam", help="invert a market price to lambda")
     g = p.add_mutually_exclusive_group(required=True)
-    g.add_argument("--atleast", nargs=2, type=float, metavar=("K", "P"))
+    g.add_argument("--atleast", nargs=2, type=float, metavar=("K", "P"),
+                   help="invert P(>=K)=P (P already a fair prob)")
     g.add_argument("--under", nargs=2, type=float, metavar=("LINE", "P"))
+    g.add_argument("--atleast-odds", nargs=2, type=int, metavar=("K", "ODDS"),
+                   dest="atleast_odds",
+                   help="invert a one-sided 'K+ at ODDS' line, de-vigged by --market")
+    g.add_argument("--under-odds", nargs=2, type=int, metavar=("LINE", "ODDS"),
+                   dest="under_odds", help="invert an 'under LINE at ODDS' line")
+    p.add_argument("--market", choices=MARKET_CHOICES, default="team_count",
+                   help="market type for the *-odds de-vig (default team_count)")
 
     p = sub.add_parser("race", help="P(A more / tie / B more)")
     p.add_argument("lam_a", type=float)
@@ -375,6 +418,8 @@ def main(argv=None):
                    help="opponent X+ line for the race")
     p.add_argument("--atleast", type=int,
                    help="P(half count >= this) instead of the 1/2/3 summary")
+    p.add_argument("--market", choices=MARKET_CHOICES, default="team_count",
+                   help="market type to de-vig --mkt/--vs-mkt lines (default team_count)")
 
     p = sub.add_parser("player", help="P(player scores) from team lam x share")
     p.add_argument("team_lam", type=float)
@@ -417,11 +462,13 @@ def main(argv=None):
 
     elif a.cmd == "anytime":
         p_raw = implied(a.odds)
-        s = auto_shade(p_raw) if a.shade is None else a.shade
-        f = p_raw / s
-        tag = " auto" if a.shade is None else ""
+        f = fair_one_sided(a.odds, a.market, a.shade)
+        if a.shade is None:
+            tag = f"{a.market} vig {100*one_sided_vig(a.market):.0f}%"
+        else:
+            tag = f"shade {a.shade:.3f}"
         print(f"raw {100*p_raw:.1f}% -> fair {100*f:.1f}% "
-              f"(shade {s:.3f}{tag})  submit {submit(f)}")
+              f"({tag})  submit {submit(f)}")
 
     elif a.cmd == "pois":
         pmf = (lambda k: nb_pmf(k, a.lam, a.nb)) if a.nb else \
@@ -448,6 +495,19 @@ def main(argv=None):
             k, pr = a.atleast
             lam = lam_from_threshold(int(k), pr)
             print(f"P(X >= {int(k)}) = {pr} -> lam = {lam:.2f}")
+        elif a.atleast_odds:
+            k, odds = a.atleast_odds
+            pr = fair_one_sided(odds, a.market)
+            lam = lam_from_threshold(k, pr)
+            print(f"P(X >= {k}) = {100*pr:.1f}% (de-vig {a.market} "
+                  f"{100*one_sided_vig(a.market):.0f}%, raw {100*implied(odds):.1f}%) "
+                  f"-> lam = {lam:.2f}")
+        elif a.under_odds:
+            line, odds = a.under_odds
+            pr = fair_one_sided(odds, a.market)
+            lam = lam_from_under(line, pr)
+            print(f"P(under {line}) = {100*pr:.1f}% (de-vig {a.market} "
+                  f"{100*one_sided_vig(a.market):.0f}%) -> lam = {lam:.2f}")
         else:
             line, pr = a.under
             lam = lam_from_under(line, pr)
@@ -509,7 +569,7 @@ def main(argv=None):
             if lam is not None:
                 return lam
             k, odds = mkt
-            return lam_from_threshold(k, one_sided_fair(odds))
+            return lam_from_threshold(k, one_sided_fair(odds, a.market))
 
         la = _full_lam(a.lam, a.mkt) * share
         print(f"{a.half} {a.event}: half lam = {la:.2f}  (share {share:.2f})")
