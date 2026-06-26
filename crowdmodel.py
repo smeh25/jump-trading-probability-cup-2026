@@ -154,13 +154,21 @@ def main(argv):
         print(f"you={you:.0f}  cat={cat}  half={half}  ->  crowd_hat={ch:.1f}  "
               f"(gap {ch-you:+.1f})")
     elif argv[0] == "card":
-        mdl = fit(load())                       # fit on ALL logged matches
+        rows = load()
+        mdl = fit(rows)                         # fit on ALL logged matches
         cats = set(mdl["cats"])
+        # per-category reliability of crowd_hat: in-sample MAE vs the ACTUAL crowd.
+        # high cMAE => crowd_hat is a weaker predictor for that prop type (be wary).
+        from collections import defaultdict
+        _err = defaultdict(list)
+        for r in rows:
+            _err[r["cat"]].append(abs(predict(mdl, r["you"], r["cat"], r["half"]) - r["crowd"]))
+        cmae = {c: sum(e) / len(e) for c, e in _err.items()}
         # gap = crowd_hat - you. RBP vs the predicted crowd, by outcome:
         #   ifYES = ((crowd-100)^2 - (you-100)^2)/100   (we gain when we're above crowd & it hits)
         #   ifNO  = (crowd^2 - you^2)/100                (we gain when we're below crowd & it misses)
         # E[RBP | your number is truth] = (crowd - you)^2 / 100 = you/100*ifYES + (1-you/100)*ifNO.
-        print(f"{'prop':22} {'you':>3} {'crowd':>5} {'gap':>5} {'ifYES':>6} {'ifNO':>6} {'E[RBP]':>6}  note")
+        print(f"{'prop':22} {'you':>3} {'crowd':>5} {'gap':>5} {'ifYES':>6} {'ifNO':>6} {'E[RBP]':>6} {'cMAE':>5}  note")
         for ln in open(argv[1]):
             ln = ln.split("#")[0].strip()
             if not ln:
@@ -182,8 +190,20 @@ def main(argv):
                 note = f"ABOVE crowd -> trim ~{round(ch)} unless you have a reason"
             else:
                 note = "~at crowd (cushion)"
+            if abs(gap) > 10:        # HARD RULE (post-M50): big bets are where we bleed
+                cap = round(ch - 10) if gap > 0 else round(ch + 10)
+                note = (f"!! DEV {gap:+.0f} (>10) -- REQUIRES lineup/suspension/direct-line "
+                        f"tag, ELSE cap to {cap}")
+            # crowd_hat reliability: flag weak categories + the two known directional biases
+            mae_c = cmae.get(cat, float("nan"))
+            if mae_c >= 4.0:
+                note += f" | crowd_hat WEAK here (cMAE {mae_c:.1f})"
+            if cat == "fav_player" and gap > 5:
+                note += " [famous/benched? real crowd usually HIGHER -> fade gap bigger]"
+            if cat in ("race", "offsides") and gap < -1.5 and you > 60:
+                note += " [dominance: crowd_hat unreliable, direction unpredictable -> do NOT reach above it]"
             print(f"{label:22} {you:>3.0f} {ch:>5.1f} {gap:>+5.1f} {ifyes:>+6.1f} {ifno:>+6.1f} "
-                  f"{erbp:>6.2f}  {note}")
+                  f"{erbp:>6.2f} {mae_c:>5.1f}  {note}")
     else:
         print(__doc__)
 
