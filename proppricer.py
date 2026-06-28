@@ -28,7 +28,7 @@ CLI quick reference (all probabilities 0-1 floats, American odds as ints):
 """
 import argparse
 import sys
-from math import ceil, exp, lgamma, factorial
+from math import ceil, exp, log, lgamma, factorial
 
 # ---------------------------------------------------------------- odds utils
 def implied(odds: int) -> float:
@@ -243,11 +243,38 @@ def advance_probs(lam_a, lam_b, rho=-0.11, pen_a=0.5, et_intensity=1.15):
         "advance_a": adv_a, "advance_b": adv_b,
     }
 
+def et_lambda(lam_full: float, intensity: float = 1.15) -> float:
+    """Expected event count in the 30' of extra time, IF it is reached.
+    Per-minute rate slightly above regulation (tired legs, open games)."""
+    return lam_full * (30 / 90) * intensity
+
+def et_block_geq(m: int, lam_full: float, p_draw: float, intensity: float = 1.15) -> float:
+    """P(>= m events occur in extra time), unconditional on reaching it.
+    ET is reached with prob p_draw (the de-vigged 90' draw price); m<=0 -> 1."""
+    if m <= 0:
+        return 1.0
+    return p_draw * p_at_least(m, et_lambda(lam_full, intensity))
+
+def incl_et_geq(k: int, lam_reg: float, lam_full_for_et: float, p_draw: float,
+                intensity: float = 1.15) -> float:
+    """P(>= k of an event across a regulation piece (lam_reg) PLUS the ET block).
+    lam_full_for_et is the FULL-match lam that drives the ET rate (ET is its own
+    30' block, not a sub-window). Convolves the reg Poisson with the ET block."""
+    tot = 0.0
+    for j in range(0, 60):
+        pj = pois_pmf(j, lam_reg)
+        if pj < 1e-12 and j > lam_reg + 10:
+            break
+        tot += pj * et_block_geq(k - j, lam_full_for_et, p_draw, intensity)
+    return tot
+
 # --------------------------------------------------------------- shares etc
 HALF_SHARE = {  # (first_half, second_half)
     "goals": (0.44, 0.56), "shots": (0.47, 0.53), "sot": (0.47, 0.53),
-    "corners": (0.45, 0.55), "cards": (0.35, 0.65), "penalties": (0.45, 0.55),
+    "corners": (0.45, 0.55), "cards": (0.35, 0.65), "penalties": (0.52, 0.48),
     "offsides": (0.50, 0.50), "fouls": (0.48, 0.52),
+    # penalties 1H moved 0.45->0.52: BOTH StatsBomb 2018-22 (0.52, n=50) and ESPN
+    # 2026 (0.545, n=11) agree pens skew earlier than the old prior (calibrate_curve.py).
 }
 
 PRIORS = {  # full-match lambda starting points, WC-calibrated (see lambda_reference.md)
@@ -255,6 +282,56 @@ PRIORS = {  # full-match lambda starting points, WC-calibrated (see lambda_refer
     "red_cards": 0.12, "offsides_total": 3.9, "offsides_team": 1.9,
     "shots_total": 23.0, "sot_total": 8.2, "penalties": 0.40, "fouls": 23.0,
 }
+
+# ------------------------------------------------------ time-window intensity
+# Cumulative share of full-match events by each node minute (a CDF over [0,90]).
+# Generalizes HALF_SHARE (the 2-bucket version) so we can scope ANY window, e.g.
+# the mandatory hydration-break quarters (breaks ~23'/68'). Window share for
+# [a,b] = F(b) - F(a), piecewise-linear between nodes. HARD CONSTRAINT: the 45'
+# node MUST equal HALF_SHARE[event][0] so window(0,45) reproduces half 1H (the
+# old `half`/`atleast` commands stay as the cross-check). Calibrate the 23'/68'
+# nodes from StatsBomb WC data (calibrate_curve.py); these are priors until then.
+WINDOW_NODES = (0, 23, 45, 68, 90)
+# F at (0, 23, 45, 68, 90); F(0)=0, F(45) PINNED to HALF_SHARE 1H, F(90)=1.
+# Nodes set from a 3-WAY comparison (calibrate_curve.py -> calibration_output.md):
+# prior (HALF_SHARE) | StatsBomb WC 2018-22 (per-second, exact) | ESPN 2026 (times
+# goals/cards/pens only). DECISIONS (2026-06-28):
+#   * F(45) kept = HALF_SHARE everywhere so window(0,45) == half 1H. The prior held up:
+#     2026 goals 1H = 0.452 ~ prior 0.44; 2018-22's 0.389 was the lone outlier.
+#   * goals/shots/sot/corners/offsides/fouls: 23/68 nodes = StatsBomb 2018-22 (no 2026
+#     timing data for the non-timed five; 2018-22 1H split already matches the prior).
+#   * cards: 2026 (n=189) shows real early-card inflation (F23 0.19 vs 2018-22 0.11);
+#     n-weighted blend -> 0.14/0.60. F(45) stays 0.35 (prior+2018-22 agree).
+#   * penalties: pooled 2018-22(n=50)+2026(n=11) -> 0.25/0.52/0.74; both agree pens
+#     skew earlier than the old 0.45 prior, so HALF_SHARE["penalties"] moved to 0.52 too.
+EVENT_CURVE = {
+    "goals":     (0.0, 0.16, 0.44, 0.68, 1.0),  # 2018-22; 2026 confirms F45=0.44
+    "shots":     (0.0, 0.21, 0.47, 0.69, 1.0),  # 2018-22 (no 2026 timing)
+    "sot":       (0.0, 0.20, 0.47, 0.67, 1.0),  # 2018-22 (no 2026 timing)
+    "corners":   (0.0, 0.22, 0.45, 0.71, 1.0),  # 2018-22 (no 2026 timing)
+    "cards":     (0.0, 0.14, 0.35, 0.60, 1.0),  # blended toward 2026 early-card signal
+    "penalties": (0.0, 0.25, 0.52, 0.74, 1.0),  # pooled data; earlier than old prior
+    "offsides":  (0.0, 0.23, 0.50, 0.74, 1.0),  # 2018-22 ~flat (no 2026 timing)
+    "fouls":     (0.0, 0.23, 0.48, 0.71, 1.0),  # 2018-22 ~flat (no 2026 timing)
+}
+SUB_GOAL_SHARE = 0.18  # fraction of goals scored by substitutes (knockouts a touch higher)
+
+def _curve_cdf(event: str, t: float) -> float:
+    """Piecewise-linear interpolation of the cumulative event-share CDF at minute t."""
+    nodes, F = WINDOW_NODES, EVENT_CURVE[event]
+    if t <= nodes[0]:
+        return F[0]
+    if t >= nodes[-1]:
+        return F[-1]
+    for i in range(1, len(nodes)):
+        if t <= nodes[i]:
+            frac = (t - nodes[i - 1]) / (nodes[i] - nodes[i - 1])
+            return F[i - 1] + frac * (F[i] - F[i - 1])
+    return F[-1]
+
+def window_share(event: str, a: float, b: float) -> float:
+    """Share of full-match `event` expected in the minute window [a, b]."""
+    return _curve_cdf(event, b) - _curve_cdf(event, a)
 
 def player_score_prob(team_lam: float, share: float, minutes_factor=1.0):
     return 1 - exp(-team_lam * share * minutes_factor)
@@ -421,6 +498,53 @@ def main(argv=None):
     p.add_argument("--market", choices=MARKET_CHOICES, default="team_count",
                    help="market type to de-vig --mkt/--vs-mkt lines (default team_count)")
 
+    p = sub.add_parser("window", help="time-window prob (e.g. before/after a hydration break) "
+                       "from a full-game lam or X+ market")
+    p.add_argument("event", choices=sorted(EVENT_CURVE))
+    p.add_argument("a", type=float, help="window start minute (e.g. 0)")
+    p.add_argument("b", type=float, help="window end minute (e.g. 23 = before 1st hydration break)")
+    src = p.add_mutually_exclusive_group(required=True)
+    src.add_argument("--lam", type=float, help="full-game lam for the team/total")
+    src.add_argument("--mkt", nargs=2, type=int, metavar=("K", "ODDS"),
+                     help="derive full-game lam from a one-sided K+ at ODDS line")
+    p.add_argument("--vs-lam", type=float, help="opponent full-game lam -> windowed race")
+    p.add_argument("--vs-mkt", nargs=2, type=int, metavar=("K", "ODDS"))
+    p.add_argument("--atleast", type=int, help="P(window count >= this) instead of 1/2/3")
+    p.add_argument("--market", choices=MARKET_CHOICES, default="team_count")
+    p.add_argument("--incl-et", action="store_true", dest="incl_et",
+                   help="add an extra-time tail (needs --draw/--draw-odds)")
+    et = p.add_mutually_exclusive_group()
+    et.add_argument("--draw", type=float, help="de-vigged 90' draw prob = P(reach ET)")
+    et.add_argument("--draw-odds", nargs=3, type=int, metavar=("A", "DRAW", "B"), dest="draw_odds")
+
+    p = sub.add_parser("reg-et", help="P(>=k) in regulation vs including extra time")
+    p.add_argument("event", choices=sorted(EVENT_CURVE))
+    src = p.add_mutually_exclusive_group(required=True)
+    src.add_argument("--lam", type=float, help="full-game (90') lam")
+    src.add_argument("--mkt", nargs=2, type=int, metavar=("K", "ODDS"))
+    p.add_argument("--atleast", type=int, default=1, dest="k", help="threshold k (default 1)")
+    p.add_argument("--market", choices=MARKET_CHOICES, default="team_count")
+    et = p.add_mutually_exclusive_group(required=True)
+    et.add_argument("--draw", type=float, help="de-vigged 90' draw prob = P(reach ET)")
+    et.add_argument("--draw-odds", nargs=3, type=int, metavar=("A", "DRAW", "B"), dest="draw_odds")
+
+    p = sub.add_parser("subgoal", help="P(a substitute scores) from total-goals lam")
+    src = p.add_mutually_exclusive_group(required=True)
+    src.add_argument("--lam", type=float, help="total-goals lam")
+    src.add_argument("--mkt", nargs=2, type=int, metavar=("K", "ODDS"))
+    p.add_argument("--share", type=float, default=SUB_GOAL_SHARE, help="sub share of goals")
+    p.add_argument("--market", choices=MARKET_CHOICES, default="team_count")
+    p.add_argument("--incl-et", action="store_true", dest="incl_et")
+    et = p.add_mutually_exclusive_group()
+    et.add_argument("--draw", type=float)
+    et.add_argument("--draw-odds", nargs=3, type=int, metavar=("A", "DRAW", "B"), dest="draw_odds")
+
+    p = sub.add_parser("brace", help="P(any player scores 2+) from anytime-scorer odds")
+    p.add_argument("odds", type=int, nargs="+",
+                   help="anytime-goalscorer American odds, one per listed player")
+    p.add_argument("--others-lam", type=float, default=None, dest="others_lam",
+                   help="aggregate goal lam for one extra 'field' player (optional)")
+
     p = sub.add_parser("player", help="P(player scores) from team lam x share")
     p.add_argument("team_lam", type=float)
     p.add_argument("share", type=float)
@@ -586,6 +710,86 @@ def main(argv=None):
         else:
             for k in (1, 2, 3):
                 print(row(f"P(>= {k})", p_at_least(k, la)))
+
+    elif a.cmd == "window":
+        def _fl(lam, mkt):
+            if lam is not None:
+                return lam
+            k, odds = mkt
+            return lam_from_threshold(k, one_sided_fair(odds, a.market))
+        share = window_share(a.event, a.a, a.b)
+        lam_full = _fl(a.lam, a.mkt)
+        lw = lam_full * share
+        print(f"{a.event} window [{a.a:g},{a.b:g}]': share {share:.3f}  "
+              f"lam_window = {lw:.3f}  (full lam {lam_full:.2f})")
+        if a.vs_lam is not None or a.vs_mkt is not None:
+            lb = _fl(a.vs_lam, a.vs_mkt) * share
+            r = race(lw, lb)
+            print(f"  opp lam_window = {lb:.3f}")
+            print(row("team more", r["a_more"]))
+            print(row("tie", r["tie"]))
+            print(row("opp more", r["b_more"]))
+            print(row("team more or tie", r["a_more"] + r["tie"]))
+        elif a.incl_et:
+            if a.draw is None and a.draw_odds is None:
+                ap.error("--incl-et needs --draw or --draw-odds")
+            p_draw = a.draw if a.draw is not None else devig(*a.draw_odds)[1]
+            k = a.atleast or 1
+            print(row(f"P(>= {k}) regulation only", p_at_least(k, lw)))
+            print(f"  ET tail: p_draw {p_draw:.2f}, ET lam {et_lambda(lam_full):.2f}")
+            print(row(f"P(>= {k}) incl ET", incl_et_geq(k, lw, lam_full, p_draw)))
+        elif a.atleast is not None:
+            print(row(f"P(>= {a.atleast})", p_at_least(a.atleast, lw)))
+        else:
+            for k in (1, 2, 3):
+                print(row(f"P(>= {k})", p_at_least(k, lw)))
+
+    elif a.cmd == "reg-et":
+        def _fl(lam, mkt):
+            if lam is not None:
+                return lam
+            k, odds = mkt
+            return lam_from_threshold(k, one_sided_fair(odds, a.market))
+        lam_full = _fl(a.lam, a.mkt)
+        p_draw = a.draw if a.draw is not None else devig(*a.draw_odds)[1]
+        p_reg = p_at_least(a.k, lam_full)
+        p_incl = incl_et_geq(a.k, lam_full, lam_full, p_draw)
+        print(f"{a.event}: full lam {lam_full:.2f}, p_draw {p_draw:.2f}, "
+              f"ET lam {et_lambda(lam_full):.2f}")
+        print(row(f"P(>= {a.k}) regulation", p_reg))
+        print(row(f"P(>= {a.k}) incl ET", p_incl))
+        print(f"  delta = {100*(p_incl - p_reg):+.1f}")
+
+    elif a.cmd == "subgoal":
+        def _fl(lam, mkt):
+            if lam is not None:
+                return lam
+            k, odds = mkt
+            return lam_from_threshold(k, one_sided_fair(odds, a.market))
+        lam_tot = _fl(a.lam, a.mkt)
+        lam_sub = lam_tot * a.share
+        print(f"sub-goal lam = {lam_tot:.2f} x {a.share:.2f} = {lam_sub:.3f}")
+        print(row("sub scores (1+) reg", 1 - exp(-lam_sub)))
+        if a.incl_et:
+            if a.draw is None and a.draw_odds is None:
+                ap.error("--incl-et needs --draw or --draw-odds")
+            p_draw = a.draw if a.draw is not None else devig(*a.draw_odds)[1]
+            print(row("sub scores (1+) incl ET", incl_et_geq(1, lam_sub, lam_sub, p_draw)))
+
+    elif a.cmd == "brace":
+        ps = []
+        for o in a.odds:
+            p = one_sided_fair(o, "anytime_scorer")
+            lp = -log(1 - p)
+            p2 = p_at_least(2, lp)
+            ps.append(p2)
+            print(f"  odds {o:+d} -> anytime {100*p:4.1f}%  lam {lp:.2f}  P(2+) {100*p2:4.1f}%")
+        none = 1.0
+        for p2 in ps:
+            none *= (1 - p2)
+        if a.others_lam is not None:
+            none *= (1 - p_at_least(2, a.others_lam))
+        print(row("any listed player 2+", 1 - none))
 
     elif a.cmd == "player":
         m = a.team_lam * a.share * a.minutes
