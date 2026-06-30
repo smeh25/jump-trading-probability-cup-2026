@@ -689,3 +689,63 @@ Algeria,Austria,70,2026-07-05,group,1,7,9+ total corners,0,31,37.1,45,13.35,1,0.
 Algeria,Austria,70,2026-07-05,group,1,8,Austria 5+ SOT,0,36,40.3,40,5.65,1,0.1296,0.1600,3.04,totals,false
 Algeria,Austria,70,2026-07-05,group,1,9,Marcel Sabitzer 1+ SOT,1,50,48.9,44,8.67,1,0.2500,0.3136,6.36,fav_player,false
 Algeria,Austria,70,2026-07-05,group,1,10,Algeria 3+ SOT,1,62,56.9,58,5.94,1,0.1444,0.1764,3.2,totals,false
+South Africa,Canada,71,2026-06-28,R32,2,1,Either team offside before 1st hydration break,0,52,49.2,52,7.13,1,0.2704,0.2704,0.00,offsides,true
+South Africa,Canada,71,2026-06-28,R32,2,2,A substitute scores (reg),0,40,43.2,29,-10.1,0,0.1600,0.0841,-7.59,uncategorized,false
+South Africa,Canada,71,2026-06-28,R32,2,3,Goal before 1st hydration break,0,32,37.9,41,18.33,1,0.1024,0.1681,6.57,totals,true
+South Africa,Canada,71,2026-06-28,R32,2,4,9+ total corners (reg),0,55,52.5,54,3.04,1,0.3025,0.2916,-1.09,totals,false
+South Africa,Canada,71,2026-06-28,R32,2,5,Regulation ends in a tie,0,28,34.0,30,6.33,1,0.0784,0.0900,1.16,uncategorized,false
+South Africa,Canada,71,2026-06-28,R32,2,6,Canada ahead at halftime,0,37,41.0,44,14.77,1,0.1369,0.1936,5.67,uncategorized,true
+South Africa,Canada,71,2026-06-28,R32,2,7,South Africa advances to R16,0,30,35.5,31,5.5,1,0.0900,0.0961,0.61,uncategorized,false
+South Africa,Canada,71,2026-06-28,R32,2,8,Penalty awarded (reg),0,27,33.2,29,6.15,1,0.0729,0.0841,1.12,uncategorized,false
+South Africa,Canada,71,2026-06-28,R32,2,9,"2nd half more goals than 1st (reg, excl ET)",1,42,46.5,49,-11.63,0,0.3364,0.2601,-7.63,race,true
+South Africa,Canada,71,2026-06-28,R32,2,10,Any player scores 2+ (reg),0,21,28.6,25,9.6,1,0.0441,0.0625,1.84,uncategorized,false
+South Africa,Canada,71,2026-06-28,R32,2,11,Cyle Larin scores (reg),0,13,27.8,25,13.44,1,0.0169,0.0625,4.56,fav_player,false
+South Africa,Canada,71,2026-06-28,R32,2,12,4+ total cards (reg),0,51,49.1,50,2.53,1,0.2601,0.2500,-1.01,discipline,false
+South Africa,Canada,71,2026-06-28,R32,2,13,Iqraam Rayners 1+ SOT (reg),0,20,31.7,32,19.85,1,0.0400,0.1024,6.24,fav_player,false
+South Africa,Canada,71,2026-06-28,R32,2,14,Card after 2nd hydration break (incl ET),0,77,67.8,61,-36.58,0,0.5929,0.3721,-22.08,discipline,false
+South Africa,Canada,71,2026-06-28,R32,2,15,Both teams score (reg),0,47,47.4,47,6.63,1,0.2209,0.2209,0.00,totals,false
+Brazil,Japan,72,2026-06-29,R32,2,1,8+ total SOT (reg),1,58,54.4,61,1.71,1,0.1764,0.1521,-2.43,totals,false
+Brazil,Japan,72,2026-06-29,R32,2,2,Any player 2+ SOT (reg),1,76,65.8,70,13.66,1,0.0576,0.0900,3.24,totals,false
+Brazil,Japan,72,2026-06-29,R32,2,3,Japan advances to R16,0,30,34.0,32,8.0,1,0.0900,0.1024,1.24,uncategorized,false
+Brazil,Japan,72,2026-06-29,R32,2,4,9+ total corners (reg),0,43,44.9,52,22.28,1,0.1849,0.2704,8.55,totals,false
+Brazil,Japan,72,2026-06-29,R32,2,5,Goal before 1st hydration break,0,33,38.7,44,21.46,1,0.1089,0.1936,8.47,totals,true
+Brazil,Japan,72,2026-06-29,R32,2,6,4+ total cards (reg),1,41,42.0,42,1.78,1,0.3481,0.3364,-1.17,discipline,false
+Brazil,Japan,72,2026-06-29,R32,2,7,A substitute scores (reg),1,37,40.0,32,19.31,1,0.3969,0.4624,6.55,uncategorized,false
+Brazil,Japan,72,2026-06-29,R32,2,8,Matheus Cunha scores (reg),0,28,36.2,33,10.05,1,0.0784,0.1089,3.05,fav_player,false
+Brazil,Japan,72,2026-06-29,R32,2,9,Any player scores 2+ (reg),0,20,25.5,29,16.51,1,0.0400,0.0841,4.41,uncategorized,false
+Brazil,Japan,72,2026-06-29,R32,2,10,Either team offside before 1st hydration break,0,53,50.0,52,4.2,1,0.2809,0.2704,-1.05,offsides,true
+Brazil,Japan,72,2026-06-29,R32,2,11,3+ total goals (reg),1,44,45.5,51,-9.76,0,0.3136,0.2401,-7.35,totals,false
+Brazil,Japan,72,2026-06-29,R32,2,12,Brazil scores in both halves (reg),0,28,33.5,42,26.05,1,0.0784,0.1764,9.80,fav_team_total,true
+Brazil,Japan,72,2026-06-29,R32,2,13,Ayase Ueda 1+ SOT (reg),1,52,49.8,49,10.36,1,0.2304,0.2601,2.97,fav_player,false
+Brazil,Japan,72,2026-06-29,R32,2,14,Regulation ends in a tie,0,27,31.4,29,5.76,1,0.0729,0.0841,1.12,uncategorized,false
+Brazil,Japan,72,2026-06-29,R32,2,15,Brazil 2+ goals (reg),1,47,49.4,54,-9.39,0,0.2809,0.2116,-6.93,fav_team_total,false
+Germany,Paraguay,73,2026-06-29,R32,2,1,Kai Havertz scores (reg),1,35,40.2,39,-4.4,0,0.4225,0.3721,-5.04,fav_player,false
+Germany,Paraguay,73,2026-06-29,R32,2,2,Goal before 1st hydration break,0,39,42.8,47,16.82,1,0.1521,0.2209,6.88,totals,true
+Germany,Paraguay,73,2026-06-29,R32,2,3,Germany win (reg),0,72,68.7,72,3.6,1,0.5184,0.5184,0.00,uncategorized,false
+Germany,Paraguay,73,2026-06-29,R32,2,4,Jamal Musiala 2+ SOT (reg) [BENCHED],0,11,26.5,33,30.44,1,0.0121,0.1089,9.68,fav_player,false
+Germany,Paraguay,73,2026-06-29,R32,2,5,4+ total cards (reg),0,37,39.2,46,19.06,1,0.1369,0.2116,7.47,discipline,false
+Germany,Paraguay,73,2026-06-29,R32,2,6,Germany scores first goal,0,71,69.8,70,0.95,1,0.5041,0.4900,-1.41,fav_team_total,false
+Germany,Paraguay,73,2026-06-29,R32,2,7,Germany 7+ SOT (reg),0,48,48.3,50,9.4,1,0.2304,0.2500,1.96,totals,false
+Germany,Paraguay,73,2026-06-29,R32,2,8,Julio Enciso 1+ SOT (reg),1,48,47.5,45,12.22,1,0.2704,0.3025,3.21,fav_player,false
+Germany,Paraguay,73,2026-06-29,R32,2,9,Both teams score (reg),1,48,48.3,44,11.21,1,0.2704,0.3136,4.32,totals,false
+Germany,Paraguay,73,2026-06-29,R32,2,10,Germany scores in both halves (reg),0,47,49.8,49,8.39,1,0.2209,0.2401,1.92,fav_team_total,true
+Germany,Paraguay,73,2026-06-29,R32,2,11,Florian Wirtz score or assist (reg),1,46,46.4,46,4.32,1,0.2916,0.2916,0.00,fav_player,false
+Germany,Paraguay,73,2026-06-29,R32,2,12,Germany 7+ corners (reg),1,50,49.6,49,6.06,1,0.2500,0.2601,1.01,totals,false
+Germany,Paraguay,73,2026-06-29,R32,2,13,Germany ahead at halftime,0,53,53.2,56,9.36,1,0.2809,0.3136,3.27,uncategorized,true
+Germany,Paraguay,73,2026-06-29,R32,2,14,3+ total offsides (reg),1,56,51.8,53,10.5,1,0.1936,0.2209,2.73,offsides,false
+Germany,Paraguay,73,2026-06-29,R32,2,15,3+ total goals (reg),0,57,54.0,57,2.08,1,0.3249,0.3249,0.00,totals,false
+Netherlands,Morocco,74,2026-06-30,R32,2,1,Goal after 2nd hydration break (reg),1,54,52.1,50,11.26,1,0.2116,0.25,3.84,totals,false
+Netherlands,Morocco,74,2026-06-30,R32,2,2,Red card shown in match,0,13,22.7,19,6.84,1,0.0169,0.0361,1.92,discipline,false
+Netherlands,Morocco,74,2026-06-30,R32,2,3,Netherlands win (reg),0,39,41.6,47,16.83,1,0.1521,0.2209,6.88,uncategorized,false
+Netherlands,Morocco,74,2026-06-30,R32,2,4,Ismael Saibari score or assist (reg),0,32,38.5,35,7.68,1,0.1024,0.1225,2.01,fav_player,false
+Netherlands,Morocco,74,2026-06-30,R32,2,5,Both teams score (reg),1,50,49.6,55,-4.97,0,0.25,0.2025,-4.75,totals,false
+Netherlands,Morocco,74,2026-06-30,R32,2,6,1st half 2+ goals,0,28,35.9,34,11.56,1,0.0784,0.1156,3.72,totals,true
+Netherlands,Morocco,74,2026-06-30,R32,2,7,Penalty awarded (reg),0,29,33.0,27,1.28,1,0.0841,0.0729,-1.12,uncategorized,false
+Netherlands,Morocco,74,2026-06-30,R32,2,8,Morocco ahead at halftime,0,23,28.0,28,8.95,1,0.0529,0.0784,2.55,uncategorized,true
+Netherlands,Morocco,74,2026-06-30,R32,2,9,Card after 2nd hydration break (incl ET),0,64,58.0,61,-0.92,0,0.4096,0.3721,-3.75,discipline,false
+Netherlands,Morocco,74,2026-06-30,R32,2,10,Goal in 1st half stoppage time,0,13,26.4,20,12.03,1,0.0169,0.04,2.31,totals,true
+Netherlands,Morocco,74,2026-06-30,R32,2,11,"2nd half more goals than 1st (reg, excl ET)",1,45,48.9,48,-2.76,0,0.3025,0.2704,-3.21,race,true
+Netherlands,Morocco,74,2026-06-30,R32,2,12,Netherlands score first goal,1,48,50.4,52,-4.81,0,0.2704,0.2304,-4.0,fav_team_total,false
+Netherlands,Morocco,74,2026-06-30,R32,2,13,Brian Brobbey 2+ SOT (reg),0,25,34.6,36,21.19,1,0.0625,0.1296,6.71,fav_player,false
+Netherlands,Morocco,74,2026-06-30,R32,2,14,Netherlands more corners than Morocco (reg),0,51,50.2,55,10.57,1,0.2601,0.3025,4.24,totals,false
+Netherlands,Morocco,74,2026-06-30,R32,2,15,Both teams 1+ card (reg),0,62,56.6,65,11.5,1,0.3844,0.4225,3.81,discipline,false
