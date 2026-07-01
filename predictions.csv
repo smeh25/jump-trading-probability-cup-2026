@@ -749,3 +749,33 @@ Netherlands,Morocco,74,2026-06-30,R32,2,12,Netherlands score first goal,1,48,50.
 Netherlands,Morocco,74,2026-06-30,R32,2,13,Brian Brobbey 2+ SOT (reg),0,25,34.6,36,21.19,1,0.0625,0.1296,6.71,fav_player,false
 Netherlands,Morocco,74,2026-06-30,R32,2,14,Netherlands more corners than Morocco (reg),0,51,50.2,55,10.57,1,0.2601,0.3025,4.24,totals,false
 Netherlands,Morocco,74,2026-06-30,R32,2,15,Both teams 1+ card (reg),0,62,56.6,65,11.5,1,0.3844,0.4225,3.81,discipline,false
+Cote d'Ivoire,Norway,75,2026-06-30,R32,2,1,Norway win (reg),1,45,46.8,52,-8.87,0,0.3025,0.2304,-7.21,uncategorized,false
+Cote d'Ivoire,Norway,75,2026-06-30,R32,2,2,Erling Haaland score (reg),1,48,47.5,54,-5.82,0,0.2704,0.2116,-5.88,fav_player,false
+Cote d'Ivoire,Norway,75,2026-06-30,R32,2,3,Ivory Coast more corners than Norway (reg),1,30,36.8,37,-16.32,0,0.49,0.3969,-9.31,totals,false
+Cote d'Ivoire,Norway,75,2026-06-30,R32,2,4,Martin Odegaard score or assist (reg),1,28,36.2,39,-24.77,0,0.5184,0.3721,-14.63,fav_player,false
+Cote d'Ivoire,Norway,75,2026-06-30,R32,2,5,Both teams score (reg),1,55,53.4,57,-0.21,0,0.2025,0.1849,-1.76,totals,false
+Cote d'Ivoire,Norway,75,2026-06-30,R32,2,6,Amad Diallo 1+ SOT (reg) [BENCHED],1,23,31.5,43,-45.7,0,0.5929,0.3249,-26.8,fav_player,false
+Cote d'Ivoire,Norway,75,2026-06-30,R32,2,7,3+ total goals (reg),1,51,50.2,51,2.89,1,0.2401,0.2401,0.0,totals,false
+Cote d'Ivoire,Norway,75,2026-06-30,R32,2,8,Goal before 1st hydration break,0,34,39.5,41,15.56,1,0.1156,0.1681,5.25,totals,true
+Cote d'Ivoire,Norway,75,2026-06-30,R32,2,9,Norway 6+ SOT (reg),0,36,40.6,44,18.51,1,0.1296,0.1936,6.4,totals,false
+Cote d'Ivoire,Norway,75,2026-06-30,R32,2,10,Alexander Sorloth 2+ SOT (reg),0,26,34.7,33,15.04,1,0.0676,0.1089,4.13,fav_player,false
+Cote d'Ivoire,Norway,75,2026-06-30,R32,2,11,Norway score first goal,1,53,54.6,56,-1.84,0,0.2209,0.1936,-2.73,fav_team_total,false
+Cote d'Ivoire,Norway,75,2026-06-30,R32,2,12,4+ total offsides (reg),1,37,39.6,41,-5.36,0,0.3969,0.3481,-4.88,offsides,false
+Cote d'Ivoire,Norway,75,2026-06-30,R32,2,13,4+ total cards (reg),0,28,32.7,43,26.51,1,0.0784,0.1849,10.65,discipline,false
+Cote d'Ivoire,Norway,75,2026-06-30,R32,2,14,Goal after 2nd hydration break (reg),1,56,54.7,52,10.81,1,0.1936,0.2304,3.68,totals,false
+Cote d'Ivoire,Norway,75,2026-06-30,R32,2,15,Penalty awarded (reg),0,31,34.6,28,-0.77,0,0.0961,0.0784,-1.77,uncategorized,false
+France,Sweden,76,2026-06-30,R32,2,1,3+ total goals (reg),1,64,58.6,65,1.35,1,0.1296,0.1225,-0.71,totals,false
+France,Sweden,76,2026-06-30,R32,2,2,France 6+ corners (reg),1,59,55.4,58,5.08,1,0.1681,0.1764,0.83,totals,false
+France,Sweden,76,2026-06-30,R32,2,3,France win (reg),1,75,73.6,75,2.77,1,0.0625,0.0625,0.0,uncategorized,false
+France,Sweden,76,2026-06-30,R32,2,4,Ousmane Dembele score (reg),0,43,44.8,44,7.98,1,0.1849,0.1936,0.87,fav_player,false
+France,Sweden,76,2026-06-30,R32,2,5,France ahead at halftime,1,57,57.8,59,1.0,1,0.1849,0.1681,-1.68,uncategorized,true
+France,Sweden,76,2026-06-30,R32,2,6,Kylian Mbappe 2+ SOT (reg),1,63,56.0,63,8.21,1,0.1369,0.1369,0.0,fav_player,false
+France,Sweden,76,2026-06-30,R32,2,7,Red card shown in match,0,12,21.7,17,6.52,1,0.0144,0.0289,1.45,discipline,false
+France,Sweden,76,2026-06-30,R32,2,8,Viktor Gyokeres score (reg),0,23,33.6,27,6.74,1,0.0529,0.0729,2.0,fav_player,false
+France,Sweden,76,2026-06-30,R32,2,9,Alexander Isak 2+ SOT (reg),0,17,30.2,32,21.55,1,0.0289,0.1024,7.35,fav_player,false
+France,Sweden,76,2026-06-30,R32,2,10,France score first goal,1,71,69.8,71,2.59,1,0.0841,0.0841,0.0,fav_team_total,false
+France,Sweden,76,2026-06-30,R32,2,11,Both teams score (reg),0,54,52.2,53,0.97,1,0.2916,0.2809,-1.07,totals,false
+France,Sweden,76,2026-06-30,R32,2,12,France 7+ SOT (reg),1,52,50.9,52,6.1,1,0.2304,0.2304,0.0,totals,false
+France,Sweden,76,2026-06-30,R32,2,13,5+ total cards (reg),0,11,21.0,29,18.87,1,0.0121,0.0841,7.2,discipline,false
+France,Sweden,76,2026-06-30,R32,2,14,Goal in 1st half stoppage time,0,23,32.6,21,5.16,1,0.0529,0.0441,-0.88,totals,true
+France,Sweden,76,2026-06-30,R32,2,15,4+ total offsides (reg),1,55,51.2,48,18.87,1,0.2025,0.2704,6.79,offsides,false
