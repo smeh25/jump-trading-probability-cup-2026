@@ -118,6 +118,14 @@ def pois_cdf(k: int, lam: float) -> float:
 def p_at_least(k: int, lam: float) -> float:
     return 1 - pois_cdf(k - 1, lam)
 
+def p_share_of_goals(share: float, lam_goals: float) -> float:
+    """P(>=1 goal of a sub-type) when that sub-type is a `share` of all goals.
+    Poisson thinning: if match goals ~ Poisson(lam_goals) and each goal is
+    independently of the sub-type w.p. `share`, the sub-type count is
+    Poisson(share*lam_goals). Used for 'goal from outside the box' / 'own goal'
+    (see GOAL_SHARE). = 1 - exp(-share*lam_goals)."""
+    return p_at_least(1, share * lam_goals)
+
 def nb_pmf(k: int, mu: float, r: float) -> float:
     """Negative binomial pmf, mean mu, dispersion r (variance = mu + mu^2/r).
     Cards/fouls are overdispersed vs Poisson; r ~ 6-10 fits card data."""
@@ -315,6 +323,13 @@ EVENT_CURVE = {
     "fouls":     (0.0, 0.23, 0.48, 0.71, 1.0),  # 2018-22 ~flat (no 2026 timing)
 }
 SUB_GOAL_SHARE = 0.18  # fraction of goals scored by substitutes (knockouts a touch higher)
+
+GOAL_SHARE = {  # fraction of a match's goals that are of this sub-type; price via
+                # p_share_of_goals(share, lam_goals). Derived offline from cached data
+                # (StatsBomb 2018-22 + ESPN 2026); regen with `calibrate_curve.py rare`.
+    "outside_box": 0.12,  # goal struck outside the box.  SB 9.9% (33/334) | 2026 12.7% (29/229)
+    "own_goal":    0.05,  # own goal.                      SB 4.5% (15/334) | 2026  5.2% (12/229)
+}
 
 def _curve_cdf(event: str, t: float) -> float:
     """Piecewise-linear interpolation of the cumulative event-share CDF at minute t."""
@@ -561,6 +576,10 @@ def main(argv=None):
     p.add_argument("crowd", type=float)
     p.add_argument("truth", type=float)
 
+    p = sub.add_parser("share", help="P(>=1 sub-type goal) from its share of goals x game lam")
+    p.add_argument("share", help="GOAL_SHARE key (outside_box/own_goal) or a raw fraction")
+    p.add_argument("lam_goals", type=float, help="total-goals lam for this match")
+
     sub.add_parser("priors", help="show WC-calibrated lambda priors")
     sub.add_parser("demo", help="original walkthrough demo")
 
@@ -806,6 +825,15 @@ def main(argv=None):
     elif a.cmd == "rbp":
         print(f"E[RBP] = {expected_rbp(a.you, a.crowd, a.truth):+.2f} "
               f"(you {a.you}, crowd {a.crowd}, truth {a.truth})")
+
+    elif a.cmd == "share":
+        if a.share in GOAL_SHARE:
+            s, tag = GOAL_SHARE[a.share], f"{a.share} share {GOAL_SHARE[a.share]:.3f}"
+        else:
+            s, tag = float(a.share), f"share {float(a.share):.3f}"
+        pr = p_share_of_goals(s, a.lam_goals)
+        print(f"P(>=1 | {tag}, lam_goals={a.lam_goals}) = {100*pr:.1f}%  "
+              f"fair {american(pr)}  submit {submit(pr)}")
 
     elif a.cmd == "priors":
         for k, v in PRIORS.items():

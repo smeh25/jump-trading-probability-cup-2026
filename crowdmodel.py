@@ -34,7 +34,7 @@ K_HALF = 8.0    # shrink strength for the half offset
 def load(path=CSV):
     rows = []
     for r in csv.DictReader(open(path)):
-        if r["you_pct"] == "NA" or r["crowd_pct"] == "NA":   # skip unplayed/unsettled
+        if r["you_pct"] in ("NA", "N/A") or r["crowd_pct"] in ("NA", "N/A"):   # skip unplayed/unsettled
             continue
         rows.append({
             "you": float(r["you_pct"]),
