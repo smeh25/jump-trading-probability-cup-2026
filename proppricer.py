@@ -329,6 +329,7 @@ GOAL_SHARE = {  # fraction of a match's goals that are of this sub-type; price v
                 # (StatsBomb 2018-22 + ESPN 2026); regen with `calibrate_curve.py rare`.
     "outside_box": 0.12,  # goal struck outside the box.  SB 9.9% (33/334) | 2026 12.7% (29/229)
     "own_goal":    0.05,  # own goal.                      SB 4.5% (15/334) | 2026  5.2% (12/229)
+    "header":      0.152, # headed goal.                   SB 17.4% (58/334) | 2026 15.2% (37/243). Locked to 2026.
 }
 
 def _curve_cdf(event: str, t: float) -> float:
@@ -577,7 +578,7 @@ def main(argv=None):
     p.add_argument("truth", type=float)
 
     p = sub.add_parser("share", help="P(>=1 sub-type goal) from its share of goals x game lam")
-    p.add_argument("share", help="GOAL_SHARE key (outside_box/own_goal) or a raw fraction")
+    p.add_argument("share", help="GOAL_SHARE key (outside_box/own_goal/header) or a raw fraction")
     p.add_argument("lam_goals", type=float, help="total-goals lam for this match")
 
     sub.add_parser("priors", help="show WC-calibrated lambda priors")
