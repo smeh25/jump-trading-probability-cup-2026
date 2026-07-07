@@ -3,7 +3,7 @@ USA,Paraguay,1,2026-06-12,group,1,1,USA caught offside 2+,1,48,NA,56,-4.09,0,0.2
 USA,Paraguay,1,2026-06-12,group,1,2,USA scores 1st AND Paraguay scores 2H,1,21,NA,31,-10.79,0,0.6241,0.4761,-14.80,and_conjunction,false
 USA,Paraguay,1,2026-06-12,group,1,3,Paraguay more corners than USA,0,32,NA,35,6.22,1,0.1024,0.1225,2.01,race,false
 USA,Paraguay,1,2026-06-12,group,1,4,USA wins,1,45,NA,60,-9.89,0,0.3025,0.1600,-14.25,fav_team_total,false
-USA,Paraguay,1,2026-06-12,group,1,5,Tied at halftime,0,47,NA,45,1.20,1,0.2209,0.2025,-1.84,uncategorized,true
+USA,Paraguay,1,2026-06-12,group,1,5,Tied at halftime,0,47,NA,45,1.20,1,0.2209,0.2025,-1.84,ht_lead,true
 USA,Paraguay,1,2026-06-12,group,1,6,3+ total goals,1,38,NA,42,-1.44,0,0.3844,0.3364,-4.80,totals,false
 USA,Paraguay,1,2026-06-12,group,1,7,Paraguay scores in 2nd half,1,42,NA,44,0.83,1,0.3364,0.3136,-2.28,fav_team_total,true
 USA,Paraguay,1,2026-06-12,group,1,8,4+ total cards,1,50,NA,49,5.69,1,0.2500,0.2601,1.01,discipline,false
@@ -13,7 +13,7 @@ Canada,Bosnia-Herzegovina,2,2026-06-13,group,1,1,Bosnia more fouls than Canada,1
 Canada,Bosnia-Herzegovina,2,2026-06-13,group,1,2,4+ total SOT in 2nd half,1,59,NA,59,3.98,1,0.1681,0.1681,0.00,totals,true
 Canada,Bosnia-Herzegovina,2,2026-06-13,group,1,3,Penalty awarded OR red card shown,0,45,NA,41,0.98,1,0.2025,0.1681,-3.44,discipline,false
 Canada,Bosnia-Herzegovina,2,2026-06-13,group,1,4,Canada wins,0,52,NA,61,14.62,1,0.2704,0.3721,10.17,fav_team_total,false
-Canada,Bosnia-Herzegovina,2,2026-06-13,group,1,5,Tied at halftime,0,45,NA,47,4.72,1,0.2025,0.2209,1.84,uncategorized,true
+Canada,Bosnia-Herzegovina,2,2026-06-13,group,1,5,Tied at halftime,0,45,NA,47,4.72,1,0.2025,0.2209,1.84,ht_lead,true
 Canada,Bosnia-Herzegovina,2,2026-06-13,group,1,6,2+ goals in 2nd half,0,38,NA,38,3.65,1,0.1444,0.1444,0.00,totals,true
 Canada,Bosnia-Herzegovina,2,2026-06-13,group,1,7,Bosnia 5+ corners,0,30,NA,36,7.69,1,0.0900,0.1296,3.96,totals,false
 Canada,Bosnia-Herzegovina,2,2026-06-13,group,1,8,Jonathan David scores,0,33,NA,38,6.81,1,0.1089,0.1444,3.55,fav_player,false
@@ -46,15 +46,15 @@ Brazil,Morocco,5,2026-06-14,group,1,4,Brazil more 2nd-half goals than Morocco,0,
 Brazil,Morocco,5,2026-06-14,group,1,5,Morocco more 2nd-half SOT than Brazil,0,22,NA,33,8.91,1,0.0484,0.1089,6.05,race,true
 Brazil,Morocco,5,2026-06-14,group,1,6,Brazil more cards than Morocco,1,33,NA,39,-5.36,0,0.4489,0.3721,-7.68,discipline,false
 Brazil,Morocco,5,2026-06-14,group,1,7,BTTS AND 3+ total goals,0,34,NA,47,15.23,1,0.1156,0.2209,10.53,and_conjunction,false
-Brazil,Morocco,5,2026-06-14,group,1,8,Brazil win,0,57,NA,67,15.54,1,0.3249,0.4489,12.40,fav_team_total,false
+Brazil,Morocco,5,2026-06-14,group,1,8,Brazil win,0,57,NA,67,15.54,1,0.3249,0.4489,12.40,match_result,false
 Brazil,Morocco,5,2026-06-14,group,1,9,Morocco 5+ corners,0,30,NA,38,8.98,1,0.0900,0.1444,5.44,totals,false
-Brazil,Morocco,5,2026-06-14,group,1,10,Tied at halftime,1,44,NA,42,5.36,1,0.3136,0.3364,2.28,uncategorized,true
+Brazil,Morocco,5,2026-06-14,group,1,10,Tied at halftime,1,44,NA,42,5.36,1,0.3136,0.3364,2.28,ht_lead,true
 Haiti,Scotland,6,2026-06-14,group,1,1,Haiti more fouls than Scotland,1,58,NA,62,-0.76,0,0.1764,0.1444,-3.20,race,false
 Haiti,Scotland,6,2026-06-14,group,1,2,Haiti more 2nd-half corners than Scotland,1,28,NA,30,0.12,1,0.5184,0.4900,-2.84,race,true
 Haiti,Scotland,6,2026-06-14,group,1,3,Haiti more 2nd-half SOT than Scotland,1,26,NA,27,1.07,1,0.5476,0.5329,-1.47,race,true
 Haiti,Scotland,6,2026-06-14,group,1,4,Penalty awarded OR red card shown,0,45,NA,42,0.70,1,0.2025,0.1764,-2.61,discipline,false
 Haiti,Scotland,6,2026-06-14,group,1,5,Haiti score 1+ goal,0,60,NA,45,-11.47,0,0.3600,0.2025,-15.75,fav_team_total,false
-Haiti,Scotland,6,2026-06-14,group,1,6,Tied at halftime,0,37,NA,39,4.28,1,0.1369,0.1521,1.52,uncategorized,true
+Haiti,Scotland,6,2026-06-14,group,1,6,Tied at halftime,0,37,NA,39,4.28,1,0.1369,0.1521,1.52,ht_lead,true
 Haiti,Scotland,6,2026-06-14,group,1,7,2 or fewer total goals,1,41,NA,46,-2.94,0,0.3481,0.2916,-5.65,totals,false
 Haiti,Scotland,6,2026-06-14,group,1,8,2nd half 2+ goals,0,50,NA,42,-4.25,0,0.2500,0.1764,-7.36,totals,true
 Haiti,Scotland,6,2026-06-14,group,1,9,Duckens Nazon 1+ SOT,0,54,NA,45,-5.24,0,0.2916,0.2025,-8.91,fav_player,false
@@ -65,7 +65,7 @@ Australia,Turkiye,7,2026-06-14,group,1,3,Australia caught offside 2+,0,52,NA,48,
 Australia,Turkiye,7,2026-06-14,group,1,4,Turkiye more corners than Australia,1,66,NA,64,3.84,1,0.1156,0.1296,1.40,race,false
 Australia,Turkiye,7,2026-06-14,group,1,5,Orkun Kokcu 1+ SOT in 2nd half,0,33,NA,41,9.68,1,0.1089,0.1681,5.92,fav_player,true
 Australia,Turkiye,7,2026-06-14,group,1,6,BTTS AND 3+ total goals,0,36,NA,37,4.03,1,0.1296,0.1369,0.73,and_conjunction,false
-Australia,Turkiye,7,2026-06-14,group,1,7,Australia win,1,19,NA,26,-7.62,0,0.6561,0.5476,-10.85,fav_team_total,false
+Australia,Turkiye,7,2026-06-14,group,1,7,Australia win,1,19,NA,26,-7.62,0,0.6561,0.5476,-10.85,match_result,false
 Australia,Turkiye,7,2026-06-14,group,1,8,Turkiye score in 2nd half,0,61,NA,60,0.81,1,0.3721,0.3600,-1.21,fav_team_total,true
 Australia,Turkiye,7,2026-06-14,group,1,9,4+ total cards,0,48,NA,51,6.40,1,0.2304,0.2601,2.97,discipline,false
 Netherlands,Japan,8,2026-06-15,group,1,1,Japan more fouls than Netherlands,0,53,NA,49,-1.63,0,0.2809,0.2401,-4.08,race,false
@@ -73,7 +73,7 @@ Netherlands,Japan,8,2026-06-15,group,1,2,Netherlands caught offside 2+,0,50,NA,5
 Netherlands,Japan,8,2026-06-15,group,1,3,Both teams 1+ SOT in 2nd half,1,77,NA,76,2.84,1,0.0529,0.0576,0.47,and_conjunction,true
 Netherlands,Japan,8,2026-06-15,group,1,4,BTTS AND 3+ total goals,1,36,NA,44,-6.44,0,0.4096,0.3136,-9.60,and_conjunction,false
 Netherlands,Japan,8,2026-06-15,group,1,5,Japan more cards than Netherlands,0,43,NA,43,1.94,1,0.1849,0.1849,0.00,discipline,false
-Netherlands,Japan,8,2026-06-15,group,1,6,Netherlands win,0,45,NA,53,11.10,1,0.2025,0.2809,7.84,fav_team_total,false
+Netherlands,Japan,8,2026-06-15,group,1,6,Netherlands win,0,45,NA,53,11.10,1,0.2025,0.2809,7.84,match_result,false
 Netherlands,Japan,8,2026-06-15,group,1,7,Japan score in 2nd half,1,44,NA,50,-4.04,0,0.3136,0.2500,-6.36,fav_team_total,true
 Netherlands,Japan,8,2026-06-15,group,1,8,8+ total SOT,1,60,NA,56,6.84,1,0.1600,0.1936,3.36,totals,false
 Netherlands,Japan,8,2026-06-15,group,1,9,Cody Gakpo 1+ SOT,1,58,NA,61,0.07,1,0.1764,0.1521,-2.43,fav_player,false
@@ -90,7 +90,7 @@ Germany,Curacao,9,2026-06-14,group,1,9,Curacao 3+ SOT,0,30,NA,32,5.44,1,0.0900,0
 Germany,Curacao,9,2026-06-14,group,1,10,Leandro Bacuna 1+ SOT,0,40,NA,32,-1.87,0,0.1600,0.1024,-5.76,fav_player,false
 Sweden,Tunisia,10,2026-06-15,group,1,1,Tunisia more corners than Sweden at HT,0,27,NA,34,6.61,1,0.0729,0.1156,4.27,race,true
 Sweden,Tunisia,10,2026-06-15,group,1,2,Sweden more fouls than Tunisia,1,42,NA,40,4.75,1,0.3364,0.3600,2.36,race,false
-Sweden,Tunisia,10,2026-06-15,group,1,3,2nd half more goals than 1st,0,44,NA,51,8.55,1,0.1936,0.2601,6.65,uncategorized,false
+Sweden,Tunisia,10,2026-06-15,group,1,3,2nd half more goals than 1st,0,44,NA,51,8.55,1,0.1936,0.2601,6.65,race,false
 Sweden,Tunisia,10,2026-06-15,group,1,4,Sweden scores 1st AND Tunisia scores 2H,0,26,NA,31,5.97,1,0.0676,0.0961,2.85,and_conjunction,false
 Sweden,Tunisia,10,2026-06-15,group,1,5,Tunisia more SOT than Sweden in 2nd half,0,28,NA,33,5.17,1,0.0784,0.1089,3.05,race,true
 Sweden,Tunisia,10,2026-06-15,group,1,6,Penalty awarded OR red card shown,0,42,NA,37,-1.68,0,0.1764,0.1369,-3.95,discipline,false
@@ -115,7 +115,7 @@ Belgium,Egypt,12,2026-06-15,group,1,4,Egypt more SOT than Belgium in 2nd half,0,
 Belgium,Egypt,12,2026-06-15,group,1,5,4+ total SOT in 2nd half,1,68,NA,64,4.88,1,0.1024,0.1296,2.72,totals,true
 Belgium,Egypt,12,2026-06-15,group,1,6,Belgium caught offside 2+,0,52,NA,50,0.55,1,0.2704,0.2500,-2.04,offsides,false
 Belgium,Egypt,12,2026-06-15,group,1,7,Belgium wins,0,56,NA,66,14.08,1,0.3136,0.4356,12.20,fav_team_total,false
-Belgium,Egypt,12,2026-06-15,group,1,8,Tied at halftime,0,40,NA,42,3.42,1,0.1600,0.1764,1.64,uncategorized,true
+Belgium,Egypt,12,2026-06-15,group,1,8,Tied at halftime,0,40,NA,42,3.42,1,0.1600,0.1764,1.64,ht_lead,true
 Belgium,Egypt,12,2026-06-15,group,1,9,Youri Tielemans 1+ SOT,0,39,NA,44,7.51,1,0.1521,0.1936,4.15,fav_player,false
 Belgium,Egypt,12,2026-06-15,group,1,10,Mahmoud Trezeguet score or assist,0,23,NA,26,4.14,1,0.0529,0.0676,1.47,fav_player,false
 Saudi-Arabia,Uruguay,13,2026-06-16,group,1,1,Saudi Arabia caught offside 2+,0,47,NA,44,0.24,1,0.2209,0.1936,-2.73,offsides,false
@@ -180,7 +180,7 @@ Austria,Jordan,18,2026-06-17,group,1,9,Marcel Sabitzer 1+ SOT,0,63,NA,57,-4.84,0
 Austria,Jordan,18,2026-06-17,group,1,10,Mousa Al-Taamari 1+ SOT,1,41,NA,42,1.87,1,0.3481,0.3364,-1.17,fav_player,false
 Portugal,DR-Congo,19,2026-06-17,group,1,1,DR Congo more fouls than Portugal,1,68,NA,61,7.47,1,0.1024,0.1521,4.97,race,false
 Portugal,DR-Congo,19,2026-06-17,group,1,2,Portugal more SOT than DR Congo in 2nd half,0,78,NA,75,-1.73,0,0.6084,0.5625,-4.59,race,true
-Portugal,DR-Congo,19,2026-06-17,group,1,3,2nd half more goals than 1st,0,44,NA,53,11.24,1,0.1936,0.2809,8.73,uncategorized,false
+Portugal,DR-Congo,19,2026-06-17,group,1,3,2nd half more goals than 1st,0,44,NA,53,11.24,1,0.1936,0.2809,8.73,race,false
 Portugal,DR-Congo,19,2026-06-17,group,1,4,Penalty awarded OR red card shown,0,44,NA,39,-1.42,0,0.1936,0.1521,-4.15,discipline,false
 Portugal,DR-Congo,19,2026-06-17,group,1,5,BTTS AND 3+ total goals,0,33,NA,36,5.63,1,0.1089,0.1296,2.07,and_conjunction,false
 Portugal,DR-Congo,19,2026-06-17,group,1,6,Portugal wins,0,76,NA,80,7.75,1,0.5776,0.6400,6.24,fav_team_total,false
@@ -213,7 +213,7 @@ Uzbekistan,Colombia,22,2026-06-17,group,1,2,Uzbekistan caught offside 2+,0,53,52
 Uzbekistan,Colombia,22,2026-06-17,group,1,3,Penalty awarded OR red card shown,0,44,44.3,37,-4.14,0,0.1936,0.1369,-5.67,discipline,false
 Uzbekistan,Colombia,22,2026-06-17,group,1,4,Luis Diaz 1+ SOT in 2nd half,1,55,54.2,55,3.36,1,0.2025,0.2025,0.0,fav_player,true
 Uzbekistan,Colombia,22,2026-06-17,group,1,5,Uzbekistan score 1+ goal,1,49,53.0,43,8.57,1,0.2601,0.3249,6.48,fav_team_total,false
-Uzbekistan,Colombia,22,2026-06-17,group,1,6,Tied at halftime,0,40,44.1,41,2.32,1,0.1600,0.1681,0.81,uncategorized,true
+Uzbekistan,Colombia,22,2026-06-17,group,1,6,Tied at halftime,0,40,44.1,41,2.32,1,0.1600,0.1681,0.81,ht_lead,true
 Uzbekistan,Colombia,22,2026-06-17,group,1,7,2 or fewer total goals,0,47,47.7,48,3.1,1,0.2209,0.2304,0.95,totals,false
 Uzbekistan,Colombia,22,2026-06-17,group,1,8,Colombia score in 2nd half,1,70,70.7,66,3.97,1,0.0900,0.1156,2.56,fav_team_total,true
 Uzbekistan,Colombia,22,2026-06-17,group,1,9,Uzbekistan 5+ corners,0,18,27.5,29,7.37,1,0.0324,0.0841,5.17,totals,false
@@ -303,11 +303,11 @@ Netherlands,Sweden,31,2026-06-20,group,1,4,Netherlands more goals than Sweden in
 Netherlands,Sweden,31,2026-06-20,group,1,5,Sweden more cards than Netherlands,1,44,44.2,47,-1.36,0,0.3136,0.2809,-3.27,discipline,false
 Netherlands,Sweden,31,2026-06-20,group,1,6,Viktor Gyokeres 1+ SOT in 2nd half,0,43,46.2,50,9.79,1,0.1849,0.2500,6.51,fav_player,true
 Netherlands,Sweden,31,2026-06-20,group,1,7,Netherlands wins,1,57,58.7,59,0.67,1,0.1849,0.1681,-1.68,fav_team_total,false
-Netherlands,Sweden,31,2026-06-20,group,1,8,Tied at halftime,0,38,43.0,43,5.57,1,0.1444,0.1849,4.05,fav_team_total,false
+Netherlands,Sweden,31,2026-06-20,group,1,8,Tied at halftime,0,38,43.0,43,5.57,1,0.1444,0.1849,4.05,ht_lead,false
 Netherlands,Sweden,31,2026-06-20,group,1,9,8+ total SOT,1,67,60.4,58,9.4,1,0.1089,0.1764,6.75,totals,false
 Netherlands,Sweden,31,2026-06-20,group,1,10,Cody Gakpo 1+ SOT,1,64,57.5,61,4.96,1,0.1296,0.1521,2.25,fav_player,false
 Germany,Ivory-Coast,32,2026-06-20,group,1,1,Both teams 1+ SOT at halftime,1,77,71.4,65,9.59,1,0.0529,0.1225,6.96,and_conjunction,true
-Germany,Ivory-Coast,32,2026-06-20,group,1,2,2nd half more goals than 1st half,1,44,45.1,52,-5.92,0,0.3136,0.2304,-8.32,totals,false
+Germany,Ivory-Coast,32,2026-06-20,group,1,2,2nd half more goals than 1st half,1,44,45.1,52,-5.92,0,0.3136,0.2304,-8.32,race,false
 Germany,Ivory-Coast,32,2026-06-20,group,1,3,Germany caught offside 2+,0,47,46.9,49,4.55,1,0.2209,0.2401,1.92,offsides,false
 Germany,Ivory-Coast,32,2026-06-20,group,1,4,Ivory Coast more SOT than Germany in 2nd half,0,18,29.6,27,6.48,1,0.0324,0.0729,4.05,race,true
 Germany,Ivory-Coast,32,2026-06-20,group,1,5,Ivory Coast caught offside 2+,0,46,46.2,44,0.78,1,0.2116,0.1936,-1.8,offsides,false
@@ -318,7 +318,7 @@ Germany,Ivory-Coast,32,2026-06-20,group,1,9,4+ total cards,0,39,40.7,46,8.29,1,0
 Germany,Ivory-Coast,32,2026-06-20,group,1,10,Germany score in 2nd half,1,70,69.8,69,1.78,1,0.0900,0.0961,0.61,fav_team_total,true
 Ecuador,Curacao,33,2026-06-20,group,1,1,Both teams 1+ SOT at halftime,0,65,61.8,56,-8.01,0,0.4225,0.3136,-10.89,and_conjunction,true
 Ecuador,Curacao,33,2026-06-20,group,1,2,Ecuador more fouls than Curacao,0,57,58.4,44,-10.38,0,0.3249,0.1936,-13.13,race,false
-Ecuador,Curacao,33,2026-06-20,group,1,3,2nd half more goals than 1st half,0,42,43.9,50,9.76,1,0.1764,0.2500,7.36,totals,false
+Ecuador,Curacao,33,2026-06-20,group,1,3,2nd half more goals than 1st half,0,42,43.9,50,9.76,1,0.1764,0.2500,7.36,race,false
 Ecuador,Curacao,33,2026-06-20,group,1,4,Ecuador first goal AND Curacao score in 2nd half,0,21,29.0,27,6.11,1,0.0441,0.0729,2.88,and_conjunction,false
 Ecuador,Curacao,33,2026-06-20,group,1,5,Penalty awarded OR red card,0,40,41.7,39,1.02,1,0.1600,0.1521,-0.79,discipline,false
 Ecuador,Curacao,33,2026-06-20,group,1,6,Ecuador wins,0,80,78.0,80,2.4,1,0.6400,0.6400,0.0,fav_team_total,false
@@ -367,7 +367,7 @@ Uruguay,Cabo-Verde,37,2026-06-23,group,1,10,Uruguay 6+ SOT,0,52,50.6,53,4.68,1,0
 New-Zealand,Egypt,38,2026-06-24,group,1,1,Egypt caught offside 2+,0,53,50.4,49,-1.46,0,0.2809,0.2401,-4.08,offsides,false
 New-Zealand,Egypt,38,2026-06-24,group,1,2,New Zealand more fouls than Egypt,1,49,51.9,51,0.45,1,0.2601,0.2401,-2.0,race,false
 New-Zealand,Egypt,38,2026-06-24,group,1,3,New Zealand more SOT than Egypt in 2nd half,0,19,29.9,33,9.7,1,0.0361,0.1089,7.28,race,true
-New-Zealand,Egypt,38,2026-06-24,group,1,4,2nd half more goals than 1st,1,43,45.6,49,-5.01,0,0.3249,0.2601,-6.48,uncategorized,false
+New-Zealand,Egypt,38,2026-06-24,group,1,4,2nd half more goals than 1st,1,43,45.6,49,-5.01,0,0.3249,0.2601,-6.48,race,false
 New-Zealand,Egypt,38,2026-06-24,group,1,5,Egypt more corners than New Zealand,0,64,62.9,62,-0.47,0,0.4096,0.3844,-2.52,race,false
 New-Zealand,Egypt,38,2026-06-24,group,1,6,New Zealand wins,0,16,23.8,23,5.14,1,0.0256,0.0529,2.73,fav_team_total,false
 New-Zealand,Egypt,38,2026-06-24,group,1,7,2 or fewer total goals,0,52,50.5,52,1.67,1,0.2704,0.2704,0.0,totals,false
@@ -376,7 +376,7 @@ New-Zealand,Egypt,38,2026-06-24,group,1,9,Ben Waine 1+ SOT,0,18,31.5,32,10.65,1,
 New-Zealand,Egypt,38,2026-06-24,group,1,10,Mahmoud Trezeguet score or assist,1,13,28.7,28,-20.61,0,0.7569,0.5184,-23.85,fav_player,false
 Argentina,Austria,39,2026-06-25,group,1,1,Austria caught offside 2+,0,54,51.0,48,-3.26,0,0.2916,0.2304,-6.12,offsides,false
 Argentina,Austria,39,2026-06-25,group,1,2,Austria more SOT than Argentina in 2nd half,0,18,29.3,27,6.42,1,0.0324,0.0729,4.05,race,true
-Argentina,Austria,39,2026-06-25,group,1,3,2nd half more goals than 1st,0,43,45.8,51,9.16,1,0.1849,0.2601,7.52,uncategorized,false
+Argentina,Austria,39,2026-06-25,group,1,3,2nd half more goals than 1st,0,43,45.8,51,9.16,1,0.1849,0.2601,7.52,race,false
 Argentina,Austria,39,2026-06-25,group,1,4,Austria more corners than Argentina,1,24,33.6,30,-7.11,0,0.5776,0.4900,-8.76,race,false
 Argentina,Austria,39,2026-06-25,group,1,5,Argentina wins,1,66,66.5,70,-0.44,0,0.1156,0.0900,-2.56,fav_team_total,false
 Argentina,Austria,39,2026-06-25,group,1,6,2 or fewer total goals,1,52,50.6,44,10.46,1,0.2304,0.3136,8.32,totals,false
@@ -399,7 +399,7 @@ Norway,Senegal,41,2026-06-27,group,1,3,Penalty awarded OR red card,0,37,39.5,39,
 Norway,Senegal,41,2026-06-27,group,1,4,Senegal more fouls than Norway,0,51,53.3,55,5.49,1,0.2601,0.3025,4.24,race,false
 Norway,Senegal,41,2026-06-27,group,1,5,4+ total SOT in 2nd half,1,66,59.9,64,3.39,1,0.1156,0.1296,1.4,totals,true
 Norway,Senegal,41,2026-06-27,group,1,6,Norway wins,1,40,44.4,49,-6.99,0,0.3600,0.2601,-9.99,fav_team_total,false
-Norway,Senegal,41,2026-06-27,group,1,7,Tied at halftime,0,42,45.4,44,3.29,1,0.1764,0.1936,1.72,uncategorized,true
+Norway,Senegal,41,2026-06-27,group,1,7,Tied at halftime,0,42,45.4,44,3.29,1,0.1764,0.1936,1.72,ht_lead,true
 Norway,Senegal,41,2026-06-27,group,1,8,9+ total corners,1,55,52.5,53,4.38,1,0.2025,0.2209,1.84,totals,false
 Norway,Senegal,41,2026-06-27,group,1,9,Norway 6+ SOT,1,40,42.6,42,0.86,1,0.3600,0.3364,-2.36,totals,false
 Norway,Senegal,41,2026-06-27,group,1,10,Sadio Mane scores a goal,0,23,34.3,30,6.1,1,0.0529,0.0900,3.71,fav_player,false
@@ -410,7 +410,7 @@ Jordan,Algeria,42,2026-06-28,group,1,4,Algeria caught offside 2+,0,60,54.6,51,-7
 Jordan,Algeria,42,2026-06-28,group,1,5,Penalty awarded OR red card,0,37,39.4,38,3.36,1,0.1369,0.1444,0.75,discipline,false
 Jordan,Algeria,42,2026-06-28,group,1,6,Riyad Mahrez 1+ SOT in 2nd half,0,40,44.0,43,5.23,1,0.1600,0.1849,2.49,fav_player,true
 Jordan,Algeria,42,2026-06-28,group,1,7,Jordan score 1+ goal,1,49,52.1,52,-1.12,0,0.2601,0.2304,-2.97,fav_team_total,false
-Jordan,Algeria,42,2026-06-28,group,1,8,Tied at halftime,0,40,43.6,42,3.37,1,0.1600,0.1764,1.64,uncategorized,true
+Jordan,Algeria,42,2026-06-28,group,1,8,Tied at halftime,0,40,43.6,42,3.37,1,0.1600,0.1764,1.64,ht_lead,true
 Jordan,Algeria,42,2026-06-28,group,1,9,3+ total goals,1,52,50.6,48,5.38,1,0.2304,0.2704,4.0,totals,false
 Jordan,Algeria,42,2026-06-28,group,1,10,Mousa Al-Taamari 1+ SOT,1,50,49.5,47,5.75,1,0.2500,0.2809,3.09,fav_player,false
 Portugal,Uzbekistan,43,2026-06-29,group,1,1,Uzbekistan caught offside 2+,1,49,47.8,41,11.64,1,0.2601,0.3481,8.8,offsides,false
@@ -446,7 +446,7 @@ Panama,Croatia,45,2026-07-01,group,1,10,Luka Sucic 1+ SOT,0,15,29.5,37,16.28,1,0
 Colombia,DR Congo,46,2026-06-23,group,1,1,Colombia more SOT than DR Congo in 2nd half,1,66,64.7,66,2.32,1,0.1156,0.1156,0.0,race,true
 Colombia,DR Congo,46,2026-06-23,group,1,2,Colombia more goals than DR Congo in 2nd half,1,48,51.3,55,-4.48,0,0.2704,0.2025,-6.79,race,true
 Colombia,DR Congo,46,2026-06-23,group,1,3,Penalty or red card in match,0,37,39.3,36,1.69,1,0.1369,0.1296,-0.73,discipline,false
-Colombia,DR Congo,46,2026-06-23,group,1,4,Colombia win,1,62,63.0,66,-1.34,0,0.1444,0.1156,-2.88,fav_team_total,false
+Colombia,DR Congo,46,2026-06-23,group,1,4,Colombia win,1,62,63.0,66,-1.34,0,0.1444,0.1156,-2.88,match_result,false
 Colombia,DR Congo,46,2026-06-23,group,1,5,Colombia winning at halftime,0,44,47.8,49,6.52,1,0.1936,0.2401,4.65,fav_team_total,true
 Colombia,DR Congo,46,2026-06-23,group,1,6,2 or fewer total goals,1,54,51.8,51,4.5,1,0.2116,0.2401,2.85,totals,false
 Colombia,DR Congo,46,2026-06-23,group,1,7,Colombia 5+ corners,1,57,53.8,58,1.15,1,0.1849,0.1764,-0.85,totals,false
@@ -459,7 +459,7 @@ Switzerland,Canada,47,2026-06-24,group,1,3,2+ total cards in 2nd half,0,58,54.7,
 Switzerland,Canada,47,2026-06-24,group,1,4,BTTS and 3+ goals,1,37,40.0,41,-2.43,0,0.3969,0.3481,-4.88,and_conjunction,false
 Switzerland,Canada,47,2026-06-24,group,1,5,Penalty awarded,0,31,34.8,29,0.67,1,0.0961,0.0841,-1.2,discipline,false
 Switzerland,Canada,47,2026-06-24,group,1,6,Switzerland more SOT than Canada in 2nd half,0,46,49.8,51,7.14,1,0.2116,0.2601,4.85,race,true
-Switzerland,Canada,47,2026-06-24,group,1,7,Switzerland win,1,38,42.7,45,-5.91,0,0.3844,0.3025,-8.19,fav_team_total,false
+Switzerland,Canada,47,2026-06-24,group,1,7,Switzerland win,1,38,42.7,45,-5.91,0,0.3844,0.3025,-8.19,match_result,false
 Switzerland,Canada,47,2026-06-24,group,1,8,2nd half 2+ goals,1,40,42.8,43,-1.28,0,0.3600,0.3249,-3.51,totals,true
 Switzerland,Canada,47,2026-06-24,group,1,9,Granit Xhaka 1+ SOT,0,37,42.1,40,5.96,1,0.1369,0.1600,2.31,fav_player,false
 Switzerland,Canada,47,2026-06-24,group,1,10,Jonathan David 1+ SOT,0,56,52.8,59,6.29,1,0.3136,0.3481,3.45,fav_player,false
@@ -469,7 +469,7 @@ Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,3,Qatar more SOT than Bosnia in 2
 Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,4,Penalty or red card in match,0,43,43.6,38,-2.18,0,0.1849,0.1444,-4.05,discipline,false
 Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,5,Qatar more fouls than Bosnia,1,35,41.5,50,-14.4,0,0.4225,0.2500,-17.25,race,false
 Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,6,Bosnia more cards than Qatar,0,36,38.5,40,5.48,1,0.1296,0.1600,3.04,discipline,false
-Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,7,Bosnia win,1,70,69.8,64,6.38,1,0.0900,0.1296,3.96,fav_team_total,false
+Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,7,Bosnia win,1,70,69.8,64,6.38,1,0.0900,0.1296,3.96,match_result,false
 Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,8,2 or fewer total goals,0,43,44.7,46,5.0,1,0.1849,0.2116,2.67,totals,false
 Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,9,Edin Dzeko 1+ SOT,0,70,60.6,59,-10.56,0,0.4900,0.3481,-14.19,fav_player,false
 Bosnia-Herzegovina,Qatar,48,2026-06-24,group,1,10,Qatar caught offside 2+,1,39,41.4,43,-1.75,0,0.3721,0.3249,-4.72,offsides,false
@@ -489,7 +489,7 @@ Morocco,Haiti,50,2026-06-25,group,1,3,Haiti more cards than Morocco,1,53,50.8,55
 Morocco,Haiti,50,2026-06-25,group,1,4,Morocco more SOT than Haiti in 2nd half,1,70,67.4,72,1.04,1,0.0900,0.0784,-1.16,race,true
 Morocco,Haiti,50,2026-06-25,group,1,5,4+ total SOT in 2nd half,1,62,57.2,62,2.3,1,0.1444,0.1444,0.0,totals,true
 Morocco,Haiti,50,2026-06-25,group,1,6,Penalty or red card in match,0,44,44.2,35,-5.05,0,0.1936,0.1225,-7.11,discipline,false
-Morocco,Haiti,50,2026-06-25,group,1,7,Morocco win,1,76,74.8,80,-0.1,0,0.0576,0.0400,-1.76,fav_team_total,false
+Morocco,Haiti,50,2026-06-25,group,1,7,Morocco win,1,76,74.8,80,-0.1,0,0.0576,0.0400,-1.76,match_result,false
 Morocco,Haiti,50,2026-06-25,group,1,8,Morocco score in 1st half,1,68,68.1,66,2.98,1,0.1024,0.1156,1.32,fav_team_total,true
 Morocco,Haiti,50,2026-06-25,group,1,9,Duckens Nazon 1+ SOT,1,16,30.4,28,-15.51,0,0.7056,0.5184,-18.72,fav_player,false
 Morocco,Haiti,50,2026-06-25,group,1,10,Haiti score in 2nd half,0,27,33.5,28,2.22,1,0.0729,0.0784,0.55,fav_team_total,true
@@ -498,8 +498,8 @@ South Africa,Korea-Republic,51,2026-06-25,group,1,2,South Korea 1+ card in 2nd h
 South Africa,Korea-Republic,51,2026-06-25,group,1,3,BTTS and 3+ goals,0,33,37.0,35,3.62,1,0.1089,0.1225,1.36,and_conjunction,false
 South Africa,Korea-Republic,51,2026-06-25,group,1,4,South Korea more SOT than South Africa in 2nd half,1,57,57.9,60,0.19,1,0.1849,0.1600,-2.49,race,true
 South Africa,Korea-Republic,51,2026-06-25,group,1,5,South Africa more fouls than South Korea,0,54,55.6,57,4.96,1,0.2916,0.3249,3.33,race,false
-South Africa,Korea-Republic,51,2026-06-25,group,1,6,South Africa win,1,17,24.9,22,-5.53,0,0.6889,0.6084,-8.05,fav_team_total,false
-South Africa,Korea-Republic,51,2026-06-25,group,1,7,Tied at halftime,1,44,47.8,43,2.52,1,0.3136,0.3249,1.13,fav_team_total,true
+South Africa,Korea-Republic,51,2026-06-25,group,1,6,South Africa win,1,17,24.9,22,-5.53,0,0.6889,0.6084,-8.05,match_result,false
+South Africa,Korea-Republic,51,2026-06-25,group,1,7,Tied at halftime,1,44,47.8,43,2.52,1,0.3136,0.3249,1.13,ht_lead,true
 South Africa,Korea-Republic,51,2026-06-25,group,1,8,South Africa 3+ SOT,1,59,55.1,52,8.54,1,0.1681,0.2304,6.23,totals,false
 South Africa,Korea-Republic,51,2026-06-25,group,1,9,Oswin Appollis 1+ SOT,1,47,47.8,40,10.61,1,0.2809,0.3600,7.91,fav_player,false
 South Africa,Korea-Republic,51,2026-06-25,group,1,10,Son Heung-min 1+ SOT,0,23,34.2,56,30.19,1,0.0529,0.3136,26.07,fav_player,false
@@ -508,14 +508,14 @@ Czechia,Mexico,52,2026-06-26,group,1,2,Mexico caught offside 2+,0,48,46.9,50,3.9
 Czechia,Mexico,52,2026-06-26,group,1,3,Czechia more SOT than Mexico in 2nd half,0,31,38.7,38,7.11,1,0.0961,0.1444,4.83,race,true
 Czechia,Mexico,52,2026-06-26,group,1,4,Mexico more corners than Czechia,0,44,48.4,54,12.28,1,0.1936,0.2916,9.8,race,false
 Czechia,Mexico,52,2026-06-26,group,1,5,BTTS and 3+ goals,0,37,40.1,37,2.06,1,0.1369,0.1369,0.0,and_conjunction,false
-Czechia,Mexico,52,2026-06-26,group,1,6,Czechia win,0,20,27.1,27,5.32,1,0.0400,0.0729,3.29,fav_team_total,false
+Czechia,Mexico,52,2026-06-26,group,1,6,Czechia win,0,20,27.1,27,5.32,1,0.0400,0.0729,3.29,match_result,false
 Czechia,Mexico,52,2026-06-26,group,1,7,Czechia score in 2nd half,0,39,43.4,44,5.97,1,0.1521,0.1936,4.15,fav_team_total,true
 Czechia,Mexico,52,2026-06-26,group,1,8,4+ total cards,0,43,43.4,47,6.38,1,0.1849,0.2209,3.6,discipline,false
 Czechia,Mexico,52,2026-06-26,group,1,9,Patrik Schick 1+ SOT,0,27,36.5,47,19,1,0.0729,0.2209,14.8,fav_player,false
 Curacao,Ivory-Coast,53,2026-06-27,group,1,1,Curacao caught offside 2+,1,43,44.0,41,5.23,1,0.3249,0.3481,2.32,offsides,false
 Curacao,Ivory-Coast,53,2026-06-27,group,1,2,Ivory Coast more fouls than Curacao,0,45,49.2,41,-0.8,0,0.2025,0.1681,-3.44,race,false
 Curacao,Ivory-Coast,53,2026-06-27,group,1,3,Ivory Coast score first goal of 2nd half,1,70,69.8,60,10.18,1,0.0900,0.1600,7.0,fav_team_total,true
-Curacao,Ivory-Coast,53,2026-06-27,group,1,4,2nd half more goals than 1st half,0,45,46.0,50,7.28,1,0.2025,0.2500,4.75,totals,false
+Curacao,Ivory-Coast,53,2026-06-27,group,1,4,2nd half more goals than 1st half,0,45,46.0,50,7.28,1,0.2025,0.2500,4.75,race,false
 Curacao,Ivory-Coast,53,2026-06-27,group,1,5,Curacao more SOT than Ivory Coast in 2nd half,0,13,25.4,23,6.18,1,0.0169,0.0529,3.60,race,true
 Curacao,Ivory-Coast,53,2026-06-27,group,1,6,Curacao more cards than Ivory Coast,1,53,51.0,52,3.43,1,0.2209,0.2304,0.95,discipline,false
 Curacao,Ivory-Coast,53,2026-06-27,group,1,7,Curacao score 1+ goal,0,41,44.9,42,3.62,1,0.1681,0.1764,0.83,fav_team_total,false
@@ -536,7 +536,7 @@ Japan,Sweden,55,2026-06-29,group,1,1,Sweden caught offside 2+,1,50,48.2,51,1.55,
 Japan,Sweden,55,2026-06-29,group,1,2,Japan more SOT than Sweden in 2nd half,0,46,49.9,51,6.94,1,0.2116,0.2601,4.85,race,true
 Japan,Sweden,55,2026-06-29,group,1,3,Sweden more goals than Japan in 2nd half,0,27,35.6,33,5.62,1,0.0729,0.1089,3.60,race,true
 Japan,Sweden,55,2026-06-29,group,1,4,Penalty awarded or red card shown,0,37,38.9,34,-0.55,0,0.1369,0.1156,-2.13,discipline,false
-Japan,Sweden,55,2026-06-29,group,1,5,Japan win,0,43,46.5,52,11.5,1,0.1849,0.2704,8.55,fav_team_total,false
+Japan,Sweden,55,2026-06-29,group,1,5,Japan win,0,43,46.5,52,11.5,1,0.1849,0.2704,8.55,match_result,false
 Japan,Sweden,55,2026-06-29,group,1,6,2 or fewer total goals,1,48,48.0,45,5.8,1,0.2704,0.3025,3.21,totals,false
 Japan,Sweden,55,2026-06-29,group,1,7,Sweden 5+ corners,1,41,43.4,46,-2.94,0,0.3481,0.2916,-5.65,totals,false
 Japan,Sweden,55,2026-06-29,group,1,8,Viktor Gyokeres score,0,31,38.9,34,3.85,1,0.0961,0.1156,1.95,fav_player,false
@@ -545,7 +545,7 @@ Tunisia,Netherlands,56,2026-06-30,group,1,2,Both teams 1+ SOT in 2nd half,1,62,5
 Tunisia,Netherlands,56,2026-06-30,group,1,3,BTTS and 3+ goals,1,34,37.4,32,4.54,1,0.4356,0.4624,2.68,and_conjunction,false
 Tunisia,Netherlands,56,2026-06-30,group,1,4,Netherlands more cards than Tunisia,0,25,29.9,34,7.43,1,0.0625,0.1156,5.31,discipline,false
 Tunisia,Netherlands,56,2026-06-30,group,1,5,Tunisia score 1+ goal,1,40,43.9,39,4.4,1,0.3600,0.3721,1.21,fav_team_total,false
-Tunisia,Netherlands,56,2026-06-30,group,1,6,Tied at halftime,0,25,31.2,31,4.72,1,0.0625,0.0961,3.36,fav_team_total,true
+Tunisia,Netherlands,56,2026-06-30,group,1,6,Tied at halftime,0,25,31.2,31,4.72,1,0.0625,0.0961,3.36,ht_lead,true
 Tunisia,Netherlands,56,2026-06-30,group,1,7,Tunisia score in 2nd half,1,25,31.2,29,-3.32,0,0.5625,0.5041,-5.84,fav_team_total,true
 Tunisia,Netherlands,56,2026-06-30,group,1,8,Ellyes Skhiri 1+ SOT,0,17,31.4,26,6.57,1,0.0289,0.0676,3.87,fav_player,false
 Tunisia,Netherlands,56,2026-06-30,group,1,9,8+ total SOT,1,75,65.5,60,12.36,1,0.0625,0.1600,9.75,totals,false
@@ -554,17 +554,17 @@ Paraguay,Australia,57,2026-07-01,group,1,1,Australia caught offside 2+,0,46,45.8
 Paraguay,Australia,57,2026-07-01,group,1,2,Australia more fouls than Paraguay,0,50,52.8,46,-2.13,0,0.25,0.2116,-3.84,race,false
 Paraguay,Australia,57,2026-07-01,group,1,3,Paraguay caught offside 2+,0,50,48.2,47,-1.22,0,0.25,0.2209,-2.91,offsides,false
 Paraguay,Australia,57,2026-07-01,group,1,4,Australia more SOT than Paraguay in 2nd half,0,37,43.1,44,7.88,1,0.1369,0.1936,5.67,race,true
-Paraguay,Australia,57,2026-07-01,group,1,5,2nd half more goals than 1st half,0,39,42.1,45,7.15,1,0.1521,0.2025,5.04,totals,false
-Paraguay,Australia,57,2026-07-01,group,1,6,Paraguay win,0,37,41.3,37,2.0,1,0.1369,0.1369,0.0,fav_team_total,false
+Paraguay,Australia,57,2026-07-01,group,1,5,2nd half more goals than 1st half,0,39,42.1,45,7.15,1,0.1521,0.2025,5.04,race,false
+Paraguay,Australia,57,2026-07-01,group,1,6,Paraguay win,0,37,41.3,37,2.0,1,0.1369,0.1369,0.0,match_result,false
 Paraguay,Australia,57,2026-07-01,group,1,7,2nd half 2+ goals,0,28,35.1,37,7.63,1,0.0784,0.1369,5.85,totals,true
 Paraguay,Australia,57,2026-07-01,group,1,8,4+ total cards,0,31,34.5,47,14.59,1,0.0961,0.2209,12.48,discipline,false
 Paraguay,Australia,57,2026-07-01,group,1,9,Julio Enciso 1+ SOT,0,51,49.8,48,-0.47,0,0.2601,0.2304,-2.97,fav_player,false
 Turkiye,United-States,58,2026-07-01,group,1,1,United States more fouls than Turkiye,0,47,50.5,47,1.77,1,0.2209,0.2209,0.0,race,false
 Turkiye,United-States,58,2026-07-01,group,1,2,Turkiye caught offside 2+,1,52,49.5,50,4.03,1,0.2304,0.25,1.96,offsides,false
-Turkiye,United-States,58,2026-07-01,group,1,3,2nd half more goals than 1st half,0,45,46.0,48,4.43,1,0.2025,0.2304,2.79,totals,false
+Turkiye,United-States,58,2026-07-01,group,1,3,2nd half more goals than 1st half,0,45,46.0,48,4.43,1,0.2025,0.2304,2.79,race,false
 Turkiye,United-States,58,2026-07-01,group,1,4,Turkiye score first goal and USA score in 2nd half,0,27,31.9,28,2.81,1,0.0729,0.0784,0.55,and_conjunction,false
 Turkiye,United-States,58,2026-07-01,group,1,5,Penalty awarded or red card shown,0,42,42.7,34,-4.37,0,0.1764,0.1156,-6.08,discipline,false
-Turkiye,United-States,58,2026-07-01,group,1,6,Turkiye win,1,28,33.7,31,-2.44,0,0.5184,0.4761,-4.23,fav_team_total,false
+Turkiye,United-States,58,2026-07-01,group,1,6,Turkiye win,1,28,33.7,31,-2.44,0,0.5184,0.4761,-4.23,match_result,false
 Turkiye,United-States,58,2026-07-01,group,1,7,3+ total goals,1,58,54.4,53,5.81,1,0.1764,0.2209,4.45,totals,false
 Turkiye,United-States,58,2026-07-01,group,1,8,Turkiye 5+ corners,0,50,49.2,52,4.75,1,0.25,0.2704,2.04,totals,false
 Turkiye,United-States,58,2026-07-01,group,1,9,Orkun Kokcu score or assist,1,25,35.5,28,-1.88,0,0.5625,0.5184,-4.41,fav_player,false
@@ -574,7 +574,7 @@ Norway,France,59,2026-07-03,group,1,2,2H Norway more corners than France,1,26,34
 Norway,France,59,2026-07-03,group,1,3,France more SOT than Norway in 2nd half,0,64,63.3,62,0.07,1,0.4096,0.3844,-2.52,race,true
 Norway,France,59,2026-07-03,group,1,4,Penalty awarded or red card shown,1,36,38.4,34,5.21,1,0.4096,0.4356,2.6,discipline,false
 Norway,France,59,2026-07-03,group,1,5,BTTS and 3+ total goals,1,42,43.4,49,-4.45,0,0.3364,0.2601,-7.63,and_conjunction,false
-Norway,France,59,2026-07-03,group,1,6,Norway win,0,11,18.9,22,5.28,1,0.0121,0.0484,3.63,fav_team_total,false
+Norway,France,59,2026-07-03,group,1,6,Norway win,0,11,18.9,22,5.28,1,0.0121,0.0484,3.63,match_result,false
 Norway,France,59,2026-07-03,group,1,7,France score in 2nd half,1,71,70.5,68,3.36,1,0.0841,0.1024,1.83,fav_team_total,true
 Norway,France,59,2026-07-03,group,1,8,8+ total SOT,1,70,62.1,63,7.82,1,0.09,0.1369,4.69,totals,false
 Norway,France,59,2026-07-03,group,1,9,Norway score 1+ goal,1,54,55.8,61,-3.53,0,0.2116,0.1521,-5.95,fav_team_total,false
@@ -587,13 +587,13 @@ Senegal,Iraq,60,2026-07-03,group,1,5,Iraq more fouls than Senegal,1,49,51.9,56,-
 Senegal,Iraq,60,2026-07-03,group,1,6,4+ total SOT in 2nd half,1,68,61.0,60,7.58,1,0.1024,0.16,5.76,totals,true
 Senegal,Iraq,60,2026-07-03,group,1,7,Mane 1+ SOT in 2nd half,0,48,48.2,46,1.34,1,0.2304,0.2116,-1.88,fav_player,true
 Senegal,Iraq,60,2026-07-03,group,1,8,2H Senegal more SOT than Iraq,1,70,67.8,68,3.24,1,0.09,0.1024,1.24,race,true
-Senegal,Iraq,60,2026-07-03,group,1,9,Senegal win,1,76,74.6,73,3.23,1,0.0576,0.0729,1.53,fav_team_total,false
+Senegal,Iraq,60,2026-07-03,group,1,9,Senegal win,1,76,74.6,73,3.23,1,0.0576,0.0729,1.53,match_result,false
 Senegal,Iraq,60,2026-07-03,group,1,10,Mohanad Ali score or assist,0,15,29.8,20,3.8,1,0.0225,0.04,1.75,fav_player,false
 Uruguay,Spain,61,2026-07-03,group,1,1,Uruguay more fouls than Spain,0,55,56.4,58,5.77,1,0.3025,0.3364,3.39,race,false
 Uruguay,Spain,61,2026-07-03,group,1,2,2H Uruguay more SOT than Spain,1,22,31.8,29,-8.8,0,0.6084,0.5041,-10.43,race,true
 Uruguay,Spain,61,2026-07-03,group,1,3,Dani Olmo 1+ SOT in 2nd half,0,27,36.3,35,8.52,1,0.0729,0.1225,4.96,fav_player,true
 Uruguay,Spain,61,2026-07-03,group,1,4,Uruguay score 1+ goal,0,56,57.5,54,-0.63,0,0.3136,0.2916,-2.2,fav_team_total,false
-Uruguay,Spain,61,2026-07-03,group,1,5,Tied at halftime,0,44,46.8,41,-0.88,0,0.1936,0.1681,-2.55,uncategorized,true
+Uruguay,Spain,61,2026-07-03,group,1,5,Tied at halftime,0,44,46.8,41,-0.88,0,0.1936,0.1681,-2.55,ht_lead,true
 Uruguay,Spain,61,2026-07-03,group,1,6,2 or fewer total goals,1,53,51.2,47,8.51,1,0.2209,0.2809,6.0,totals,false
 Uruguay,Spain,61,2026-07-03,group,1,7,2H 2+ goals,0,45,46.2,44,1.64,1,0.2025,0.1936,-0.89,totals,true
 Uruguay,Spain,61,2026-07-03,group,1,8,9+ total corners,0,54,51.9,56,4.89,1,0.2916,0.3136,2.2,totals,false
@@ -605,7 +605,7 @@ Cabo-Verde,Saudi-Arabia,62,2026-07-03,group,1,3,Saudi Arabia more cards than Cap
 Cabo-Verde,Saudi-Arabia,62,2026-07-03,group,1,4,Penalty awarded in match,0,29,33.2,28,1.14,1,0.0841,0.0784,-0.57,discipline,false
 Cabo-Verde,Saudi-Arabia,62,2026-07-03,group,1,5,Cape Verde caught offside 2+,1,54,50.6,47,9.76,1,0.2116,0.2809,6.93,offsides,false
 Cabo-Verde,Saudi-Arabia,62,2026-07-03,group,1,6,2H Saudi more SOT than Cape Verde,0,37,43.0,44,7.81,1,0.1369,0.1936,5.67,race,true
-Cabo-Verde,Saudi-Arabia,62,2026-07-03,group,1,7,Cape Verde win,0,35,39.6,39,5.24,1,0.1225,0.1521,2.96,fav_team_total,false
+Cabo-Verde,Saudi-Arabia,62,2026-07-03,group,1,7,Cape Verde win,0,35,39.6,39,5.24,1,0.1225,0.1521,2.96,match_result,false
 Cabo-Verde,Saudi-Arabia,62,2026-07-03,group,1,8,Cape Verde score in 2nd half,0,50,52.5,49,0.88,1,0.25,0.2401,-0.99,fav_team_total,true
 Cabo-Verde,Saudi-Arabia,62,2026-07-03,group,1,9,Ryan Mendes score or assist,0,28,36.8,30,2.98,1,0.0784,0.09,1.16,fav_player,false
 Cabo-Verde,Saudi-Arabia,62,2026-07-03,group,1,10,Salem Al-Dawsari score a goal,0,24,34.6,25,2.54,1,0.0576,0.0625,0.49,fav_player,false
@@ -622,7 +622,7 @@ New-Zealand,Belgium,63,2026-07-04,group,1,10,Youri Tielemans 1+ SOT,0,46,46.7,43
 Egypt,Iran,64,2026-07-04,group,1,1,Iran 2+ offsides,1,48,46.8,47,3.02,1,0.2704,0.2809,1.05,offsides,false
 Egypt,Iran,64,2026-07-04,group,1,2,Iran more SOT than Egypt in 2nd half,0,43,47.5,40,-0.94,0,0.1849,0.1600,-2.49,race,true
 Egypt,Iran,64,2026-07-04,group,1,3,Iran more corners than Egypt,0,41,45.9,42,2.46,1,0.1681,0.1764,0.83,race,false
-Egypt,Iran,64,2026-07-04,group,1,4,Egypt win the match,0,36,40.4,43,8.03,1,0.1296,0.1849,5.53,fav_team_total,false
+Egypt,Iran,64,2026-07-04,group,1,4,Egypt win the match,0,36,40.4,43,8.03,1,0.1296,0.1849,5.53,match_result,false
 Egypt,Iran,64,2026-07-04,group,1,5,2 or fewer total goals,1,65,58.9,58,7.04,1,0.1225,0.1764,5.39,totals,false
 Egypt,Iran,64,2026-07-04,group,1,6,2nd half 2+ total goals,0,32,37.8,37,5.32,1,0.1024,0.1369,3.45,totals,true
 Egypt,Iran,64,2026-07-04,group,1,7,4+ total cards,1,26,30.9,45,-22.08,0,0.5476,0.3025,-24.51,discipline,false
@@ -634,7 +634,7 @@ Panama,England,65,2026-07-05,group,1,2,Panama more fouls than England,1,64,63.1,
 Panama,England,65,2026-07-05,group,1,3,4+ total SOT in 2nd half,1,74,64.7,66,7.09,1,0.0676,0.1156,4.8,totals,true
 Panama,England,65,2026-07-05,group,1,4,Panama score first goal and England score in 2nd half,0,16,23.3,19,3.45,1,0.0256,0.0361,1.05,and_conjunction,false
 Panama,England,65,2026-07-05,group,1,5,penalty awarded or red card shown,0,37,39.5,36,1.78,1,0.1369,0.1296,-0.73,discipline,false
-Panama,England,65,2026-07-05,group,1,6,tied at halftime,1,26,31.4,32,-6.97,0,0.5476,0.4624,-8.52,uncategorized,true
+Panama,England,65,2026-07-05,group,1,6,tied at halftime,1,26,31.4,32,-6.97,0,0.5476,0.4624,-8.52,ht_lead,true
 Panama,England,65,2026-07-05,group,1,7,3+ total goals,0,67,60.1,59,-7.42,0,0.4489,0.3481,-10.08,totals,false
 Panama,England,65,2026-07-05,group,1,8,5+ corners in 2nd half,0,61,56.3,56,-3.84,0,0.3721,0.3136,-5.85,totals,true
 Panama,England,65,2026-07-05,group,1,9,Jose Fajardo 1+ SOT,0,17,30.4,31,9.59,1,0.0289,0.0961,6.72,fav_player,false
@@ -643,7 +643,7 @@ Croatia,Ghana,66,2026-07-05,group,1,1,Ghana 2+ offsides,1,51,48.7,48,5.41,1,0.24
 Croatia,Ghana,66,2026-07-05,group,1,2,penalty awarded or red card shown,0,37,39.5,35,0.35,1,0.1369,0.1225,-1.44,discipline,false
 Croatia,Ghana,66,2026-07-05,group,1,3,Luka Sucic 1+ SOT in 2nd half,0,16,30.0,28,8.23,1,0.0256,0.0784,5.28,fav_player,true
 Croatia,Ghana,66,2026-07-05,group,1,4,4+ total SOT in 2nd half,0,62,57.0,57,-2.82,0,0.3844,0.3249,-5.95,totals,true
-Croatia,Ghana,66,2026-07-05,group,1,5,Croatia win the match,1,52,53.9,56,-1.69,0,0.2304,0.1936,-3.68,fav_team_total,false
+Croatia,Ghana,66,2026-07-05,group,1,5,Croatia win the match,1,52,53.9,56,-1.69,0,0.2304,0.1936,-3.68,match_result,false
 Croatia,Ghana,66,2026-07-05,group,1,6,Croatia leading at halftime,1,36,40.5,40,-3.93,0,0.4096,0.3600,-4.96,fav_team_total,true
 Croatia,Ghana,66,2026-07-05,group,1,7,Croatia score in 2nd half,1,57,58.2,59,-0.59,0,0.1849,0.1681,-1.68,fav_team_total,true
 Croatia,Ghana,66,2026-07-05,group,1,8,9+ total corners,0,47,47.3,49,4.57,1,0.2209,0.2401,1.92,totals,false
@@ -656,20 +656,20 @@ DR-Congo,Uzbekistan,67,2026-07-05,group,1,4,both teams score and 3+ total goals,
 DR-Congo,Uzbekistan,67,2026-07-05,group,1,5,penalty awarded or red card shown,1,37,39.5,34,5.68,1,0.3969,0.4356,3.87,discipline,false
 DR-Congo,Uzbekistan,67,2026-07-05,group,1,6,Uzbekistan more SOT than DR Congo in 2nd half,0,38,43.7,36,0.91,1,0.1444,0.1296,-1.48,race,true
 DR-Congo,Uzbekistan,67,2026-07-05,group,1,7,Eldor Shomurodov 1+ SOT in 2nd half,0,36,41.1,36,2.25,1,0.1296,0.1296,0.0,fav_player,true
-DR-Congo,Uzbekistan,67,2026-07-05,group,1,8,DR Congo win the match,1,56,57.3,53,5.04,1,0.1936,0.2209,2.73,fav_team_total,false
+DR-Congo,Uzbekistan,67,2026-07-05,group,1,8,DR Congo win the match,1,56,57.3,53,5.04,1,0.1936,0.2209,2.73,match_result,false
 DR-Congo,Uzbekistan,67,2026-07-05,group,1,9,Cedric Bakambu score or assist,0,36,40.9,35,1.38,1,0.1296,0.1225,-0.71,fav_player,false
 DR-Congo,Uzbekistan,67,2026-07-05,group,1,10,Uzbekistan 5+ corners,0,31,37.1,38,7.6,1,0.0961,0.1444,4.83,totals,false
 Colombia,Portugal,68,2026-07-05,group,1,1,Colombia 2+ offsides,1,56,51.8,51,6.67,1,0.1936,0.2401,4.65,offsides,false
 Colombia,Portugal,68,2026-07-05,group,1,2,Colombia more SOT than Portugal in 2nd half,1,33,39.9,38,-4.57,0,0.4489,0.3844,-6.45,race,true
 Colombia,Portugal,68,2026-07-05,group,1,3,penalty awarded or red card shown,0,36,38.8,35,0.82,1,0.1296,0.1225,-0.71,discipline,false
 Colombia,Portugal,68,2026-07-05,group,1,4,both teams score and 3+ total goals,0,46,46.2,46,1.81,1,0.2116,0.2116,0.0,and_conjunction,false
-Colombia,Portugal,68,2026-07-05,group,1,5,Colombia win the match,0,23,29.4,30,5.23,1,0.0529,0.0900,3.71,fav_team_total,false
+Colombia,Portugal,68,2026-07-05,group,1,5,Colombia win the match,0,23,29.4,30,5.23,1,0.0529,0.0900,3.71,match_result,false
 Colombia,Portugal,68,2026-07-05,group,1,6,Colombia 4+ SOT,1,51,49.8,51,2.12,1,0.2401,0.2401,0.0,totals,false
 Colombia,Portugal,68,2026-07-05,group,1,7,Portugal 4+ SOT,0,72,63.3,65,-7.8,0,0.5184,0.4225,-9.59,totals,false
 Colombia,Portugal,68,2026-07-05,group,1,8,5+ corners in 2nd half,1,54,51.9,54,2.42,1,0.2116,0.2116,0.0,totals,true
 Colombia,Portugal,68,2026-07-05,group,1,9,Luis Diaz score a goal,0,22,33.2,29,5.37,1,0.0484,0.0841,3.57,fav_player,false
 Colombia,Portugal,68,2026-07-05,group,1,10,Goncalo Ramos 1+ SOT,0,17,30.4,37,15.38,1,0.0289,0.1369,10.8,fav_player,false
-Jordan,Argentina,69,2026-07-05,group,1,1,Argentina 1+ corner in 1st half,1,92,87.9,83,4.79,1,0.0064,0.0289,2.25,fav_team_total,true
+Jordan,Argentina,69,2026-07-05,group,1,1,Argentina 1+ corner in 1st half,1,92,87.9,83,4.79,1,0.0064,0.0289,2.25,totals,true
 Jordan,Argentina,69,2026-07-05,group,1,2,Jordan 2+ offsides,0,42,43.1,38,-1.07,0,0.1764,0.1444,-3.2,offsides,false
 Jordan,Argentina,69,2026-07-05,group,1,3,Jordan more fouls than Argentina,1,65,63.8,59,6.57,1,0.1225,0.1681,4.56,race,false
 Jordan,Argentina,69,2026-07-05,group,1,4,Argentina more SOT than Jordan in 2nd half,0,78,73.7,73,-4.69,0,0.6084,0.5329,-7.55,race,true
@@ -681,24 +681,24 @@ Jordan,Argentina,69,2026-07-05,group,1,9,Mousa Al-Taamari score or assist,1,11,2
 Jordan,Argentina,69,2026-07-05,group,1,10,Argentina 6+ SOT,0,68,60.7,59,-8.15,0,0.4624,0.3481,-11.43,totals,false
 Algeria,Austria,70,2026-07-05,group,1,1,Algeria more fouls than Austria,0,37,42.8,48,11.05,1,0.1369,0.2304,9.35,race,false
 Algeria,Austria,70,2026-07-05,group,1,2,Austria more SOT than Algeria in 2nd half,0,47,50.4,48,2.67,1,0.2209,0.2304,0.95,race,true
-Algeria,Austria,70,2026-07-05,group,1,3,Austria score first goal of 2nd half,1,32,37.0,38,-6.77,0,0.4624,0.3844,-7.8,uncategorized,true
+Algeria,Austria,70,2026-07-05,group,1,3,Austria score first goal of 2nd half,1,32,37.0,38,-6.77,0,0.4624,0.3844,-7.8,fav_team_total,true
 Algeria,Austria,70,2026-07-05,group,1,4,Austria more goals than Algeria in 2nd half,0,28,36.1,38,8.47,1,0.0784,0.1444,6.6,race,true
 Algeria,Austria,70,2026-07-05,group,1,5,Austria more cards than Algeria,1,43,43.6,43,1.11,1,0.3249,0.3249,0.0,discipline,false
-Algeria,Austria,70,2026-07-05,group,1,6,Algeria win the match,0,26,31.8,31,4.64,1,0.0676,0.0961,2.85,fav_team_total,false
+Algeria,Austria,70,2026-07-05,group,1,6,Algeria win the match,0,26,31.8,31,4.64,1,0.0676,0.0961,2.85,match_result,false
 Algeria,Austria,70,2026-07-05,group,1,7,9+ total corners,0,31,37.1,45,13.35,1,0.0961,0.2025,10.64,totals,false
 Algeria,Austria,70,2026-07-05,group,1,8,Austria 5+ SOT,0,36,40.3,40,5.65,1,0.1296,0.1600,3.04,totals,false
 Algeria,Austria,70,2026-07-05,group,1,9,Marcel Sabitzer 1+ SOT,1,50,48.9,44,8.67,1,0.2500,0.3136,6.36,fav_player,false
 Algeria,Austria,70,2026-07-05,group,1,10,Algeria 3+ SOT,1,62,56.9,58,5.94,1,0.1444,0.1764,3.2,totals,false
 South Africa,Canada,71,2026-06-28,R32,2,1,Either team offside before 1st hydration break,0,52,49.2,52,7.13,1,0.2704,0.2704,0.00,offsides,true
-South Africa,Canada,71,2026-06-28,R32,2,2,A substitute scores (reg),0,40,43.2,29,-10.1,0,0.1600,0.0841,-7.59,uncategorized,false
+South Africa,Canada,71,2026-06-28,R32,2,2,A substitute scores (reg),0,40,43.2,29,-10.1,0,0.1600,0.0841,-7.59,sub_scorer,false
 South Africa,Canada,71,2026-06-28,R32,2,3,Goal before 1st hydration break,0,32,37.9,41,18.33,1,0.1024,0.1681,6.57,totals,true
 South Africa,Canada,71,2026-06-28,R32,2,4,9+ total corners (reg),0,55,52.5,54,3.04,1,0.3025,0.2916,-1.09,totals,false
-South Africa,Canada,71,2026-06-28,R32,2,5,Regulation ends in a tie,0,28,34.0,30,6.33,1,0.0784,0.0900,1.16,uncategorized,false
-South Africa,Canada,71,2026-06-28,R32,2,6,Canada ahead at halftime,0,37,41.0,44,14.77,1,0.1369,0.1936,5.67,uncategorized,true
-South Africa,Canada,71,2026-06-28,R32,2,7,South Africa advances to R16,0,30,35.5,31,5.5,1,0.0900,0.0961,0.61,uncategorized,false
-South Africa,Canada,71,2026-06-28,R32,2,8,Penalty awarded (reg),0,27,33.2,29,6.15,1,0.0729,0.0841,1.12,uncategorized,false
+South Africa,Canada,71,2026-06-28,R32,2,5,Regulation ends in a tie,0,28,34.0,30,6.33,1,0.0784,0.0900,1.16,match_result,false
+South Africa,Canada,71,2026-06-28,R32,2,6,Canada ahead at halftime,0,37,41.0,44,14.77,1,0.1369,0.1936,5.67,ht_lead,true
+South Africa,Canada,71,2026-06-28,R32,2,7,South Africa advances to R16,0,30,35.5,31,5.5,1,0.0900,0.0961,0.61,match_result,false
+South Africa,Canada,71,2026-06-28,R32,2,8,Penalty awarded (reg),0,27,33.2,29,6.15,1,0.0729,0.0841,1.12,discipline,false
 South Africa,Canada,71,2026-06-28,R32,2,9,"2nd half more goals than 1st (reg, excl ET)",1,42,46.5,49,-11.63,0,0.3364,0.2601,-7.63,race,true
-South Africa,Canada,71,2026-06-28,R32,2,10,Any player scores 2+ (reg),0,21,28.6,25,9.6,1,0.0441,0.0625,1.84,uncategorized,false
+South Africa,Canada,71,2026-06-28,R32,2,10,Any player scores 2+ (reg),0,21,28.6,25,9.6,1,0.0441,0.0625,1.84,fav_player,false
 South Africa,Canada,71,2026-06-28,R32,2,11,Cyle Larin scores (reg),0,13,27.8,25,13.44,1,0.0169,0.0625,4.56,fav_player,false
 South Africa,Canada,71,2026-06-28,R32,2,12,4+ total cards (reg),0,51,49.1,50,2.53,1,0.2601,0.2500,-1.01,discipline,false
 South Africa,Canada,71,2026-06-28,R32,2,13,Iqraam Rayners 1+ SOT (reg),0,20,31.7,32,19.85,1,0.0400,0.1024,6.24,fav_player,false
@@ -706,22 +706,22 @@ South Africa,Canada,71,2026-06-28,R32,2,14,Card after 2nd hydration break (incl 
 South Africa,Canada,71,2026-06-28,R32,2,15,Both teams score (reg),0,47,47.4,47,6.63,1,0.2209,0.2209,0.00,totals,false
 Brazil,Japan,72,2026-06-29,R32,2,1,8+ total SOT (reg),1,58,54.4,61,1.71,1,0.1764,0.1521,-2.43,totals,false
 Brazil,Japan,72,2026-06-29,R32,2,2,Any player 2+ SOT (reg),1,76,65.8,70,13.66,1,0.0576,0.0900,3.24,totals,false
-Brazil,Japan,72,2026-06-29,R32,2,3,Japan advances to R16,0,30,34.0,32,8.0,1,0.0900,0.1024,1.24,uncategorized,false
+Brazil,Japan,72,2026-06-29,R32,2,3,Japan advances to R16,0,30,34.0,32,8.0,1,0.0900,0.1024,1.24,match_result,false
 Brazil,Japan,72,2026-06-29,R32,2,4,9+ total corners (reg),0,43,44.9,52,22.28,1,0.1849,0.2704,8.55,totals,false
 Brazil,Japan,72,2026-06-29,R32,2,5,Goal before 1st hydration break,0,33,38.7,44,21.46,1,0.1089,0.1936,8.47,totals,true
 Brazil,Japan,72,2026-06-29,R32,2,6,4+ total cards (reg),1,41,42.0,42,1.78,1,0.3481,0.3364,-1.17,discipline,false
-Brazil,Japan,72,2026-06-29,R32,2,7,A substitute scores (reg),1,37,40.0,32,19.31,1,0.3969,0.4624,6.55,uncategorized,false
+Brazil,Japan,72,2026-06-29,R32,2,7,A substitute scores (reg),1,37,40.0,32,19.31,1,0.3969,0.4624,6.55,sub_scorer,false
 Brazil,Japan,72,2026-06-29,R32,2,8,Matheus Cunha scores (reg),0,28,36.2,33,10.05,1,0.0784,0.1089,3.05,fav_player,false
-Brazil,Japan,72,2026-06-29,R32,2,9,Any player scores 2+ (reg),0,20,25.5,29,16.51,1,0.0400,0.0841,4.41,uncategorized,false
+Brazil,Japan,72,2026-06-29,R32,2,9,Any player scores 2+ (reg),0,20,25.5,29,16.51,1,0.0400,0.0841,4.41,fav_player,false
 Brazil,Japan,72,2026-06-29,R32,2,10,Either team offside before 1st hydration break,0,53,50.0,52,4.2,1,0.2809,0.2704,-1.05,offsides,true
 Brazil,Japan,72,2026-06-29,R32,2,11,3+ total goals (reg),1,44,45.5,51,-9.76,0,0.3136,0.2401,-7.35,totals,false
 Brazil,Japan,72,2026-06-29,R32,2,12,Brazil scores in both halves (reg),0,28,33.5,42,26.05,1,0.0784,0.1764,9.80,fav_team_total,true
 Brazil,Japan,72,2026-06-29,R32,2,13,Ayase Ueda 1+ SOT (reg),1,52,49.8,49,10.36,1,0.2304,0.2601,2.97,fav_player,false
-Brazil,Japan,72,2026-06-29,R32,2,14,Regulation ends in a tie,0,27,31.4,29,5.76,1,0.0729,0.0841,1.12,uncategorized,false
+Brazil,Japan,72,2026-06-29,R32,2,14,Regulation ends in a tie,0,27,31.4,29,5.76,1,0.0729,0.0841,1.12,match_result,false
 Brazil,Japan,72,2026-06-29,R32,2,15,Brazil 2+ goals (reg),1,47,49.4,54,-9.39,0,0.2809,0.2116,-6.93,fav_team_total,false
 Germany,Paraguay,73,2026-06-29,R32,2,1,Kai Havertz scores (reg),1,35,40.2,39,-4.4,0,0.4225,0.3721,-5.04,fav_player,false
 Germany,Paraguay,73,2026-06-29,R32,2,2,Goal before 1st hydration break,0,39,42.8,47,16.82,1,0.1521,0.2209,6.88,totals,true
-Germany,Paraguay,73,2026-06-29,R32,2,3,Germany win (reg),0,72,68.7,72,3.6,1,0.5184,0.5184,0.00,uncategorized,false
+Germany,Paraguay,73,2026-06-29,R32,2,3,Germany win (reg),0,72,68.7,72,3.6,1,0.5184,0.5184,0.00,match_result,false
 Germany,Paraguay,73,2026-06-29,R32,2,4,Jamal Musiala 2+ SOT (reg) [BENCHED],0,11,26.5,33,30.44,1,0.0121,0.1089,9.68,fav_player,false
 Germany,Paraguay,73,2026-06-29,R32,2,5,4+ total cards (reg),0,37,39.2,46,19.06,1,0.1369,0.2116,7.47,discipline,false
 Germany,Paraguay,73,2026-06-29,R32,2,6,Germany scores first goal,0,71,69.8,70,0.95,1,0.5041,0.4900,-1.41,fav_team_total,false
@@ -731,27 +731,27 @@ Germany,Paraguay,73,2026-06-29,R32,2,9,Both teams score (reg),1,48,48.3,44,11.21
 Germany,Paraguay,73,2026-06-29,R32,2,10,Germany scores in both halves (reg),0,47,49.8,49,8.39,1,0.2209,0.2401,1.92,fav_team_total,true
 Germany,Paraguay,73,2026-06-29,R32,2,11,Florian Wirtz score or assist (reg),1,46,46.4,46,4.32,1,0.2916,0.2916,0.00,fav_player,false
 Germany,Paraguay,73,2026-06-29,R32,2,12,Germany 7+ corners (reg),1,50,49.6,49,6.06,1,0.2500,0.2601,1.01,totals,false
-Germany,Paraguay,73,2026-06-29,R32,2,13,Germany ahead at halftime,0,53,53.2,56,9.36,1,0.2809,0.3136,3.27,uncategorized,true
+Germany,Paraguay,73,2026-06-29,R32,2,13,Germany ahead at halftime,0,53,53.2,56,9.36,1,0.2809,0.3136,3.27,ht_lead,true
 Germany,Paraguay,73,2026-06-29,R32,2,14,3+ total offsides (reg),1,56,51.8,53,10.5,1,0.1936,0.2209,2.73,offsides,false
 Germany,Paraguay,73,2026-06-29,R32,2,15,3+ total goals (reg),0,57,54.0,57,2.08,1,0.3249,0.3249,0.00,totals,false
 Netherlands,Morocco,74,2026-06-30,R32,2,1,Goal after 2nd hydration break (reg),1,54,52.1,50,11.26,1,0.2116,0.25,3.84,totals,false
 Netherlands,Morocco,74,2026-06-30,R32,2,2,Red card shown in match,0,13,22.7,19,6.84,1,0.0169,0.0361,1.92,discipline,false
-Netherlands,Morocco,74,2026-06-30,R32,2,3,Netherlands win (reg),0,39,41.6,47,16.83,1,0.1521,0.2209,6.88,uncategorized,false
+Netherlands,Morocco,74,2026-06-30,R32,2,3,Netherlands win (reg),0,39,41.6,47,16.83,1,0.1521,0.2209,6.88,match_result,false
 Netherlands,Morocco,74,2026-06-30,R32,2,4,Ismael Saibari score or assist (reg),0,32,38.5,35,7.68,1,0.1024,0.1225,2.01,fav_player,false
 Netherlands,Morocco,74,2026-06-30,R32,2,5,Both teams score (reg),1,50,49.6,55,-4.97,0,0.25,0.2025,-4.75,totals,false
 Netherlands,Morocco,74,2026-06-30,R32,2,6,1st half 2+ goals,0,28,35.9,34,11.56,1,0.0784,0.1156,3.72,totals,true
-Netherlands,Morocco,74,2026-06-30,R32,2,7,Penalty awarded (reg),0,29,33.0,27,1.28,1,0.0841,0.0729,-1.12,uncategorized,false
-Netherlands,Morocco,74,2026-06-30,R32,2,8,Morocco ahead at halftime,0,23,28.0,28,8.95,1,0.0529,0.0784,2.55,uncategorized,true
+Netherlands,Morocco,74,2026-06-30,R32,2,7,Penalty awarded (reg),0,29,33.0,27,1.28,1,0.0841,0.0729,-1.12,discipline,false
+Netherlands,Morocco,74,2026-06-30,R32,2,8,Morocco ahead at halftime,0,23,28.0,28,8.95,1,0.0529,0.0784,2.55,ht_lead,true
 Netherlands,Morocco,74,2026-06-30,R32,2,9,Card after 2nd hydration break (incl ET),0,64,58.0,61,-0.92,0,0.4096,0.3721,-3.75,discipline,false
 Netherlands,Morocco,74,2026-06-30,R32,2,10,Goal in 1st half stoppage time,0,13,26.4,20,12.03,1,0.0169,0.04,2.31,totals,true
 Netherlands,Morocco,74,2026-06-30,R32,2,11,"2nd half more goals than 1st (reg, excl ET)",1,45,48.9,48,-2.76,0,0.3025,0.2704,-3.21,race,true
 Netherlands,Morocco,74,2026-06-30,R32,2,12,Netherlands score first goal,1,48,50.4,52,-4.81,0,0.2704,0.2304,-4.0,fav_team_total,false
 Netherlands,Morocco,74,2026-06-30,R32,2,13,Brian Brobbey 2+ SOT (reg),0,25,34.6,36,21.19,1,0.0625,0.1296,6.71,fav_player,false
-Netherlands,Morocco,74,2026-06-30,R32,2,14,Netherlands more corners than Morocco (reg),0,51,50.2,55,10.57,1,0.2601,0.3025,4.24,totals,false
+Netherlands,Morocco,74,2026-06-30,R32,2,14,Netherlands more corners than Morocco (reg),0,51,50.2,55,10.57,1,0.2601,0.3025,4.24,race,false
 Netherlands,Morocco,74,2026-06-30,R32,2,15,Both teams 1+ card (reg),0,62,56.6,65,11.5,1,0.3844,0.4225,3.81,discipline,false
-Cote d'Ivoire,Norway,75,2026-06-30,R32,2,1,Norway win (reg),1,45,46.8,52,-8.87,0,0.3025,0.2304,-7.21,uncategorized,false
+Cote d'Ivoire,Norway,75,2026-06-30,R32,2,1,Norway win (reg),1,45,46.8,52,-8.87,0,0.3025,0.2304,-7.21,match_result,false
 Cote d'Ivoire,Norway,75,2026-06-30,R32,2,2,Erling Haaland score (reg),1,48,47.5,54,-5.82,0,0.2704,0.2116,-5.88,fav_player,false
-Cote d'Ivoire,Norway,75,2026-06-30,R32,2,3,Ivory Coast more corners than Norway (reg),1,30,36.8,37,-16.32,0,0.49,0.3969,-9.31,totals,false
+Cote d'Ivoire,Norway,75,2026-06-30,R32,2,3,Ivory Coast more corners than Norway (reg),1,30,36.8,37,-16.32,0,0.49,0.3969,-9.31,race,false
 Cote d'Ivoire,Norway,75,2026-06-30,R32,2,4,Martin Odegaard score or assist (reg),1,28,36.2,39,-24.77,0,0.5184,0.3721,-14.63,fav_player,false
 Cote d'Ivoire,Norway,75,2026-06-30,R32,2,5,Both teams score (reg),1,55,53.4,57,-0.21,0,0.2025,0.1849,-1.76,totals,false
 Cote d'Ivoire,Norway,75,2026-06-30,R32,2,6,Amad Diallo 1+ SOT (reg) [BENCHED],1,23,31.5,43,-45.7,0,0.5929,0.3249,-26.8,fav_player,false
@@ -763,12 +763,12 @@ Cote d'Ivoire,Norway,75,2026-06-30,R32,2,11,Norway score first goal,1,53,54.6,56
 Cote d'Ivoire,Norway,75,2026-06-30,R32,2,12,4+ total offsides (reg),1,37,39.6,41,-5.36,0,0.3969,0.3481,-4.88,offsides,false
 Cote d'Ivoire,Norway,75,2026-06-30,R32,2,13,4+ total cards (reg),0,28,32.7,43,26.51,1,0.0784,0.1849,10.65,discipline,false
 Cote d'Ivoire,Norway,75,2026-06-30,R32,2,14,Goal after 2nd hydration break (reg),1,56,54.7,52,10.81,1,0.1936,0.2304,3.68,totals,false
-Cote d'Ivoire,Norway,75,2026-06-30,R32,2,15,Penalty awarded (reg),0,31,34.6,28,-0.77,0,0.0961,0.0784,-1.77,uncategorized,false
+Cote d'Ivoire,Norway,75,2026-06-30,R32,2,15,Penalty awarded (reg),0,31,34.6,28,-0.77,0,0.0961,0.0784,-1.77,discipline,false
 France,Sweden,76,2026-06-30,R32,2,1,3+ total goals (reg),1,64,58.6,65,1.35,1,0.1296,0.1225,-0.71,totals,false
 France,Sweden,76,2026-06-30,R32,2,2,France 6+ corners (reg),1,59,55.4,58,5.08,1,0.1681,0.1764,0.83,totals,false
-France,Sweden,76,2026-06-30,R32,2,3,France win (reg),1,75,73.6,75,2.77,1,0.0625,0.0625,0.0,uncategorized,false
+France,Sweden,76,2026-06-30,R32,2,3,France win (reg),1,75,73.6,75,2.77,1,0.0625,0.0625,0.0,match_result,false
 France,Sweden,76,2026-06-30,R32,2,4,Ousmane Dembele score (reg),0,43,44.8,44,7.98,1,0.1849,0.1936,0.87,fav_player,false
-France,Sweden,76,2026-06-30,R32,2,5,France ahead at halftime,1,57,57.8,59,1.0,1,0.1849,0.1681,-1.68,uncategorized,true
+France,Sweden,76,2026-06-30,R32,2,5,France ahead at halftime,1,57,57.8,59,1.0,1,0.1849,0.1681,-1.68,ht_lead,true
 France,Sweden,76,2026-06-30,R32,2,6,Kylian Mbappe 2+ SOT (reg),1,63,56.0,63,8.21,1,0.1369,0.1369,0.0,fav_player,false
 France,Sweden,76,2026-06-30,R32,2,7,Red card shown in match,0,12,21.7,17,6.52,1,0.0144,0.0289,1.45,discipline,false
 France,Sweden,76,2026-06-30,R32,2,8,Viktor Gyokeres score (reg),0,23,33.6,27,6.74,1,0.0529,0.0729,2.0,fav_player,false
@@ -780,14 +780,14 @@ France,Sweden,76,2026-06-30,R32,2,13,5+ total cards (reg),0,11,21.0,29,18.87,1,0
 France,Sweden,76,2026-06-30,R32,2,14,Goal in 1st half stoppage time,0,23,32.6,21,5.16,1,0.0529,0.0441,-0.88,totals,true
 France,Sweden,76,2026-06-30,R32,2,15,4+ total offsides (reg),1,55,51.2,48,18.87,1,0.2025,0.2704,6.79,offsides,false
 Mexico,Ecuador,77,2026-06-30,R32,2,1,Raul Jimenez 1+ goal (reg),1,26,35.2,31,-9.41,0,0.5476,0.4761,-7.15,fav_player,false
-Mexico,Ecuador,77,2026-06-30,R32,2,2,2nd half more goals than 1st (reg),0,42,44.5,49,15.73,1,0.1764,0.2401,6.37,totals,false
+Mexico,Ecuador,77,2026-06-30,R32,2,2,2nd half more goals than 1st (reg),0,42,44.5,49,15.73,1,0.1764,0.2401,6.37,race,false
 Mexico,Ecuador,77,2026-06-30,R32,2,3,Mexico more SOT than Ecuador (reg),1,57,57.7,55,6.93,1,0.1849,0.2025,1.76,race,false
 Mexico,Ecuador,77,2026-06-30,R32,2,4,2 or fewer total goals (reg),1,70,62.6,61,16.48,1,0.0900,0.1521,6.21,totals,false
 Mexico,Ecuador,77,2026-06-30,R32,2,5,Gonzalo Plata score or assist (reg),0,22,32.9,28,9.92,1,0.0484,0.0784,3.00,fav_player,false
 Mexico,Ecuador,77,2026-06-30,R32,2,6,Mexico 6+ SOT (reg),0,25,33.4,35,18.32,1,0.0625,0.1225,6.00,totals,false
 Mexico,Ecuador,77,2026-06-30,R32,2,7,Goal from outside the box (reg),0,20,30.2,27,11.60,1,0.0400,0.0729,3.29,totals,false
 Mexico,Ecuador,77,2026-06-30,R32,2,8,Own goal scored (reg),0,9,19.9,14,6.72,1,0.0081,0.0196,1.15,discipline,false
-Mexico,Ecuador,77,2026-06-30,R32,2,9,Mexico win (reg),1,42,45.4,48,-9.71,0,0.3364,0.2704,-6.60,fav_team_total,false
+Mexico,Ecuador,77,2026-06-30,R32,2,9,Mexico win (reg),1,42,45.4,48,-9.71,0,0.3364,0.2704,-6.60,match_result,false
 Mexico,Ecuador,77,2026-06-30,R32,2,10,9+ total corners (reg),1,38,41.9,47,-16.60,0,0.3844,0.2809,-10.35,totals,false
 Mexico,Ecuador,77,2026-06-30,R32,2,11,4+ total cards (reg),1,51,49.2,51,4.45,1,0.2401,0.2401,0.00,discipline,false
 Mexico,Ecuador,77,2026-06-30,R32,2,12,3+ offsides (reg),0,57,52.4,55,0.24,1,0.3249,0.3025,-2.24,offsides,false
@@ -804,23 +804,23 @@ England,DR Congo,78,2026-07-01,R32,2,7,England 7+ SOT (reg),1,42,44.5,47,-6.64,0
 England,DR Congo,78,2026-07-01,R32,2,8,England 8+ corners (reg),0,41,43.9,49,18.76,1,0.1681,0.2401,7.20,totals,false
 England,DR Congo,78,2026-07-01,R32,2,9,4+ total cards (reg),0,27,32.1,41,22.99,1,0.0729,0.1681,9.52,discipline,false
 England,DR Congo,78,2026-07-01,R32,2,10,20+ total shots (reg),1,85,71.8,64,27.51,1,0.0225,0.1296,10.71,totals,false
-England,DR Congo,78,2026-07-01,R32,2,11,2nd half more goals than 1st (reg),1,45,46.4,50,-6.04,0,0.3025,0.2500,-5.25,totals,false
+England,DR Congo,78,2026-07-01,R32,2,11,2nd half more goals than 1st (reg),1,45,46.4,50,-6.04,0,0.3025,0.2500,-5.25,race,false
 England,DR Congo,78,2026-07-01,R32,2,12,3+ offsides (reg),1,70,60.7,56,25.63,1,0.0900,0.1936,10.36,offsides,false
 England,DR Congo,78,2026-07-01,R32,2,13,Goal before 1st hydration break,1,33,38.8,40,-11.81,0,0.4489,0.3600,-8.89,totals,false
 England,DR Congo,78,2026-07-01,R32,2,14,Penalty or red card (reg),0,42,42.8,33,-10.30,0,0.1764,0.1089,-6.75,discipline,false
-England,DR Congo,78,2026-07-01,R32,2,15,England win by 2+ (reg),0,50,52.1,51,7.00,1,0.2500,0.2601,1.01,fav_team_total,false
-Belgium,Senegal,79,2026-07-01,R32,2,1,Belgium win (reg),0,45,47.9,49,10.72,1,0.2025,0.2401,3.76,fav_team_total,false
+England,DR Congo,78,2026-07-01,R32,2,15,England win by 2+ (reg),0,50,52.1,51,7.00,1,0.2500,0.2601,1.01,match_result,false
+Belgium,Senegal,79,2026-07-01,R32,2,1,Belgium win (reg),0,45,47.9,49,10.72,1,0.2025,0.2401,3.76,match_result,false
 Belgium,Senegal,79,2026-07-01,R32,2,2,Leandro Trossard 1+ goal (reg),0,23,33.5,30,12.11,1,0.0529,0.0900,3.71,fav_player,false
 Belgium,Senegal,79,2026-07-01,R32,2,3,Kevin De Bruyne goal or assist (reg),0,35,40.3,42,14.52,1,0.1225,0.1764,5.39,fav_player,false
 Belgium,Senegal,79,2026-07-01,R32,2,4,Both teams score (reg),1,56,53.4,58,-0.52,0,0.1936,0.1764,-1.72,totals,false
 Belgium,Senegal,79,2026-07-01,R32,2,5,Sadio Mane 2+ SOT (reg),0,14,28.3,32,23.84,1,0.0196,0.1024,8.28,fav_player,false
-Belgium,Senegal,79,2026-07-01,R32,2,6,A substitute scores (reg),1,37,41.5,32,17.98,1,0.3969,0.4624,6.55,totals,false
+Belgium,Senegal,79,2026-07-01,R32,2,6,A substitute scores (reg),1,37,41.5,32,17.98,1,0.3969,0.4624,6.55,sub_scorer,false
 Belgium,Senegal,79,2026-07-01,R32,2,7,3+ total goals (reg),1,53,51.5,52,4.73,1,0.2209,0.2304,0.95,totals,false
 Belgium,Senegal,79,2026-07-01,R32,2,8,Belgium 7+ SOT (reg),0,24,33.3,37,21.49,1,0.0576,0.1369,7.93,totals,false
 Belgium,Senegal,79,2026-07-01,R32,2,9,4+ total cards (reg),0,35,37.9,44,17.62,1,0.1225,0.1936,7.11,discipline,false
 Belgium,Senegal,79,2026-07-01,R32,2,10,Ismaila Sarr 1+ SOT (reg),1,50,48.9,56,-6.33,0,0.2500,0.1936,-5.64,fav_player,false
 Belgium,Senegal,79,2026-07-01,R32,2,11,Belgium 6+ corners (reg),0,47,47.7,48,6.11,1,0.2209,0.2304,0.95,totals,false
-Belgium,Senegal,79,2026-07-01,R32,2,12,Belgium ahead at halftime,0,34,38.6,38,9.54,1,0.1156,0.1444,2.88,fav_team_total,false
+Belgium,Senegal,79,2026-07-01,R32,2,12,Belgium ahead at halftime,0,34,38.6,38,9.54,1,0.1156,0.1444,2.88,ht_lead,false
 Belgium,Senegal,79,2026-07-01,R32,2,13,Goal in 1st half stoppage time,0,16,28.4,19,8.26,1,0.0256,0.0361,1.05,totals,true
 Belgium,Senegal,79,2026-07-01,R32,2,14,24+ total shots (reg),1,62,57.1,53,22.13,1,0.1444,0.2209,7.65,totals,false
 Belgium,Senegal,79,2026-07-01,R32,2,15,Penalty or red card (reg),0,37,39.3,32,-4.74,0,0.1369,0.1024,-3.45,discipline,false
@@ -830,8 +830,8 @@ USA,Bosnia,80,2026-07-01,R32,2,3,USA 6+ corners (reg),0,60,55.9,57,-3.71,0,0.36,
 USA,Bosnia,80,2026-07-01,R32,2,4,Substitution before halftime,0,15,20.2,22,10.57,1,0.0225,0.0484,2.59,uncategorized,false
 USA,Bosnia,80,2026-07-01,R32,2,5,5+ total cards (reg),0,17,25.1,34,21.18,1,0.0289,0.1156,8.67,discipline,false
 USA,Bosnia,80,2026-07-01,R32,2,6,Penalty or red card (reg),1,31,35.0,32,-0.14,0,0.4761,0.4624,-1.37,discipline,false
-USA,Bosnia,80,2026-07-01,R32,2,7,USA win by 2+ (reg),1,49,51.2,46,11.08,1,0.2601,0.2916,3.15,fav_team_total,false
-USA,Bosnia,80,2026-07-01,R32,2,8,Bosnia more cards than USA (reg),0,58,58.4,53,-7.95,0,0.3364,0.2809,-5.55,race,false
+USA,Bosnia,80,2026-07-01,R32,2,7,USA win by 2+ (reg),1,49,51.2,46,11.08,1,0.2601,0.2916,3.15,match_result,false
+USA,Bosnia,80,2026-07-01,R32,2,8,Bosnia more cards than USA (reg),0,58,58.4,53,-7.95,0,0.3364,0.2809,-5.55,discipline,false
 USA,Bosnia,80,2026-07-01,R32,2,9,Folarin Balogun 1+ goal (reg),1,41,43.8,41,4.7,1,0.3481,0.3481,0.0,fav_player,false
 USA,Bosnia,80,2026-07-01,R32,2,10,2 or fewer total goals (reg),1,42,44.5,42,2.0,1,0.3364,0.3364,0.0,totals,false
 USA,Bosnia,80,2026-07-01,R32,2,11,4+ offsides (reg),0,45,44.9,44,1.71,1,0.2025,0.1936,-0.89,offsides,false
@@ -841,14 +841,14 @@ USA,Bosnia,80,2026-07-01,R32,2,14,22+ total shots (reg),0,70,62.2,57,-27.23,0,0.
 USA,Bosnia,80,2026-07-01,R32,2,15,USA 6+ SOT (reg),0,50,49.5,49,3.7,1,0.25,0.2401,-0.99,totals,false
 Spain,Austria,81,2026-07-02,R32,2,1,Lamine Yamal 2+ SOT (reg),1,45,46.1,51,-4.89,0,0.3025,0.2401,-6.24,fav_player,false
 Spain,Austria,81,2026-07-02,R32,2,2,Mikel Oyarzabal scores (reg),1,45,46.1,42,13.21,1,0.3025,0.3364,3.39,fav_player,false
-Spain,Austria,81,2026-07-02,R32,2,3,Spain win (reg),1,72,70.6,72,2.9,1,0.0784,0.0784,0.00,fav_team_total,false
+Spain,Austria,81,2026-07-02,R32,2,3,Spain win (reg),1,72,70.6,72,2.9,1,0.0784,0.0784,0.00,match_result,false
 Spain,Austria,81,2026-07-02,R32,2,4,Marcel Sabitzer score or assist (reg),0,19,31.2,26,10.14,1,0.0361,0.0676,3.15,fav_player,false
 Spain,Austria,81,2026-07-02,R32,2,5,3+ total goals (reg),1,55,52.7,54,4.84,1,0.2025,0.2116,0.91,totals,false
 Spain,Austria,81,2026-07-02,R32,2,6,Spain score first goal,1,72,70.6,70,4.72,1,0.0784,0.0900,1.16,fav_team_total,false
 Spain,Austria,81,2026-07-02,R32,2,7,Spain 8+ SOT (reg),1,30,36.8,40,-18.48,0,0.4900,0.3600,-13.00,totals,false
 Spain,Austria,81,2026-07-02,R32,2,8,Austria 4+ SOT (reg),0,21,31.1,35,20.97,1,0.0441,0.1225,7.84,totals,false
 Spain,Austria,81,2026-07-02,R32,2,9,Spain 7+ corners (reg),1,44,45.7,50,-8.54,0,0.3136,0.2500,-6.36,totals,false
-Spain,Austria,81,2026-07-02,R32,2,10,Spain ahead at halftime,1,56,57.2,55,5.71,1,0.1936,0.2025,0.89,fav_team_total,true
+Spain,Austria,81,2026-07-02,R32,2,10,Spain ahead at halftime,1,56,57.2,55,5.71,1,0.1936,0.2025,0.89,ht_lead,true
 Spain,Austria,81,2026-07-02,R32,2,11,Both teams score (reg),0,44,45.7,45,5.48,1,0.1936,0.2025,0.89,totals,false
 Spain,Austria,81,2026-07-02,R32,2,12,Spain score in both halves (reg),1,46,48.8,48,0.96,1,0.2916,0.2704,-2.12,fav_team_total,true
 Spain,Austria,81,2026-07-02,R32,2,13,4+ total cards (reg),0,25,31.2,39,22.1,1,0.0625,0.1521,8.96,discipline,false
@@ -862,7 +862,7 @@ Portugal,Croatia,82,2026-07-02,R32,2,5,Croatia 4+ SOT (reg),1,46,47.0,46,4.17,1,
 Portugal,Croatia,82,2026-07-02,R32,2,6,4+ total cards (reg),0,27,32.6,40,22.63,1,0.0729,0.16,8.71,discipline,false
 Portugal,Croatia,82,2026-07-02,R32,2,7,Both teams 1+ card (reg),1,52,50.0,61,-9.99,0,0.2304,0.1521,-7.83,discipline,false
 Portugal,Croatia,82,2026-07-02,R32,2,8,Portugal 6+ corners (reg),1,52,50.8,50,7.91,1,0.2304,0.25,1.96,totals,false
-Portugal,Croatia,82,2026-07-02,R32,2,9,Tied at halftime,1,43,45.2,44,0.78,1,0.3249,0.3136,-1.13,totals,true
+Portugal,Croatia,82,2026-07-02,R32,2,9,Tied at halftime,1,43,45.2,44,0.78,1,0.3249,0.3136,-1.13,ht_lead,true
 Portugal,Croatia,82,2026-07-02,R32,2,10,Portugal 6+ SOT (reg),0,43,45.1,45,7.99,1,0.1849,0.2025,1.76,totals,false
 Portugal,Croatia,82,2026-07-02,R32,2,11,Bernardo Silva 1+ SOT (reg),0,23,33.4,39,29.71,1,0.0529,0.1521,9.92,fav_player,false
 Portugal,Croatia,82,2026-07-02,R32,2,12,Header goal scored (reg),1,35,40.0,36,1.53,1,0.4225,0.4096,-1.29,totals,false
@@ -879,14 +879,14 @@ Switzerland,Algeria,83,2026-07-02,R32,2,7,Algeria more corners than Switzerland 
 Switzerland,Algeria,83,2026-07-02,R32,2,8,5+ total cards (reg),0,17,25.7,31,17.81,1,0.0289,0.0961,6.72,discipline,false
 Switzerland,Algeria,83,2026-07-02,R32,2,9,Any player 2+ goals (reg),0,20,30.5,24,8.18,1,0.04,0.0576,1.76,totals,false
 Switzerland,Algeria,83,2026-07-02,R32,2,10,Switzerland 5+ SOT (reg),1,53,51.3,53,2.65,1,0.2209,0.2209,0.0,totals,false
-Switzerland,Algeria,83,2026-07-02,R32,2,11,Tied at halftime,0,47,47.6,44,-3.66,0,0.2209,0.1936,-2.73,totals,true
+Switzerland,Algeria,83,2026-07-02,R32,2,11,Tied at halftime,0,47,47.6,44,-3.66,0,0.2209,0.1936,-2.73,ht_lead,true
 Switzerland,Algeria,83,2026-07-02,R32,2,12,Penalty or red card (reg),0,27,32.7,32,8.63,1,0.0729,0.1024,2.95,discipline,false
 Switzerland,Algeria,83,2026-07-02,R32,2,13,Switzerland score first goal,1,54,55.4,57,-2.61,0,0.2116,0.1849,-2.67,fav_team_total,false
 Switzerland,Algeria,83,2026-07-02,R32,2,14,Goal after 2nd hydration break (reg),0,54,52.1,51,-2.31,0,0.2916,0.2601,-3.15,totals,true
 Switzerland,Algeria,83,2026-07-02,R32,2,15,Switzerland advance to R16,1,65,64.7,64,3.73,1,0.1225,0.1296,0.71,fav_team_total,false
 Australia,Egypt,84,2026-07-03,R32,2,1,Mahmoud Trezeguet scores (reg),0,12,27.2,23,13.6,1,0.0144,0.0529,3.85,fav_player,false
-Australia,Egypt,84,2026-07-03,R32,2,2,Egypt win (reg),0,39,42.7,44,11.33,1,0.1521,0.1936,4.15,fav_team_total,false
-Australia,Egypt,84,2026-07-03,R32,2,3,Tied at halftime,0,51,50.2,49,-1.66,0,0.2601,0.2401,-2.0,totals,true
+Australia,Egypt,84,2026-07-03,R32,2,2,Egypt win (reg),0,39,42.7,44,11.33,1,0.1521,0.1936,4.15,match_result,false
+Australia,Egypt,84,2026-07-03,R32,2,3,Tied at halftime,0,51,50.2,49,-1.66,0,0.2601,0.2401,-2.0,ht_lead,true
 Australia,Egypt,84,2026-07-03,R32,2,4,2 or fewer total goals (reg),1,62,57.0,60,7.36,1,0.1444,0.16,1.56,totals,false
 Australia,Egypt,84,2026-07-03,R32,2,5,Nestory Irankunda 2+ SOT (reg),0,17,30.0,29,17.94,1,0.0289,0.0841,5.52,fav_player,false
 Australia,Egypt,84,2026-07-03,R32,2,6,Both teams 1+ card (reg),0,63,57.7,64,6.03,1,0.3969,0.4096,1.27,discipline,false
@@ -895,7 +895,126 @@ Australia,Egypt,84,2026-07-03,R32,2,8,Penalty or red card (reg),0,27,32.8,32,8.4
 Australia,Egypt,84,2026-07-03,R32,2,9,Egypt 5+ SOT (reg),0,36,40.5,42,13.15,1,0.1296,0.1764,4.68,totals,false
 Australia,Egypt,84,2026-07-03,R32,2,10,9+ total corners (reg),0,46,46.9,51,12.62,1,0.2116,0.2601,4.85,totals,false
 Australia,Egypt,84,2026-07-03,R32,2,11,Egypt score first goal,1,46,48.7,50,-5.96,0,0.2916,0.25,-4.16,fav_team_total,false
-Australia,Egypt,84,2026-07-03,R32,2,12,2H more goals than 1H (reg),0,44,45.6,48,9.38,1,0.1936,0.2304,3.68,totals,false
+Australia,Egypt,84,2026-07-03,R32,2,12,2H more goals than 1H (reg),0,44,45.6,48,9.38,1,0.1936,0.2304,3.68,race,false
 Australia,Egypt,84,2026-07-03,R32,2,13,3+ offside calls (reg),1,60,53.9,53,17.39,1,0.16,0.2209,6.09,offsides,false
 Australia,Egypt,84,2026-07-03,R32,2,14,Substitution before halftime,0,15,20.6,22,9.95,1,0.0225,0.0484,2.59,uncategorized,true
 Australia,Egypt,84,2026-07-03,R32,2,15,20+ total shots (reg),1,73,64.0,59,25.46,1,0.0729,0.1681,9.52,totals,false
+Argentina,Cabo-Verde,85,2026-07-03,R32,2,1,Argentina win (reg),0,83,79.9,83,4.55,1,0.6889,0.6889,0.0,match_result,false
+Argentina,Cabo-Verde,85,2026-07-03,R32,2,2,Lionel Messi 3+ SOT (reg),1,46,47.2,51,-0.37,0,0.2916,0.2401,-5.15,fav_player,false
+Argentina,Cabo-Verde,85,2026-07-03,R32,2,3,goal before 1st hydration break,0,45,47.9,48,10.52,1,0.2025,0.2304,2.79,totals,false
+Argentina,Cabo-Verde,85,2026-07-03,R32,2,4,Lautaro Martinez scores (reg),0,41,43.8,44,11.33,1,0.1681,0.1936,2.55,fav_player,false
+Argentina,Cabo-Verde,85,2026-07-03,R32,2,5,Argentina clean sheet (reg),0,67,65.6,64,-2.83,0,0.4489,0.4096,-3.93,fav_team_total,false
+Argentina,Cabo-Verde,85,2026-07-03,R32,2,6,Cape Verde 2+ SOT (reg),1,52,53.9,49,11.6,1,0.2304,0.2601,2.97,race,false
+Argentina,Cabo-Verde,85,2026-07-03,R32,2,7,Argentina 3+ goals (reg),0,50,52.0,51,7.06,1,0.25,0.2601,1.01,fav_team_total,false
+Argentina,Cabo-Verde,85,2026-07-03,R32,2,8,Argentina scores both halves (reg),0,54,55.4,58,13.99,1,0.2916,0.3364,4.48,fav_team_total,false
+Argentina,Cabo-Verde,85,2026-07-03,R32,2,9,Argentina 8+ SOT (reg),1,41,43.6,47,-4.56,0,0.3481,0.2809,-6.72,totals,false
+Argentina,Cabo-Verde,85,2026-07-03,R32,2,10,Julian Alvarez goal or assist (reg),0,20,30.0,39,30.03,1,0.04,0.1521,11.21,fav_player,false
+Argentina,Cabo-Verde,85,2026-07-03,R32,2,11,3+ total cards (reg),0,46,46.8,51,14.41,1,0.2116,0.2601,4.85,discipline,false
+Argentina,Cabo-Verde,85,2026-07-03,R32,2,12,Argentina scores first goal,1,79,77.4,80,2.11,1,0.0441,0.04,-0.41,fav_team_total,false
+Argentina,Cabo-Verde,85,2026-07-03,R32,2,13,Argentina 8+ corners (reg),0,35,39.4,45,23.36,1,0.1225,0.2025,8.0,totals,false
+Argentina,Cabo-Verde,85,2026-07-03,R32,2,14,Argentina ahead at halftime,1,63,63.1,65,0.34,1,0.1369,0.1225,-1.44,ht_lead,true
+Argentina,Cabo-Verde,85,2026-07-03,R32,2,15,22+ total shots (reg),0,72,64.0,59,-27.69,0,0.5184,0.3481,-17.03,totals,false
+Colombia,Ghana,86,2026-07-03,R32,2,1,Luis Diaz scores (reg),0,33,40.4,39,14.41,1,0.1089,0.1521,4.32,fav_player,false
+Colombia,Ghana,86,2026-07-03,R32,2,2,James Rodriguez goal or assist (reg),0,38,42.7,40,6.4,1,0.1444,0.16,1.56,fav_player,false
+Colombia,Ghana,86,2026-07-03,R32,2,3,Antoine Semenyo 2+ SOT (reg),0,12,27.2,26,17.5,1,0.0144,0.0676,5.32,fav_player,false
+Colombia,Ghana,86,2026-07-03,R32,2,4,both teams score (reg),0,42,44.4,43,5.7,1,0.1764,0.1849,0.85,totals,false
+Colombia,Ghana,86,2026-07-03,R32,2,5,Jordan Ayew scores (reg),0,12,27.2,22,11.09,1,0.0144,0.0484,3.4,fav_player,false
+Colombia,Ghana,86,2026-07-03,R32,2,6,Colombia 7+ SOT (reg),1,32,36.9,40,-14.81,0,0.4624,0.36,-10.24,totals,false
+Colombia,Ghana,86,2026-07-03,R32,2,7,Colombia scores first goal,1,69,68.2,65,7.58,1,0.0961,0.1225,2.64,fav_team_total,false
+Colombia,Ghana,86,2026-07-03,R32,2,8,4+ total cards (reg),1,28,33.5,41,-28.84,0,0.5184,0.3481,-17.03,discipline,false
+Colombia,Ghana,86,2026-07-03,R32,2,9,Colombia ahead at halftime,1,49,51.4,48,4.98,1,0.2601,0.2704,1.03,ht_lead,true
+Colombia,Ghana,86,2026-07-03,R32,2,10,22+ total shots (reg),1,70,63.3,57,24.06,1,0.09,0.1849,9.49,totals,false
+Colombia,Ghana,86,2026-07-03,R32,2,11,Colombia 6+ corners (reg),0,52,53.8,52,2.23,1,0.2704,0.2704,0.0,totals,false
+Colombia,Ghana,86,2026-07-03,R32,2,12,3+ total offsides (reg),0,74,64.1,59,-33.96,0,0.5476,0.3481,-19.95,offsides,false
+Colombia,Ghana,86,2026-07-03,R32,2,13,3+ total goals (reg),0,47,47.5,46,0.47,1,0.2209,0.2116,-0.93,totals,false
+Colombia,Ghana,86,2026-07-03,R32,2,14,goal before 1st hydration break,1,36,41.9,40,-5.28,0,0.4096,0.36,-4.96,totals,false
+Colombia,Ghana,86,2026-07-03,R32,2,15,Colombia advance to R16,1,81,80.0,75,8.75,1,0.0361,0.0625,2.64,fav_team_total,false
+Canada,Morocco,87,2026-07-04,R16,2,1,Jonathan David scores (reg),0,20,29.9,28,12.37,1,0.04,0.0784,3.84,fav_player,false
+Canada,Morocco,87,2026-07-04,R16,2,2,Achraf Hakimi goal or assist (reg),1,25,34.0,36,-24.47,0,0.5625,0.4096,-15.29,fav_player,false
+Canada,Morocco,87,2026-07-04,R16,2,3,Alphonso Davies (benched) 1+ SOT (reg),0,25,34.0,34,21.44,1,0.0625,0.1156,5.31,fav_player,false
+Canada,Morocco,87,2026-07-04,R16,2,4,match decided by penalty shootout,0,14,25.0,22,10.26,1,0.0196,0.0484,2.88,uncategorized,false
+Canada,Morocco,87,2026-07-04,R16,2,5,Brahim Diaz 1+ SOT (reg),0,51,50.1,55,13.83,1,0.2601,0.3025,4.24,fav_player,false
+Canada,Morocco,87,2026-07-04,R16,2,6,exactly 1 goal scored (reg),0,23,31.8,27,8.69,1,0.0529,0.0729,2.0,totals,false
+Canada,Morocco,87,2026-07-04,R16,2,7,match tied at halftime,1,45,48.7,43,6.98,1,0.3025,0.3249,2.24,ht_lead,true
+Canada,Morocco,87,2026-07-04,R16,2,8,4+ total cards (reg),1,37,39.2,42,-8.72,0,0.3969,0.3364,-6.05,discipline,false
+Canada,Morocco,87,2026-07-04,R16,2,9,Ismael Saibari scores (reg),0,29,36.3,36,14.1,1,0.0841,0.1296,4.55,fav_player,false
+Canada,Morocco,87,2026-07-04,R16,2,10,Canada 4+ SOT (reg),0,41,43.7,46,13.44,1,0.1681,0.2116,4.35,totals,false
+Canada,Morocco,87,2026-07-04,R16,2,11,Morocco more corners than Canada (reg),0,55,55.3,56,6.86,1,0.3025,0.3136,1.11,race,false
+Canada,Morocco,87,2026-07-04,R16,2,12,penalty awarded OR red card (reg),0,27,33.7,32,9.26,1,0.0729,0.1024,2.95,discipline,false
+Canada,Morocco,87,2026-07-04,R16,2,13,goal before 1st hydration break,0,32,38.9,37,11.44,1,0.1024,0.1369,3.45,totals,false
+Canada,Morocco,87,2026-07-04,R16,2,14,both teams score (reg),0,46,46.9,48,8.21,1,0.2116,0.2304,1.88,totals,false
+Canada,Morocco,87,2026-07-04,R16,2,15,Morocco advance to quarterfinals,1,71,69.8,70,6.16,1,0.0841,0.09,0.59,fav_team_total,false
+Paraguay,France,88,2026-07-04,R16,2,1,Kylian Mbappe scores (reg),1,56,53.1,64,-6.83,0,0.1936,0.1296,-6.4,fav_player,false
+Paraguay,France,88,2026-07-04,R16,2,2,Ousmane Dembele 2+ SOT (reg),0,38,41.5,48,25.19,1,0.1444,0.2304,8.6,fav_player,false
+Paraguay,France,88,2026-07-04,R16,2,3,Julio Enciso 1+ SOT (reg),0,42,42.7,44,9.0,1,0.1764,0.1936,1.72,fav_player,false
+Paraguay,France,88,2026-07-04,R16,2,4,3+ total goals (reg),0,56,53.8,60,12.55,1,0.3136,0.36,4.64,totals,false
+Paraguay,France,88,2026-07-04,R16,2,5,Miguel Almiron goal or assist (reg),0,12,27.0,22,10.43,1,0.0144,0.0484,3.4,fav_player,false
+Paraguay,France,88,2026-07-04,R16,2,6,France 7+ SOT (reg),0,59,58.8,58,4.96,1,0.3481,0.3364,-1.17,totals,false
+Paraguay,France,88,2026-07-04,R16,2,7,France scores both halves (reg),0,49,51.3,55,19.41,1,0.2401,0.3025,6.24,fav_team_total,false
+Paraguay,France,88,2026-07-04,R16,2,8,4+ total cards (reg),0,27,33.0,42,26.02,1,0.0729,0.1764,10.35,discipline,false
+Paraguay,France,88,2026-07-04,R16,2,9,a substitute scores (reg),0,44,44.3,33,-12.56,0,0.1936,0.1089,-8.47,sub_scorer,false
+Paraguay,France,88,2026-07-04,R16,2,10,France 6+ corners (reg),1,66,63.9,62,9.97,1,0.1156,0.1444,2.88,totals,false
+Paraguay,France,88,2026-07-04,R16,2,11,match tied at halftime,1,33,39.7,33,4.73,1,0.4489,0.4489,0.0,ht_lead,true
+Paraguay,France,88,2026-07-04,R16,2,12,Paraguay hold a lead at any point (excl shootout),0,19,29.1,22,7.04,1,0.0361,0.0484,1.23,race,false
+Paraguay,France,88,2026-07-04,R16,2,13,Michael Olise goal or assist (reg),0,49,48.5,53,15.79,1,0.2401,0.2809,4.08,fav_player,false
+Paraguay,France,88,2026-07-04,R16,2,14,penalty awarded (reg),1,31,33.7,27,13.81,1,0.4761,0.5329,5.68,discipline,false
+Paraguay,France,88,2026-07-04,R16,2,15,France win (reg),1,80,77.4,80,3.97,1,0.04,0.04,0.0,match_result,false
+Brazil,Norway,89,2026-07-05,R16,2,1,Vinicius Junior score (reg),0,38,42.2,44,14.29,1,0.1444,0.1936,4.92,fav_player,false
+Brazil,Norway,89,2026-07-05,R16,2,2,Erling Haaland score (reg),1,39,42.7,48,-14.54,0,0.3721,0.2704,-10.17,fav_player,false
+Brazil,Norway,89,2026-07-05,R16,2,3,Martin Odegaard goal or assist (reg),0,21,32.1,35,19.4,1,0.0441,0.1225,7.84,fav_player,false
+Brazil,Norway,89,2026-07-05,R16,2,4,Matheus Cunha 1+ SOT (reg),0,64,57.6,59,-6.34,0,0.4096,0.3481,-6.15,fav_player,false
+Brazil,Norway,89,2026-07-05,R16,2,5,Brazil advance to QF,0,68,67.8,67,0.46,1,0.4624,0.4489,-1.35,match_result,false
+Brazil,Norway,89,2026-07-05,R16,2,6,match decided by penalty shootout,0,11,22.3,22,12.79,1,0.0121,0.0484,3.63,uncategorized,false
+Brazil,Norway,89,2026-07-05,R16,2,7,exactly 2 total goals (reg),0,23,32.2,28,10.03,1,0.0529,0.0784,2.55,totals,false
+Brazil,Norway,89,2026-07-05,R16,2,8,both teams score (reg),1,59,55.2,60,1.68,1,0.1681,0.16,-0.81,totals,false
+Brazil,Norway,89,2026-07-05,R16,2,9,Brazil 6+ corners (reg),0,53,51.3,52,2.24,1,0.2809,0.2704,-1.05,totals,false
+Brazil,Norway,89,2026-07-05,R16,2,10,4+ total cards (reg),0,32,36.2,42,18.94,1,0.1024,0.1764,7.4,discipline,false
+Brazil,Norway,89,2026-07-05,R16,2,11,Norway 4+ SOT (reg),1,53,51.3,53,5.17,1,0.2209,0.2209,0.0,totals,false
+Brazil,Norway,89,2026-07-05,R16,2,12,match tied at halftime,1,41,43.1,41,3.1,1,0.3481,0.3481,0.0,ht_lead,true
+Brazil,Norway,89,2026-07-05,R16,2,13,2nd half more goals than 1st (reg),1,50,52.5,50,2.85,1,0.25,0.25,0.0,race,false
+Brazil,Norway,89,2026-07-05,R16,2,14,Brazil 6+ SOT (reg),0,49,48.8,51,8.17,1,0.2401,0.2601,2.0,totals,false
+Brazil,Norway,89,2026-07-05,R16,2,15,both teams receive 1+ card (reg),0,59,55.2,62,11.59,1,0.3481,0.3844,3.63,discipline,false
+Mexico,England,90,2026-07-05,R16,2,1,Harry Kane score (reg),1,37,41.6,46,-15.2,0,0.3969,0.2916,-10.53,fav_player,false
+Mexico,England,90,2026-07-05,R16,2,2,Jude Bellingham 2+ SOT (reg),1,20,31.6,35,-33.75,0,0.64,0.4225,-21.75,fav_player,false
+Mexico,England,90,2026-07-05,R16,2,3,England advance to QF,1,53,54.9,56,-0.51,0,0.2209,0.1936,-2.73,match_result,false
+Mexico,England,90,2026-07-05,R16,2,4,Raul Jimenez score (reg),1,23,33.3,32,-20.12,0,0.5929,0.4624,-13.05,fav_player,false
+Mexico,England,90,2026-07-05,R16,2,5,Julian Quinones 1+ SOT (reg),1,53,51.1,55,2.62,1,0.2209,0.2025,-1.84,fav_player,false
+Mexico,England,90,2026-07-05,R16,2,6,match tied at halftime,0,50,50.3,47,-1.56,0,0.25,0.2209,-2.91,ht_lead,true
+Mexico,England,90,2026-07-05,R16,2,7,England more corners than Mexico (reg),0,55,56.3,58,11.33,1,0.3025,0.3364,3.39,race,false
+Mexico,England,90,2026-07-05,R16,2,8,match decided by penalty shootout,0,16,24.9,24,11.92,1,0.0256,0.0576,3.2,uncategorized,false
+Mexico,England,90,2026-07-05,R16,2,9,both teams score (reg),1,47,47.5,50,-2.33,0,0.2809,0.25,-3.09,totals,false
+Mexico,England,90,2026-07-05,R16,2,10,more total cards than goals (reg),1,56,53.3,57,4.57,1,0.1936,0.1849,-0.87,totals,false
+Mexico,England,90,2026-07-05,R16,2,11,18+ total shots (reg),1,95,78.3,70,25.0,1,0.0025,0.09,8.75,totals,false
+Mexico,England,90,2026-07-05,R16,2,12,4+ total cards (reg),1,38,40.5,45,-10.8,0,0.3844,0.3025,-8.19,discipline,false
+Mexico,England,90,2026-07-05,R16,2,13,goal after 2nd hydration break (reg),0,52,50.7,49,-1.82,0,0.2704,0.2401,-3.03,totals,false
+Mexico,England,90,2026-07-05,R16,2,14,England 5+ SOT (reg),1,43,45.0,50,-9.77,0,0.3249,0.25,-7.49,totals,false
+Mexico,England,90,2026-07-05,R16,2,15,2 or fewer total goals (reg),0,61,56.5,56,-8.31,0,0.3721,0.3136,-5.85,totals,false
+Portugal,Spain,91,2026-07-06,R16,2,1,Ronaldo score (reg),0,31,38.1,37,15.18,1,0.0961,0.1369,4.08,fav_player,false
+Portugal,Spain,91,2026-07-06,R16,2,2,Yamal score or assist (reg),0,47,47.6,51,12.3,1,0.2209,0.2601,3.92,fav_player,false
+Portugal,Spain,91,2026-07-06,R16,2,3,Bruno Fernandes 1+ SOT (reg),0,44,45.8,53,23.79,1,0.1936,0.2809,8.73,fav_player,false
+Portugal,Spain,91,2026-07-06,R16,2,4,both halves same goals (reg),0,26,34.2,31,9.47,1,0.0676,0.0961,2.85,totals,false
+Portugal,Spain,91,2026-07-06,R16,2,5,Portugal score first goal (reg),0,38,42.2,38,4.3,1,0.1444,0.1444,0.00,match_result,false
+Portugal,Spain,91,2026-07-06,R16,2,6,3+ total goals (reg),0,54,52.0,53,2.55,1,0.2916,0.2809,-1.07,totals,false
+Portugal,Spain,91,2026-07-06,R16,2,7,Diogo Costa 4+ saves (reg),1,44,45.8,51,-10.1,0,0.3136,0.2401,-7.35,fav_player,false
+Portugal,Spain,91,2026-07-06,R16,2,8,a substitute scores (reg),1,45,42.6,32,36.62,1,0.3025,0.4624,15.99,sub_scorer,false
+Portugal,Spain,91,2026-07-06,R16,2,9,4+ total cards (reg),0,36,39.2,45,19.67,1,0.1296,0.2025,7.29,discipline,false
+Portugal,Spain,91,2026-07-06,R16,2,10,9+ total substitutions (reg),1,57,53.9,56,9.69,1,0.1849,0.1936,0.87,totals,false
+Portugal,Spain,91,2026-07-06,R16,2,11,Spain 6+ corners (reg),1,49,49.4,54,-5.73,0,0.2601,0.2116,-4.85,totals,false
+Portugal,Spain,91,2026-07-06,R16,2,12,match goes to extra time,0,27,32.8,32,11.31,1,0.0729,0.1024,2.95,match_result,false
+Portugal,Spain,91,2026-07-06,R16,2,13,any Portugal player 2+ SOT (reg),1,56,53.0,57,7.42,1,0.1936,0.1849,-0.87,fav_player,false
+Portugal,Spain,91,2026-07-06,R16,2,14,Spain advance to QF,1,65,65.2,64,5.54,1,0.1225,0.1296,0.71,match_result,false
+Portugal,Spain,91,2026-07-06,R16,2,15,first card before first goal (reg),1,50,52.5,50,4.04,1,0.2500,0.2500,0.00,race,false
+USA,Belgium,92,2026-07-07,R16,2,1,Pulisic score (reg),0,28,36.4,32,10.0,1,0.0784,0.1024,2.40,fav_player,false
+USA,Belgium,92,2026-07-07,R16,2,2,De Bruyne score or assist (reg) [benched],0,24,34.0,36,20.49,1,0.0576,0.1296,7.20,fav_player,false
+USA,Belgium,92,2026-07-07,R16,2,3,Belgium advance to QF,1,47,49.7,51,-1.59,0,0.2809,0.2401,-4.08,match_result,false
+USA,Belgium,92,2026-07-07,R16,2,4,Tillman 1+ SOT (reg),1,47,47.8,49,1.31,1,0.2809,0.2601,-2.08,fav_player,false
+USA,Belgium,92,2026-07-07,R16,2,5,Lukaku score (reg) [benched],1,21,32.2,35,-32.37,0,0.6241,0.4225,-20.16,fav_player,false
+USA,Belgium,92,2026-07-07,R16,2,6,both teams score (reg),1,59,55.2,59,2.58,1,0.1681,0.1681,0.00,totals,false
+USA,Belgium,92,2026-07-07,R16,2,8,goal in each half (reg),1,53,51.4,55,1.5,1,0.2209,0.2025,-1.84,totals,false
+USA,Belgium,92,2026-07-07,R16,2,9,3+ total goals (reg),1,53,51.4,54,0.18,1,0.2209,0.2116,-0.93,totals,false
+USA,Belgium,92,2026-07-07,R16,2,10,10+ total corners (reg),0,55,52.7,51,-5.72,0,0.3025,0.2601,-4.24,totals,false
+USA,Belgium,92,2026-07-07,R16,2,11,4+ offsides (reg),0,47,46.1,46,2.5,1,0.2209,0.2116,-0.93,offsides,false
+USA,Belgium,92,2026-07-07,R16,2,12,Trossard score (reg),0,20,31.6,29,13.79,1,0.0400,0.0841,4.41,fav_player,false
+USA,Belgium,92,2026-07-07,R16,2,13,tied at halftime,0,43,44.4,43,3.66,1,0.1849,0.1849,0.00,ht_lead,false
+USA,Belgium,92,2026-07-07,R16,2,14,4+ total cards (reg),0,38,40.6,45,16.65,1,0.1444,0.2025,5.81,discipline,false
+USA,Belgium,92,2026-07-07,R16,2,15,USA more SOT than Belgium (reg),0,44,48.0,43,3.0,1,0.1936,0.1849,-0.87,race,false
