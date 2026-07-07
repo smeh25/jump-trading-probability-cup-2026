@@ -163,6 +163,25 @@ def diff_at_least(lam_a: float, lam_b: float, t: int, nmax: int = 60) -> float:
     """P(A - B >= t) for independent Poissons (Skellam tail by summation)."""
     return sum(pois_pmf(b, lam_b) * p_at_least(b + t, lam_a) for b in range(nmax))
 
+def count_race(mean_a, mean_b, r_a=None, r_b=None, pmf_a=None, pmf_b=None,
+               nmax: int = 25) -> dict:
+    """P(A>B), P(tie), P(B>A) for two INDEPENDENT count distributions, where each
+    side is Poisson OR Negative Binomial (or an explicit pmf list). Generalizes
+    race() (Poisson-Poisson) to overdispersed counts — e.g. cards (NB, r~7) vs
+    goals (Poisson, or an exact-goals pmf) for 'more total cards than goals'.
+
+    Each side: pass pmf_x (explicit list, e.g. de-vigged exact-goals) to use it
+    directly; else NB(mean, r_x) if r_x is given, else Poisson(mean). Ties (A==B)
+    count for NEITHER side, so a STRICT 'A more than B' prop = the 'a_more' key.
+    """
+    pa = list(pmf_a) if pmf_a is not None else [
+        (nb_pmf(k, mean_a, r_a) if r_a else pois_pmf(k, mean_a)) for k in range(nmax)]
+    pb = list(pmf_b) if pmf_b is not None else [
+        (nb_pmf(k, mean_b, r_b) if r_b else pois_pmf(k, mean_b)) for k in range(nmax)]
+    a_more = sum(pa[a] * sum(pb[:a]) for a in range(len(pa)))   # P(A>B): B in 0..a-1
+    tie = sum(pa[k] * pb[k] for k in range(min(len(pa), len(pb))))
+    return {"a_more": a_more, "tie": tie, "b_more": 1 - a_more - tie}
+
 # ------------------------------------------------------------ scoreline grid
 def grid(lam_a: float, lam_b: float, rho: float = 0.0, nmax: int = 12):
     """Scoreline probability matrix with Dixon-Coles low-score correction.
@@ -256,6 +275,31 @@ def et_lambda(lam_full: float, intensity: float = 1.15) -> float:
     Per-minute rate slightly above regulation (tired legs, open games)."""
     return lam_full * (30 / 90) * intensity
 
+def ever_leads(lam_a: float, lam_b: float, rho: float = -0.11, include_et: bool = True,
+               et_intensity: float = 1.15, lam_a_et=None, lam_b_et=None) -> float:
+    """P(team A ever STRICTLY leads at some point) — the 'to hold a lead at any
+    point (excl. shootout)' prop. Path-dependent, so we weight the DC scoreline
+    grid by the Bertrand-ballot probability that a uniform ordering of the goals
+    has a prefix with more A-goals than B-goals:
+        everlead(i,j) = 1 if i>j else i/(j+1)   (verified: 1-1->.5, 1-2->1/3).
+    include_et adds the extra-time block: ET is reached only if tied k-k at 90',
+    and among those A had NOT yet led with prob 1/(k+1); the two terms are disjoint
+    (no double count). Shootout excluded (a shootout is not a 'lead'). ET rate is
+    the scaled 90' rate (et_lambda) by default, or pass calibrated lam_a_et/lam_b_et
+    (e.g. fit to the Method-of-Victory 'decided in ET' figure)."""
+    def everlead(i, j):
+        return 1.0 if i > j else i / (j + 1)
+    g = grid(lam_a, lam_b, rho)
+    p_reg = sum(p * everlead(i, j) for (i, j), p in g.items())
+    if not include_et:
+        return p_reg
+    reach_et_no_lead = sum(p / (k + 1) for (k, kk), p in g.items() if k == kk)
+    ea = lam_a_et if lam_a_et is not None else et_lambda(lam_a, et_intensity)
+    eb = lam_b_et if lam_b_et is not None else et_lambda(lam_b, et_intensity)
+    g_et = grid(ea, eb, 0.0)                            # ET rho=0, like advance_probs
+    l_et = sum(p * everlead(i, j) for (i, j), p in g_et.items())
+    return p_reg + reach_et_no_lead * l_et
+
 def et_block_geq(m: int, lam_full: float, p_draw: float, intensity: float = 1.15) -> float:
     """P(>= m events occur in extra time), unconditional on reaching it.
     ET is reached with prob p_draw (the de-vigged 90' draw price); m<=0 -> 1."""
@@ -322,7 +366,10 @@ EVENT_CURVE = {
     "offsides":  (0.0, 0.23, 0.50, 0.74, 1.0),  # 2018-22 ~flat (no 2026 timing)
     "fouls":     (0.0, 0.23, 0.48, 0.71, 1.0),  # 2018-22 ~flat (no 2026 timing)
 }
-SUB_GOAL_SHARE = 0.18  # fraction of goals scored by substitutes (knockouts a touch higher)
+SUB_GOAL_SHARE = 0.24  # fraction of goals scored by substitutes. KO-CALIBRATED 2026-07-06:
+# ESPN 2026 knockouts (n=22) show P(a sub scores in reg) = 50% (11/22) -> share ~0.26; the old
+# 0.18 badly undershot (gave ~39% vs realized 50%, and our own 4 KO sub-scorer props hit ~50%).
+# Set to 0.24 (shaded for CI). Groups may run lower (~0.18); this value is for the KO run.
 
 GOAL_SHARE = {  # fraction of a match's goals that are of this sub-type; price via
                 # p_share_of_goals(share, lam_goals). Derived offline from cached data
@@ -348,6 +395,31 @@ def _curve_cdf(event: str, t: float) -> float:
 def window_share(event: str, a: float, b: float) -> float:
     """Share of full-match `event` expected in the minute window [a, b]."""
     return _curve_cdf(event, b) - _curve_cdf(event, a)
+
+def first_event_race(event_a: str, mu_a: float, event_b: str, mu_b: float) -> dict:
+    """P(first A occurs before first B) over a match, using the EVENT_CURVE time
+    SHAPES so the race respects WHEN each event tends to occur, not just the
+    full-match totals mu_a/mu_b. This matters because e.g. cards are more
+    back-loaded than goals (card F23=0.14 vs goal 0.16, F45 0.35 vs 0.44), so the
+    early match is goal-richer and the naive mu_a/(mu_a+mu_b) OVERSTATES 'card first'.
+
+    Over each WINDOW_NODES interval both processes are piecewise-constant Poisson;
+    conditional on >=1 event in the interval, the first is an A with prob
+    rate_a/(rate_a+rate_b). A non-occurring event is time=+inf, so a card in a 0-0
+    counts as 'card first' automatically (handled by `neither` catching all-quiet).
+    'first card before first goal' = first_event_race('cards', mu_c, 'goals', mu_g)['a_first'].
+    """
+    nodes = WINDOW_NODES
+    Fa, Fb = EVENT_CURVE[event_a], EVENT_CURVE[event_b]
+    a_first, survive = 0.0, 1.0   # survive = P(no A and no B so far)
+    for i in range(len(nodes) - 1):
+        ra = mu_a * (Fa[i + 1] - Fa[i])   # expected A events in this interval
+        rb = mu_b * (Fb[i + 1] - Fb[i])
+        s = ra + rb
+        if s > 0:
+            a_first += survive * (1 - exp(-s)) * (ra / s)
+            survive *= exp(-s)
+    return {"a_first": a_first, "b_first": 1 - a_first - survive, "neither": survive}
 
 def player_score_prob(team_lam: float, share: float, minutes_factor=1.0):
     return 1 - exp(-team_lam * share * minutes_factor)
