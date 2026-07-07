@@ -202,6 +202,8 @@ def main(argv):
                 note += " [famous/benched? real crowd usually HIGHER -> fade gap bigger]"
             if cat in ("race", "offsides") and gap < -1.5 and you > 60:
                 note += " [dominance: crowd_hat unreliable, direction unpredictable -> do NOT reach above it]"
+            if cat == "sub_scorer":
+                note += " [crowd anchors ~30-33 (model under-shrinks at low n); crowd sits BELOW you -> being above is +EV, do NOT trim to crowd_hat]"
             print(f"{label:22} {you:>3.0f} {ch:>5.1f} {gap:>+5.1f} {ifyes:>+6.1f} {ifno:>+6.1f} "
                   f"{erbp:>6.2f} {mae_c:>5.1f}  {note}")
     else:
