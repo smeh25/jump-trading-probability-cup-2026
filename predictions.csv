@@ -1018,3 +1018,108 @@ USA,Belgium,92,2026-07-07,R16,2,12,Trossard score (reg),0,20,31.6,29,13.79,1,0.0
 USA,Belgium,92,2026-07-07,R16,2,13,tied at halftime,0,43,44.4,43,3.66,1,0.1849,0.1849,0.00,ht_lead,false
 USA,Belgium,92,2026-07-07,R16,2,14,4+ total cards (reg),0,38,40.6,45,16.65,1,0.1444,0.2025,5.81,discipline,false
 USA,Belgium,92,2026-07-07,R16,2,15,USA more SOT than Belgium (reg),0,44,48.0,43,3.0,1,0.1936,0.1849,-0.87,race,false
+Argentina,Egypt,93,2026-07-07,R16,2,1,Argentina win (reg),1,72,71.1,74,1.71,1,0.0784,0.0676,-1.08,match_result,false
+Argentina,Egypt,93,2026-07-07,R16,2,2,Omar Marmoush 1+ SOT (reg) [BENCHED],0,17,29.8,37,30.53,1,0.0289,0.1369,10.80,fav_player,false
+Argentina,Egypt,93,2026-07-07,R16,2,3,total goals odd (reg),1,49,48.9,52,-2.27,0,0.2601,0.2304,-2.97,totals,false
+Argentina,Egypt,93,2026-07-07,R16,2,4,Lionel Messi 1+ goal (reg),1,50,49.6,59,-10.79,0,0.2500,0.1681,-8.19,fav_player,false
+Argentina,Egypt,93,2026-07-07,R16,2,5,Mohamed Salah 1+ goal (reg),0,15,28.6,26,13.19,1,0.0225,0.0676,4.51,fav_player,false
+Argentina,Egypt,93,2026-07-07,R16,2,6,4+ total cards (reg),0,34,37.8,43,17.75,1,0.1156,0.1849,6.93,discipline,false
+Argentina,Egypt,93,2026-07-07,R16,2,7,both teams score (reg),1,39,40.7,43,-6.84,0,0.3721,0.3249,-4.72,and_conjunction,false
+Argentina,Egypt,93,2026-07-07,R16,2,8,Argentina 5+ SOT (reg),1,71,69.7,66,9.99,1,0.0841,0.1156,3.15,fav_team_total,false
+Argentina,Egypt,93,2026-07-07,R16,2,9,Argentina 6+ corners (reg),1,51,52.8,53,-0.35,0,0.2401,0.2209,-1.92,fav_team_total,false
+Argentina,Egypt,93,2026-07-07,R16,2,10,Julian Alvarez score or assist (reg),0,47,47.8,45,0.64,1,0.2209,0.2025,-1.84,fav_player,false
+Argentina,Egypt,93,2026-07-07,R16,2,11,goal in 1st half after 1st hydration break,0,51,50.2,44,-8.45,0,0.2601,0.1936,-6.65,totals,true
+Argentina,Egypt,93,2026-07-07,R16,2,12,3+ total goals (reg),1,46,47.0,51,-6.03,0,0.2916,0.2401,-5.15,totals,false
+Argentina,Egypt,93,2026-07-07,R16,2,13,tied at halftime,0,40,42.0,38,0.04,1,0.1600,0.1444,-1.56,ht_lead,false
+Argentina,Egypt,93,2026-07-07,R16,2,14,first goal not Messi or Salah,1,59,59.3,55,13.13,1,0.1681,0.2025,3.44,race,false
+Argentina,Egypt,93,2026-07-07,R16,2,15,any player 2+ goals (reg),0,29,36.1,32,9.58,1,0.0841,0.1024,1.83,totals,false
+Switzerland,Colombia,94,2026-07-07,R16,2,1,Dan Ndoye 1+ goal (reg),0,18,30.5,23,8.34,1,0.0324,0.0529,2.05,fav_player,false
+Switzerland,Colombia,94,2026-07-07,R16,2,2,Switzerland clean sheet (reg),1,27,34.8,29,-1.74,0,0.5329,0.5041,-2.88,totals,false
+Switzerland,Colombia,94,2026-07-07,R16,2,3,tied at halftime,1,49,49.1,46,9.28,1,0.2601,0.2916,3.15,ht_lead,false
+Switzerland,Colombia,94,2026-07-07,R16,2,4,4+ total cards (reg),0,34,37.9,45,23.02,1,0.1156,0.2025,8.69,discipline,false
+Switzerland,Colombia,94,2026-07-07,R16,2,5,Colombia 5+ corners (reg),0,49,51.1,52,9.14,1,0.2401,0.2704,3.03,fav_team_total,false
+Switzerland,Colombia,94,2026-07-07,R16,2,6,Switzerland 4+ SOT (reg),0,50,51.9,49,1.94,1,0.2500,0.2401,-0.99,fav_team_total,false
+Switzerland,Colombia,94,2026-07-07,R16,2,7,a substitute scores or assists (reg),0,47,43.0,36,-14.11,0,0.2209,0.1296,-9.13,sub_scorer,false
+Switzerland,Colombia,94,2026-07-07,R16,2,8,first goal in 2nd half (reg),0,31,37.4,37,13.36,1,0.0961,0.1369,4.08,totals,false
+Switzerland,Colombia,94,2026-07-07,R16,2,9,either team wins both halves (reg),0,18,29.1,26,12.02,1,0.0324,0.0676,3.52,totals,false
+Switzerland,Colombia,94,2026-07-07,R16,2,10,decided by exactly 1 goal (reg),0,41,44.7,44,9.05,1,0.1681,0.1936,2.55,match_result,false
+Switzerland,Colombia,94,2026-07-07,R16,2,11,1+ card in each half (reg),0,53,51.2,56,12.39,1,0.2809,0.3136,3.27,discipline,false
+Switzerland,Colombia,94,2026-07-07,R16,2,12,Luis Diaz 1+ goal (reg),0,26,35.3,33,12.92,1,0.0676,0.1089,4.13,fav_player,false
+Switzerland,Colombia,94,2026-07-07,R16,2,13,Jhon Arias score or assist (reg),0,27,35.9,32,9.45,1,0.0729,0.1024,2.95,fav_player,false
+Switzerland,Colombia,94,2026-07-07,R16,2,14,Colombia advance,0,59,60.1,61,9.18,1,0.3481,0.3721,2.40,match_result,false
+Switzerland,Colombia,94,2026-07-07,R16,2,15,Breel Embolo 1+ SOT (reg),0,54,52.0,56,10.59,1,0.2916,0.3136,2.20,fav_player,false
+France,Morocco,95,2026-07-09,QF,2,1,Kylian Mbappe 1+ goal (reg),1,48,48.5,57,-9.95,0,0.2704,0.1849,-8.55,fav_player,false
+France,Morocco,95,2026-07-09,QF,2,2,Achraf Hakimi 1+ SOT (reg),0,36,41.2,44,21.29,1,0.1296,0.1936,6.40,fav_player,false
+France,Morocco,95,2026-07-09,QF,2,3,Brahim Diaz 1+ SOT (reg),0,43,45.4,46,12.17,1,0.1849,0.2116,2.67,fav_player,false
+France,Morocco,95,2026-07-09,QF,2,4,Ousmane Dembele 2+ SOT (reg),0,29,37.0,40,23.09,1,0.0841,0.1600,7.59,fav_player,false
+France,Morocco,95,2026-07-09,QF,2,5,Morocco 3+ SOT (reg),0,62,62.0,58,-2.46,0,0.3844,0.3364,-4.80,fav_team_total,false
+France,Morocco,95,2026-07-09,QF,2,6,2 or fewer total goals (reg),1,47,47.5,48,2.92,1,0.2809,0.2704,-1.05,totals,false
+France,Morocco,95,2026-07-09,QF,2,7,5+ total cards (reg),0,21,28.8,34,19.79,1,0.0441,0.1156,7.15,discipline,false
+France,Morocco,95,2026-07-09,QF,2,8,tied at halftime,1,44,45.0,43,5.17,1,0.3136,0.3249,1.13,ht_lead,false
+France,Morocco,95,2026-07-09,QF,2,9,both halves same goals (reg),0,25,33.4,30,9.34,1,0.0625,0.0900,2.75,totals,false
+France,Morocco,95,2026-07-09,QF,2,10,penalty or red card (reg),1,28,33.8,35,-15.64,0,0.5184,0.4225,-9.59,discipline,false
+France,Morocco,95,2026-07-09,QF,2,11,a substitute scores or assists (reg),0,53,46.4,38,-23.55,0,0.2809,0.1444,-13.65,sub_scorer,false
+France,Morocco,95,2026-07-09,QF,2,12,France 5+ corners (reg),1,70,68.8,66,8.55,1,0.0900,0.1156,2.56,fav_team_total,false
+France,Morocco,95,2026-07-09,QF,2,13,goal after 2nd hydration break (reg),0,58,54.6,52,-9.05,0,0.3364,0.2704,-6.60,totals,false
+France,Morocco,95,2026-07-09,QF,2,14,card shown in stoppage time (reg),0,43,44.3,42,5.24,1,0.1849,0.1764,-0.85,discipline,false
+France,Morocco,95,2026-07-09,QF,2,15,France win (reg),1,60,61.0,63,-0.25,0,0.1600,0.1369,-2.31,match_result,false
+Spain,Belgium,96,2026-07-10,QF,2,1,Spain advance,1,74,73.1,73,5.02,1,0.0676,0.0729,0.53,match_result,false
+Spain,Belgium,96,2026-07-10,QF,2,2,tied at halftime,1,42,43.4,42,3.12,1,0.3364,0.3364,0.00,ht_lead,false
+Spain,Belgium,96,2026-07-10,QF,2,3,Belgium ever leads (reg),0,36,41.2,34,2.42,1,0.1296,0.1156,-1.40,match_result,false
+Spain,Belgium,96,2026-07-10,QF,2,4,either team HT sub,0,55,47.9,41,-19.71,0,0.3025,0.1681,-13.44,uncategorized,false
+Spain,Belgium,96,2026-07-10,QF,2,5,goal before 1st break (reg),0,34,43.7,37,9.35,1,0.1156,0.1369,2.13,totals,false
+Spain,Belgium,96,2026-07-10,QF,2,6,goal after 2nd break (reg),1,53,52.0,53,4.69,1,0.2209,0.2209,0.00,totals,false
+Spain,Belgium,96,2026-07-10,QF,2,7,BTTS (reg),1,54,53.3,50,11.94,1,0.2116,0.2500,3.84,totals,false
+Spain,Belgium,96,2026-07-10,QF,2,8,Yamal score/assist (reg),0,47,48.0,49,9.49,1,0.2209,0.2401,1.92,fav_player,false
+Spain,Belgium,96,2026-07-10,QF,2,9,De Bruyne 1+ SOT (reg),1,41,44.3,47,-7.05,0,0.3481,0.2809,-6.72,fav_player,false
+Spain,Belgium,96,2026-07-10,QF,2,10,Lukaku 1+ SOT benched (reg),0,21,31.6,45,39.75,1,0.0441,0.2025,15.84,fav_player,false
+Spain,Belgium,96,2026-07-10,QF,2,11,Spain 5+ SOT (reg),1,70,63.6,63,13.14,1,0.0900,0.1369,4.69,totals,false
+Spain,Belgium,96,2026-07-10,QF,2,12,Belgium 3+ SOT (reg),0,61,58.4,56,-6.79,0,0.3721,0.3136,-5.85,totals,false
+Spain,Belgium,96,2026-07-10,QF,2,13,Spain 6+ corners (reg),0,54,52.0,57,11.24,1,0.2916,0.3249,3.33,totals,false
+Spain,Belgium,96,2026-07-10,QF,2,14,4+ cards (reg),1,27,33.2,38,-25.96,0,0.5329,0.3844,-14.85,discipline,false
+Spain,Belgium,96,2026-07-10,QF,2,15,pen or red (reg),0,31,35.2,33,6.93,1,0.0961,0.1089,1.28,discipline,false
+Norway,England,97,2026-07-11,QF,2,1,Haaland 1+ goal (reg),0,47,,55,24.34,1,0.2209,0.3025,8.16,fav_player,false
+Norway,England,97,2026-07-11,QF,2,2,Kane 2+ SOT (reg),0,49,,55,20.67,1,0.2401,0.3025,6.24,fav_player,false
+Norway,England,97,2026-07-11,QF,2,3,Bellingham 2+ SOT (reg),0,30,,42,24.8,1,0.0900,0.1764,8.64,fav_player,false
+Norway,England,97,2026-07-11,QF,2,4,3+ total goals (reg),0,56,,58,9.73,1,0.3136,0.3364,2.28,totals,false
+Norway,England,97,2026-07-11,QF,2,5,tied at halftime,1,42,,44,-1.09,0,0.3364,0.3136,-2.28,ht_lead,false
+Norway,England,97,2026-07-11,QF,2,6,Norway 4+ corners (reg),1,64,,56,16.68,1,0.1296,0.1936,6.40,totals,false
+Norway,England,97,2026-07-11,QF,2,7,a substitute scores or assists (reg),0,42,,39,-0.14,0,0.1764,0.1521,-2.43,sub_scorer,false
+Norway,England,97,2026-07-11,QF,2,8,England more corners AND more shots (reg),0,47,,53,16.8,1,0.2209,0.2809,6.00,race,false
+Norway,England,97,2026-07-11,QF,2,9,BTTS (reg),1,63,,63,4.22,1,0.1369,0.1369,0.00,totals,false
+Norway,England,97,2026-07-11,QF,2,10,England 6+ corners (reg),0,54,,51,-2.35,0,0.2916,0.2601,-3.15,totals,false
+Norway,England,97,2026-07-11,QF,2,11,1+ card in each half (reg),0,48,,51,11.84,1,0.2304,0.2601,2.97,discipline,false
+Norway,England,97,2026-07-11,QF,2,12,pen or red (reg),0,31,,35,9.26,1,0.0961,0.1225,2.64,discipline,false
+Norway,England,97,2026-07-11,QF,2,13,24+ total shots (reg),0,80,,56,-59.35,0,0.6400,0.3136,-32.64,totals,false
+Norway,England,97,2026-07-11,QF,2,14,2nd half more goals than 1st (reg),0,52,,53,6.38,1,0.2704,0.2809,1.05,race,false
+Norway,England,97,2026-07-11,QF,2,15,England win (reg),0,53,,52,2.83,1,0.2809,0.2704,-1.05,match_result,false
+Argentina,Switzerland,98,2026-07-11,QF,2,1,Argentina advance to SF,1,74,72.9,75,2.71,1,0.0676,0.0625,-1.02,match_result,false
+Argentina,Switzerland,98,2026-07-11,QF,2,2,0-0 at halftime,0,37,39.4,37,5.05,1,0.1369,0.1369,0.00,ht_lead,true
+Argentina,Switzerland,98,2026-07-11,QF,2,3,Switzerland hold a lead at any point (reg),0,32,36.7,33,5.56,1,0.1024,0.1089,1.30,match_result,false
+Argentina,Switzerland,98,2026-07-11,QF,2,4,2 or fewer total goals (reg),1,57,53.9,52,13.37,1,0.1849,0.2304,9.10,totals,false
+Argentina,Switzerland,98,2026-07-11,QF,2,5,Goal after 2nd hydration break (reg),0,54,52.0,51,-2.45,0,0.2916,0.2601,-6.30,totals,false
+Argentina,Switzerland,98,2026-07-11,QF,2,6,Switzerland 3+ SOT (reg),1,58,54.5,52,16.04,1,0.1764,0.2304,10.80,totals,false
+Argentina,Switzerland,98,2026-07-11,QF,2,7,a substitute scores or assists (reg),0,35,35.8,37,6.78,1,0.1225,0.1369,2.88,sub_scorer,false
+Argentina,Switzerland,98,2026-07-11,QF,2,8,Messi 1+ goal (reg),0,51,50.5,55,14.73,1,0.2601,0.3025,8.48,fav_player,false
+Argentina,Switzerland,98,2026-07-11,QF,2,9,Alvarez score or assist (reg),0,36,41.4,40,10.17,1,0.1296,0.1600,6.08,fav_player,false
+Argentina,Switzerland,98,2026-07-11,QF,2,10,Embolo 1+ SOT (reg),1,51,50.5,51,4.36,1,0.2401,0.2401,0.00,fav_player,false
+Argentina,Switzerland,98,2026-07-11,QF,2,11,Switzerland 4+ corners (reg),0,47,47.5,46,1.42,1,0.2209,0.2116,-1.86,totals,false
+Argentina,Switzerland,98,2026-07-11,QF,2,12,Argentina 5+ SOT (reg),0,62,57.1,61,2.61,1,0.3844,0.3721,-2.46,totals,false
+Argentina,Switzerland,98,2026-07-11,QF,2,13,Argentina 7+ corners (reg),0,33,38.6,38,12.93,1,0.1089,0.1444,7.10,totals,false
+Argentina,Switzerland,98,2026-07-11,QF,2,14,4+ total cards (reg),0,36,39.5,42,13.69,1,0.1296,0.1764,9.36,discipline,false
+Argentina,Switzerland,98,2026-07-11,QF,2,15,Penalty awarded OR red card (reg),1,28,33.9,36,-18.77,0,0.5184,0.4096,-21.76,discipline,false
+France,Spain,99,2026-07-14,SF,2,1,4+ total offsides (reg),1,53,49.6,50,10.79,1,0.2209,0.25,5.82,offsides,false
+France,Spain,99,2026-07-14,SF,2,2,4+ total cards (reg),0,42,45.7,43,6.56,1,0.1764,0.1849,1.7,discipline,false
+France,Spain,99,2026-07-14,SF,2,3,Yamal score or assist (reg),0,42,45.1,42,6.82,0,0.1764,0.1764,0.0,fav_player,false
+France,Spain,99,2026-07-14,SF,2,4,on-field VAR review (reg or ET),0,32,34.9,42,23.9,1,0.1024,0.1764,14.8,uncategorized,false
+France,Spain,99,2026-07-14,SF,2,5,3+ total goals (reg),0,51,50.0,53,8.08,1,0.2601,0.2809,4.16,totals,false
+France,Spain,99,2026-07-14,SF,2,6,tied at end of reg go to ET,0,32,36.6,34,7.4,1,0.1024,0.1156,2.64,match_result,false
+France,Spain,99,2026-07-14,SF,2,7,goal before 1st hydration break,1,30,36.7,38,-16.76,0,0.49,0.3844,-21.12,totals,true
+France,Spain,99,2026-07-14,SF,2,8,first goal by single-digit shirt (incl ET),0,22,30.0,35,21.03,1,0.0484,0.1225,14.82,uncategorized,false
+France,Spain,99,2026-07-14,SF,2,9,Spain advance to final,1,44,47.0,43,8.19,1,0.3136,0.3249,2.26,match_result,false
+France,Spain,99,2026-07-14,SF,2,10,Mbappe 1+ goal (reg),0,47,48.1,52,15.34,1,0.2209,0.2704,9.9,fav_player,false
+France,Spain,99,2026-07-14,SF,2,11,goal after 1st before 2nd hydration break,1,66,60.9,61,12.64,1,0.1156,0.1521,7.3,totals,false
+France,Spain,99,2026-07-14,SF,2,12,Spain 5+ SOT (reg),0,44,45.6,50,15.43,1,0.1936,0.25,11.28,totals,false
+France,Spain,99,2026-07-14,SF,2,13,BTTS (reg),0,61,56.4,59,0.74,0,0.3721,0.3481,-4.8,totals,false
+France,Spain,99,2026-07-14,SF,2,14,Spain makes first substitution (reg),0,51,51.7,54,9.34,1,0.2601,0.2916,6.3,race,false
+France,Spain,99,2026-07-14,SF,2,15,France 4+ SOT (reg),0,69,60.9,66,-3.52,0,0.4761,0.4356,-8.1,totals,false
