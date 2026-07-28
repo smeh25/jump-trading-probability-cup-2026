@@ -1123,3 +1123,53 @@ France,Spain,99,2026-07-14,SF,2,12,Spain 5+ SOT (reg),0,44,45.6,50,15.43,1,0.193
 France,Spain,99,2026-07-14,SF,2,13,BTTS (reg),0,61,56.4,59,0.74,0,0.3721,0.3481,-4.8,totals,false
 France,Spain,99,2026-07-14,SF,2,14,Spain makes first substitution (reg),0,51,51.7,54,9.34,1,0.2601,0.2916,6.3,race,false
 France,Spain,99,2026-07-14,SF,2,15,France 4+ SOT (reg),0,69,60.9,66,-3.52,0,0.4761,0.4356,-8.1,totals,false
+England,Argentina,100,2026-07-15,SF,2,1,8+ total SOT (reg),0,57,54.0,57,7.61,0,0.3249,0.3249,0.0,totals,false
+England,Argentina,100,2026-07-15,SF,2,2,goal in stoppage time (reg),1,28,35.4,34,-8.98,0,0.5184,0.4356,-16.56,totals,false
+England,Argentina,100,2026-07-15,SF,2,3,Alvarez 1+ SOT (reg),1,55,53.0,58,1.26,0,0.2025,0.1764,-5.22,fav_player,false
+England,Argentina,100,2026-07-15,SF,2,4,England advance to final,0,54,55.6,52,3.26,0,0.2916,0.2704,-4.24,match_result,false
+England,Argentina,100,2026-07-15,SF,2,5,penalty awarded (reg),0,26,32.6,33,14.81,1,0.0676,0.1089,8.26,discipline,false
+England,Argentina,100,2026-07-15,SF,2,6,Messi 1+ goal (reg),0,41,44.5,45,13.84,1,0.1681,0.2025,6.88,fav_player,false
+England,Argentina,100,2026-07-15,SF,2,7,goal in each half (reg),0,54,52.0,51,-1.48,0,0.2916,0.2601,-6.3,totals,false
+England,Argentina,100,2026-07-15,SF,2,8,Bellingham score or assist (reg),0,36,41.5,44,20.34,1,0.1296,0.1936,12.8,fav_player,false
+England,Argentina,100,2026-07-15,SF,2,9,both teams 1+ card (reg),1,75,66.5,66,17.19,1,0.0625,0.1156,10.62,discipline,false
+England,Argentina,100,2026-07-15,SF,2,10,Argentina more corners than England (reg),1,37,42.7,44,-11.08,0,0.3969,0.3136,-16.66,race,false
+England,Argentina,100,2026-07-15,SF,2,11,card before first goal (reg),1,56,57.0,49,17.41,1,0.1936,0.2601,13.3,race,false
+England,Argentina,100,2026-07-15,SF,2,12,Kane 1+ goal (reg),0,39,43.3,44,13.46,1,0.1521,0.1936,8.3,fav_player,false
+England,Argentina,100,2026-07-15,SF,2,13,10+ total corners (reg),0,36,40.5,45,21.2,1,0.1296,0.2025,14.58,totals,false
+England,Argentina,100,2026-07-15,SF,2,14,England lead at HT,0,27,31.3,35,14.51,1,0.0729,0.1225,9.92,ht_lead,false
+England,Argentina,100,2026-07-15,SF,2,15,Argentina 2+ goals (reg),1,33,37.5,39,-9.16,0,0.4489,0.3721,-15.36,fav_team_total,false
+France,England,101,2026-07-18,3rd,2,1,9+ total corners (reg),0,58,52.7,60,11.42,1,0.3364,0.36,4.72,totals,0
+France,England,101,2026-07-18,3rd,2,2,Kane scores (reg),0,26,36.6,36,22.62,1,0.0676,0.1296,12.4,fav_player,0
+France,England,101,2026-07-18,3rd,2,3,Mbappe scores (reg),1,59,53.7,58,8.88,1,0.1681,0.1764,1.66,fav_player,0
+France,England,101,2026-07-18,3rd,2,4,each team 4+ SOT (reg),1,45,46.3,52,-7.31,0,0.3025,0.2304,-14.42,totals,0
+France,England,101,2026-07-18,3rd,2,5,France win 3rd place,0,69,68.6,63,-9.82,0,0.4761,0.3969,-15.84,match_result,0
+France,England,101,2026-07-18,3rd,2,6,both teams score (reg),1,67,60.4,66,6.63,1,0.1089,0.1156,1.34,totals,0
+France,England,101,2026-07-18,3rd,2,7,2H more goals than 1H (reg),1,47,47.6,53,-7.6,0,0.2809,0.2209,-12.0,totals,0
+France,England,101,2026-07-18,3rd,2,8,Dembele scores or assists (reg),1,25,40.9,38,-26.25,0,0.5625,0.3844,-35.62,sub_scorer,0
+France,England,101,2026-07-18,3rd,2,9,any player 2+ goals (reg),1,37,42.5,35,11.51,1,0.3969,0.4225,5.12,totals,0
+France,England,101,2026-07-18,3rd,2,10,4+ total goals (reg),1,44,45.7,42,10.52,1,0.3136,0.3364,4.56,totals,0
+France,England,101,2026-07-18,3rd,2,11,France first goal (reg),0,62,58.4,58,-5.12,0,0.3844,0.3364,-9.6,race,0
+France,England,101,2026-07-18,3rd,2,12,a substitute scores or assists (reg),1,46,45.4,45,9.19,1,0.2916,0.3025,2.18,sub_scorer,0
+France,England,101,2026-07-18,3rd,2,13,goal before first hydration break,1,54,52.1,44,27.29,1,0.2116,0.3136,20.4,totals,0
+France,England,101,2026-07-18,3rd,2,14,20+ total shots (reg),1,74,57.8,71,11.2,1,0.0676,0.0841,3.3,totals,0
+France,England,101,2026-07-18,3rd,2,15,tied at halftime,0,36,38.8,41,12.92,1,0.1296,0.1681,7.7,ht_lead,1
+Spain,Argentina,102,2026-07-19,final,3,1,first goal credited with an assist (reg),0,66,59.8,66,9.36,0,0.4356,0.4356,0.0,totals,false
+Spain,Argentina,102,2026-07-19,final,3,2,either team 2+ goals in same half (reg),0,41,43.7,44,21.5,1,0.1681,0.1936,7.65,totals,false
+Spain,Argentina,102,2026-07-19,final,3,3,both teams score (reg),0,56,53.4,57,14.86,1,0.3136,0.3249,3.39,totals,false
+Spain,Argentina,102,2026-07-19,final,3,4,goal before first hydration break,0,44,45.7,38,-3.25,0,0.1936,0.1444,-14.76,totals,false
+Spain,Argentina,102,2026-07-19,final,3,5,Spain 5+ SOT (reg),1,46,48.5,54,-11.47,0,0.2916,0.2116,-24.0,fav_team_total,false
+Spain,Argentina,102,2026-07-19,final,3,6,goal after second hydration break (reg),0,56,53.4,57,16.05,1,0.3136,0.3249,3.39,totals,false
+Spain,Argentina,102,2026-07-19,final,3,7,5+ total cards (reg),0,31,36.0,40,31.47,1,0.0961,0.16,19.17,discipline,false
+Spain,Argentina,102,2026-07-19,final,3,8,Argentina 4+ SOT (reg),0,55,56.1,57,19.54,1,0.3025,0.3249,6.72,fav_team_total,false
+Spain,Argentina,102,2026-07-19,final,3,9,penalty kick scored (reg),0,26,32.6,31,22.61,1,0.0676,0.0961,8.55,discipline,false
+Spain,Argentina,102,2026-07-19,final,3,10,"tied at end of regulation, to ET",1,32,36.4,36,-2.75,0,0.4624,0.4096,-15.84,match_result,false
+Spain,Argentina,102,2026-07-19,final,3,11,a substitute scores or assists (reg),0,35,37.3,41,25.73,1,0.1225,0.1681,13.68,sub_scorer,false
+Spain,Argentina,102,2026-07-19,final,3,12,5+ total offsides (reg),0,50,47.9,46,1.41,0,0.25,0.2116,-11.52,offsides,false
+Spain,Argentina,102,2026-07-19,final,3,13,Yamal more SOT than Messi (reg),1,32,39.0,39,-15.6,0,0.4624,0.3721,-27.09,race,false
+Spain,Argentina,102,2026-07-19,final,3,14,Spain more corners than Argentina (reg),1,55,56.2,57,2.58,0,0.2025,0.1849,-5.28,race,false
+Spain,Argentina,102,2026-07-19,final,3,15,5+ different Spain players attempt shot (reg),1,86,82.2,70,34.43,1,0.0196,0.09,21.12,fav_team_total,false
+Spain,Argentina,102,2026-07-19,final,3,16,10+ total corners (reg),1,33,38.6,46,-33.36,0,0.4489,0.2916,-47.19,totals,false
+Spain,Argentina,102,2026-07-19,final,3,17,22+ total shots (reg),0,60,56.0,57,1.65,0,0.36,0.3249,-10.53,totals,false
+Spain,Argentina,102,2026-07-19,final,3,18,Yamal score or assist (reg),0,44,46.4,45,15.79,1,0.1936,0.2025,2.67,fav_player,false
+Spain,Argentina,102,2026-07-19,final,3,19,Messi score or assist (reg),0,50,50.1,56,33.71,1,0.25,0.3136,19.08,fav_player,false
+Spain,Argentina,102,2026-07-19,final,3,20,Argentina win World Cup,0,43,45.9,45,21.54,1,0.1849,0.2025,5.28,match_result,false
