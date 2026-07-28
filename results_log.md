@@ -85,10 +85,10 @@ crowd_hat on a dominance prop.
 | 30 | Türkiye v Paraguay | +29.8 | +10.1 | 5/10 | Kökçü benched fade 15v41 NO +17.6 |
 | 31 | Netherlands v Sweden | +45.2 | +21.4 | 8/10 | Gyökeres half-SOT fade +9.8 |
 | 32 | Germany v Côte d'Ivoire | +31.1 | +9.0 | 8/10 | both-SOT-HT 77v65 +9.6 |
-| 33 | Ecuador v Curaçao (0-0) | +2.6 | −22.3 | 6/9 | shock 0-0; two oversized above-crowd holds sank doc |
+| 33 | Ecuador v Curaçao (0-0) | +2.6 | −22.3 | 6/9 | 0-0; two oversized above-crowd holds cost doc |
 | 34 | Tunisia v Japan (0-4) | +34.7 | +16.0 | 8/9 | Japan more fouls +13.6 |
 | 35 | Spain v Saudi Arabia (4-0) | +57.7 | +30.9 | 9/10 | blowout: above-crowd offside +12.9 |
-| 36 | Belgium v Iran (0-0) | +24.6 | +3.7 | 7/10 | shock 0-0; favorite-fades cashed |
+| 36 | Belgium v Iran (0-0) | +24.6 | +3.7 | 7/10 | 0-0; favorite-fades cashed |
 | 37 | Uruguay v Cabo Verde (2-2) | +33.8 | +9.1 | 9/10 | Núñez benched fade 16v38 NO +15.5 |
 | 38 | New Zealand v Egypt (1-3) | +10.1 | −14.3 | 6/10 | Trezeguet benched fade YES −20.6 (+EV tail) |
 | 39 | Argentina v Austria (2-0) | +25.6 | +2.6 | 5/10 | 2-or-fewer goals +10.5 |
@@ -142,7 +142,7 @@ crowd_hat on a dominance prop.
 | 87 | Canada v Morocco (0-3) | +109.8 | +18.1 | 13/15 | Davies benched 1+SOT 25v34 NO +21.4 |
 | 88 | Paraguay v France (0-1) | +143.5 | +32.8 | 13/15 | 4+ cards 27v42 NO +26.0 |
 | 89 | Brazil v Norway (1-2, NOR win) | +89.8 | +12.4 | 13/15 | Ødegaard G/A 21v35 NO +19.4 (favorite upset) |
-| 90 | Mexico v England (2-3, ENG win) | −48.7 | −66.0 | 5/15 | worst card — correlation disaster (Bellingham 2+SOT −33.8) |
+| 90 | Mexico v England (2-3, ENG win) | −48.7 | −66.0 | 5/15 | worst card — correlated fades all lost (Bellingham 2+SOT −33.8) |
 | 91 | Portugal v Spain (0-1, ESP win) | +146.1 | +33.3 | 13/15 | sub-scores recalibration 45v32 YES +36.6 |
 | 92 | USA v Belgium (1-4, BEL win) | +36.0 | −15.3 | 11/14 | benched Lukaku YES −20 in a 4-1 rout (doc− card) |
 | 93 | Argentina v Egypt (3-2, ARG win) | +61.8 | −3.4 | 9/15 | Marmoush benched 17v37 NO +30.5 |
@@ -153,7 +153,7 @@ crowd_hat on a dominance prop.
 | 98 | Argentina v Switzerland (3-1, ET; reg 1-1) | +88.2 | +21.7 | 13/15 | Switzerland 3+ SOT 58v52 YES +16.0 |
 | 99 | France v Spain (0-2, SF) | +126.0 | +47.0 | 13/15 | VAR-review fade 32v42 NO +23.9 |
 | 100 | England v Argentina (1-2, SF) | +114.2 | +20.3 | 11/15 | 10+ corners 36v45 NO +14.6 |
-| 101 | France v England (4-6, 3rd-place, 2×) | +76.1 | −24.1 | 10/15 | goal-before-break 54v44 YES +20.4 (10-goal freak game) |
+| 101 | France v England (4-6, 3rd-place, 2×) | +76.1 | −24.1 | 10/15 | goal-before-break 54v44 YES +20.4 (10-goal game) |
 | 102 | Spain v Argentina (0-0 reg, SPA won ET, FINAL 3×) | +205.8 | −45.5 | 11/20 | 5+ Spain shooters 86v70 YES +34.4 |
 
 ---
