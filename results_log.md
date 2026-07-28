@@ -97,7 +97,7 @@ crowd_hat on a dominance prop.
 | 42 | Jordan v Algeria (1-2) | +13.4 | −8.0 | 6/10 | small fades won; two +EV holds hit tails (variance) |
 | 43 | Portugal v Uzbekistan (5-0) | +58.0 | +32.3 | 9/10 | blowout: above-crowd offside +11.6 |
 | 44 | England v Ghana (draw) | +25.6 | −1.0 | 8/10 | Ghana corners fade +8.5 |
-| 45 | Panama v Croatia | +12.7 | −13.5 | 5/10 | Sučić fade +16.3 (Panama above-crowd cluster soured) |
+| 45 | Panama v Croatia | +12.7 | −13.5 | 5/10 | Sučić fade +16.3 (Panama above-crowd cluster lost) |
 | 46 | Colombia v DR Congo (1-0) | +24.1 | +2.6 | 7/10 | Díaz vig-fade 41v50 NO +11.4 |
 | 47 | Switzerland v Canada (2-1) | +15.7 | −9.6 | 6/10 | Xhaka/David player fades cashed |
 | 48 | Bosnia-H v Qatar (3-1) | −17.5 | −43.4 | 4/10 | biggest deviations all lost (2H-corner −17, fouls −14) |

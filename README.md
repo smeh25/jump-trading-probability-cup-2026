@@ -137,7 +137,7 @@ Computes cumulative edge and calibration diagnostics over `predictions.csv`.
   - group stage (1×) → price each prop to its edge;
   - knockout (2×) → same edge-pricing, but tighter correlation/script caps since a correlated bad card now costs double, and research concentrated here where points count more;
   - the final (3×, prize on the line) → reframed to maximize **P(finishing in the money)** given the leaderboard: deviation caps, a pre-lock worst-case script budget (worst script ≥ −60), no max-stake single props.
-- **Tail-loss caps.** Per-prop deviation limits plus a pre-lock scenario table (grind / normal / freak scripts) bound the worst-case card before submission. Counterfactual check on the realized final: the risk-managed card (+205.8) scored within ~4 points of the pure max-EV card (+209.4) and beat the rank-chasing card (+186.3) — the defensive posture cost almost nothing while capping the tail.
+- **Tail-loss caps.** Per-prop deviation limits plus a pre-lock scenario table (grind / normal / tail scripts) bound the worst-case card before submission. Counterfactual check on the realized final: the risk-managed card (+205.8) scored within ~4 points of the pure max-EV card (+209.4) and beat the rank-chasing card (+186.3) — the defensive posture cost almost nothing while capping the tail.
 
 ## Reproduce
 
